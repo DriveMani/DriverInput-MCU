@@ -1,0 +1,106 @@
+
+Name: config/Port.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420201207438504586769684071497809287483434535935791
+ 8876703522985614889782139892709449667251101267038039
+SignatureKeyID: Freescale
+
+Name: generate_PC/BOLERO_256K_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773968887139577460914717632124559427052331868582670
+ 724374742847133725711856289187012913837364970344082374
+SignatureKeyID: Freescale
+
+Name: generate_PC/BOLERO_512K_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421617425037303736460796724032994508447101836864155
+ 2495247385262554778508123503542800343601016521528117
+SignatureKeyID: Freescale
+
+Name: generate_PB/BOLERO_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420254680773197919967146396312996024119045411799423
+ 3932787770713031205167968036868215697985099255548657
+SignatureKeyID: Freescale
+
+Name: generate_PB/BOLERO_256K_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423565442781460801471083177055719647785899620374862
+ 8075173778595263308076362756805381457226979552699963
+SignatureKeyID: Freescale
+
+Name: generate_PB/BOLERO_512K_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422980650884050129648808081528442408461263160858462
+ 4702918882694558452328629191224079382864561464848626
+SignatureKeyID: Freescale
+
+Name: generate_PC/BOLERO_1M5_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594745440356804289625025179720180288507849333580200253
+ 703189087630570386010515793836328771493383113043083251
+SignatureKeyID: Freescale
+
+Name: generate_PC/BOLERO_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421568697459106472994502288584913818511711021025488
+ 6394933231784734797199241516874527345859789324729803
+SignatureKeyID: Freescale
+
+Name: generate_PC/Port_VersionCheck_Inc.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773963814605934519550380077636280815723180956346808
+ 577201406152703357294728630100798869731464560860575518
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Port_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773971491160757641202558125248398366215418880199742
+ 415927343981255707373035874366247650719778240108435966
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Port_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426714664381554487988285831133721769312070496472348
+ 8707510099160987041561483405739279836686343899402396
+SignatureKeyID: Freescale
+
+Name: generate_PB/Port_VersionCheck_Src_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423681645635432166282824763726446393550805036105079
+ 8009495040845011402106898373532163187127439624788832
+SignatureKeyID: Freescale
+
+Name: generate_PB/BOLERO_1M5_Resource.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773966017068908886031777715385712394745170597240918
+ 502352731469426472800718930839255914195287437054459559
+SignatureKeyID: Freescale
+
+Name: generate_PC/Port_VersionCheck_Src.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773965027812889657794884164712087530101920013652518
+ 555091470848352093366362231089386802378892161449135844
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Port_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425401750070519642067650614762299373062819824100310
+ 8710181707603154711568300268467689495643379210077108
+SignatureKeyID: Freescale
+

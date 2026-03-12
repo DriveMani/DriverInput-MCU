@@ -1,0 +1,43 @@
+
+Name: generate_PB/src/Icu_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594752126358592043405971230324010704335757754016352192
+ 831076348457923744822865576460304739207887448306488600
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Icu_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424678045409076771901624983881368389728657897483505
+ 2613230797607958307942569045586475324811699841649120
+SignatureKeyID: Freescale
+
+Name: config/Icu.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420612651542005508765982265159107035945631352560075
+ 4924331372631732643824837141606703718551867101915620
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Icu_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425882318109178096619213181884785149354878279440405
+ 4949197566554295902187553221947130793016602895513281
+SignatureKeyID: Freescale
+
+Name: generate_PC/Icu_PluginCheck.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421314600015310768110185451107915293059381869271942
+ 2186103261282743281243928350759703107329237702310087
+SignatureKeyID: Freescale
+
+Name: generate_PB/Icu_PluginCheck.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594752131586370258062073881555893515896861553241575125
+ 341424683299201953049883724324075932533970579182325806
+SignatureKeyID: Freescale
+

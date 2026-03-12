@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<!--
+*   @file    plugin.xml
+*   @version 1.0.1
+*
+*   @brief   AUTOSAR Wdg_TS_T2D13M10I1R0 - Tresos Studio plugin configuration file.
+*   @details This file contains the configuration for and Wdg Tresos Studio plugin.
+-->
+<!--
+====================================================================================================
+*   Project              : AUTOSAR 4.0 MCAL
+*   Platform             : PA
+*   Peripheral           : Swt
+*   Dependencies         : none
+*
+*   Autosar Version      : 4.0.3
+*   Autosar Revision     : ASR_REL_4_0_REV_0003
+*   Autosar Conf.Variant :
+*   SW Version           : 1.0.1
+*   Build Version        : MPC560xB_MCAL_1_0_1_RTM_HF12_ASR_REL_4_0_REV_0003_20161209
+*
+*   (c) Copyright 2006-2016 Freescale Semiconductor Inc and STMicroelectronics
+*   All rights exclusively reserved for Freescale Semiconductor Inc and STMicroelectronics, 
+*   unless expressly agreed to otherwise.
+====================================================================================================
+====================================================================================================
+====================================================================================================
+-->
+
+<plugin>
+  <extension point="dreisoft.tresos.launcher2.plugin.module"
+             id="Wdg_TS_T2D13M10I1R0_ModuleId"
+             name="Wdg_TS_T2D13M10I1R0 Module">
+
+    <module id="Wdg_TS_T2D13M10I1R0"
+            label="Wdg"
+            mandatory="false"
+            allowMultiple="false"
+            description="Wdg BSW module"
+            copyright="(c) 2006-2016 Freescale Semiconductor Inc and STMicroelectronics"
+            swVersionMajor="1"
+            swVersionMinor="0"
+            swVersionPatch="1"
+            swVersionSuffix="RTM_HF12"
+            specVersionMajor="2"
+            specVersionMinor="5"
+            specVersionPatch="0"
+            specVersionSuffix="Rev_0003"
+            relVersionPrefix="AUTOSAR"
+            relVersionMajor="4"
+            relVersionMinor="0"
+            relVersionPatch="3"
+            relVersionSuffix="0003"
+            categoryType="Wdg"
+            categoryLayer="MCAL"
+            categoryCategory="ECU Firmware"
+            categoryComponent="ECUC">
+      <ecuType target="PA" derivate="XPC560XB"/>
+    </module>
+    </extension>
+	
+  <extension point="dreisoft.tresos.launcher2.plugin.configuration"
+             id="Wdg_TS_T2D13M10I1R0_ConfigId"
+             name="Wdg_TS_T2D13M10I1R0 Configuration">
+    <configuration moduleId="Wdg_TS_T2D13M10I1R0">
+      <schema>
+        <manager class="dreisoft.tresos.autosar2.resourcehandling.AutosarSchemaManager"/>
+          <!-- register the main xdm configuration schema for Wdg -->
+          <resource value="config/Wdg.xdm" type="xdm"/>
+
+
+
+
+      </schema>
+
+      <data>
+        <manager class="dreisoft.tresos.autosar2.resourcehandling.AutosarConfigManager"/>
+        <schemaNode path="ASPath:/TS_T2D13M10I1R0/Wdg"/>
+      </data>
+
+      <editor id="Wdg_TS_T2D13M10I1R0_EditorId"
+              label="Default"
+              tooltip="Wdg BSW module">
+        <class class="dreisoft.tresos.launcher2.editor.GenericConfigEditor">
+          <parameter name="schema" value="ASPath:/TS_T2D13M10I1R0/Wdg"/>
+          <parameter name="title" value="Wdg"/>
+          <parameter name="noTabs" value="false"/>
+          <parameter name="noLinks" value="true"/>
+          <parameter name="groupLinks" value="false"/>
+          <parameter name="groupContainers" value="false"/>
+          <parameter name="groupTables" value="true"/>
+          <parameter name="optionalGeneralTab" value="true"/>
+        </class>
+      </editor>
+    </configuration>
+  </extension>
+
+ <extension point="dreisoft.tresos.launcher2.plugin.generator"
+             id="EPCGenerator"
+             name="EPC Generator">
+  <generator moduleId="Wdg_TS_T2D13M10I1R0"
+               id="Wdg_TS_T2D13M10I1R0"
+               class="dreisoft.tresos.autosar2.generator.EPCFileGenerator">
+  <parameter name="cfgFilePath" value="output"/>
+  <parameter name="generateAllModules" value="false"/>
+  <parameter name="generateIntoOneFile" value="false"/>
+  <parameter name="contentType" value="asc:4.0.3"/>
+  </generator>
+ </extension>
+
+  <extension point="dreisoft.tresos.launcher2.plugin.generator"
+              id="Wdg_TS_T2D13M10I1R0_GeneratorId"
+              name="Wdg_TS_T2D13M10I1R0 Generator">
+    <generator moduleId="Wdg_TS_T2D13M10I1R0"
+               class="dreisoft.tresos.launcher2.generator.TemplateBasedCodeGenerator">
+
+      <!-- common template path parameters -->
+      <parameter name="templates" mode="generate,verify" value="generate,generate_PC,generate_PB,generate_LT"/>
+      <!-- custom generators -->
+      <parameter name="templates" mode="generate_PC" value="generate_PC"/>
+      <parameter name="templates" mode="generate_PB" value="generate_PB"/>
+      <parameter name="templates" mode="generate_LT" value="generate_LT"/>
+      <!-- custom template paths -->
+      <parameter name="mode_type" mode="generate_PC" value="generate"/>
+      <parameter name="mode_type" mode="generate_PB" value="generate"/>
+      <parameter name="mode_type" mode="generate_LT" value="generate"/>
+    </generator>
+  </extension>
+ 
+  <extension point="org.eclipse.help.toc">
+    <toc file="anchors.xml" primary="true"/>
+    <toc file="$nl$/Wdg/toc.xml" primary="false"/>
+    <!-- toc file="$nl$/ReleaseNotes/toc.xml" primary="false"/ !-->
+  </extension>
+</plugin>

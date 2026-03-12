@@ -1,0 +1,7 @@
+.metadata/
+**/.metadata/
+**/.plugins/
+**/*.log
+**/*.tmp
+**/Debug/
+**/Release/

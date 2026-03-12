@@ -1,0 +1,22 @@
+
+Name: config/Fee.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422395448598597279371931510875680289550062306843864
+ 6952379654843538244007950005481225498106422947118936
+SignatureKeyID: Freescale
+
+Name: generate/src/Fee_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422104250746320205595883941792471518782939455860180
+ 1624639785385610041403488126822977621908249888333506
+SignatureKeyID: Freescale
+
+Name: generate/include/Fee_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421498848116675670974289960693156980706771389816854
+ 0538422522036009456421686930358870257307439239647771
+SignatureKeyID: Freescale
+

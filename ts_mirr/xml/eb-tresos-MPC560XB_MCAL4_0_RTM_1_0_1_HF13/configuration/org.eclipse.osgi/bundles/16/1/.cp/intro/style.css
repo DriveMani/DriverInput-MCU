@@ -1,0 +1,128 @@
+BODY {
+  PADDING       : 5px;
+  FONT-SIZE     : 8pt; 
+  WORD-SPACING  : 0.3mm; 
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  TEXT-ALIGN    : center;
+  LETTER-SPACING: 0mm;
+}
+
+A {
+  PADDING-RIGHT : 0mm; 
+  PADDING-LEFT  : 0mm; 
+  FONT-SIZE     : 8pt; 
+  PADDING-BOTTOM: 0mm; 
+  MARGIN        : 0mm; 
+  WORD-SPACING  : 0px; 
+  LINE-HEIGHT   : 13pt; 
+  PADDING-TOP   : 0mm;     
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  LIST-STYLE-TYPE: square; 
+  LETTER-SPACING: 0.1mm; 
+  TEXT-ALIGN    : justify; 
+  TEXT-DECORATION: none; 
+}
+
+A:link {
+  COLOR         : #707070
+}
+A:hover,unknown {
+  COLOR         : #d20000
+}
+A:visited {
+  COLOR         : #707070
+}
+A:active {
+  COLOR         : #707070
+}
+
+#frame {
+  MARGIN        : 0 auto;
+  BORDER        : 1px solid #c0c0c0;
+  WIDTH         : 760px;
+  MARGIN        : 0;
+  PADDING       : 0;
+  TEXT-ALIGN    : justify;
+}
+#content {
+  WIDTH         : 750px;
+  margin-left   : 5px;
+  margin-top    : 10px;
+  margin-right  : 5px;
+}
+
+#footer {
+  BACKGROUND    : url('img/eb_rbg.gif') no-repeat bottom right;
+  MARGIN-TOP    : 15px;
+  PADDING-TOP   : 17px;
+  HEIGHT        : 45px;
+  WIDTH         : 750px;
+}
+
+#footer_text {
+  TEXT-ALIGN    : left;
+}
+
+#header {
+  BACKGROUND    : url('img/tresos_header.jpg') no-repeat top left;
+  HEIGHT        : 120px;
+  WIDTH         : 760px;
+  TOP           : 0px;
+}
+
+.headline {
+  FONT-WEIGHT   : bold; 
+  FONT-SIZE     : 13pt; 
+  COLOR         : #000000; 
+  LINE-HEIGHT   : 12pt; 
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  TEXT-ALIGN    : left;
+}
+
+#title {
+  FONT-SIZE     : 18pt;
+}
+
+#info {
+  MARGIN        : 0 auto;
+  BORDER        : 1px solid #c0c0c0;
+  BACKGROUND-COLOR : #f7f7f7;
+  WIDTH         : 250px;
+  MARGIN-LEFT   : 20px;
+  margin-top    : 20px;
+  PADDING       : 4px;
+  TEXT-ALIGN    : left;
+}
+
+#links {
+  WIDTH         : 250px;
+  TEXT-ALIGN    : left;
+}
+
+
+#standby-title {
+  FONT-SIZE     : 18pt; 
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  TEXT-ALIGN    : left;
+  MARGIN-LEFT   : 0px;
+  MARGIN-TOP    : 10px;
+  MARGIN-BOTTOM : 5px;
+}
+
+#standby-quick {
+  FONT-SIZE     : 12pt; 
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  TEXT-ALIGN    : left;
+  MARGIN-TOP    : 10px;
+  MARGIN-BOTTOM : 5px;
+}
+
+#standby-external {
+  FONT-SIZE     : 12pt; 
+  FONT-FAMILY   : Verdana,Arial,Helvetica; 
+  TEXT-ALIGN    : left;
+  MARGIN-TOP    : 10px;
+  MARGIN-BOTTOM : 5px;
+}
+
+

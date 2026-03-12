@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+	<!--
+		Copyright (C) 3SOFT All rights reserved CREATED BY: mawe2550 A content
+		file for the Tresos Welcome
+	-->
+
+	<!--
+		Usage notes: - "id" will be "id" in the generated HTML (important for
+		CSS styling) - "style-id" will be "class" in the generated HTML
+		(important for CSS styling)
+	-->
+<introContent>
+	<!-- Root page -->
+	<page id="root" alt-style="" style="style.css" style-id="page">
+		<group id="frame">
+			<group id="header" />
+
+
+			<!--<img id="tresos_icon" src="../icons/Tresos16x16.gif" />-->
+			<group id="content">
+				<text id="title">Welcome to the EB tresos product line</text>
+	
+				<text id="page-description">
+					The EB tresos product line is the Elektrobit (EB) solution for developing embedded automotive 
+					software. EB tresos is an extensible framework specifically tailored for you to deal with AUTOSAR 
+					compliant basic software. 
+	            </text>
+
+				<group id="info">
+					<text>Version: $variant_version$</text>
+					<text>Build-Nr: $buildnr$</text>
+					<text>Licensed to: $licensee$</text>
+				</group>
+	
+				<text>
+					To start to work with EB tresos you must first install your license
+					files. Use the following dialog to
+					select the license file that you have received for your product: 
+	            </text>
+	
+				<link
+					url="http://org.eclipse.ui.intro/runAction?class=dreisoft.tresos.launcher2.gui.actions.LicenseAction&amp;pluginId=dreisoft.tresos.launcher2.plugin&amp;standby=true"
+					label="Open the License Dialog" />
+	
+				<text style-id="headline">EB tresos product line &amp; Elektrobit</text>
+	
+				<text>
+					For further information concerning the EB tresos product family please
+					visit our product homepage:
+	            </text>
+	
+				<group id="external-links">
+					<link url="http://www.tresos.de/" label="EB tresos Homepage"
+						id="tresos_homepage" style-id="">
+					</link>
+				</group>
+	
+				<text>
+					Please also visit the Elektrobit homepage to get an impression about our
+					services and expertise: 
+	            </text>
+	
+				<group id="links">
+					<link url="http://automotive.elektrobit.com/" label="Elektrobit Automotive Homepage"
+						id="dreisoft_homepage" style-id="">
+					</link>
+					
+				</group>
+
+					<link url="http://org.eclipse.ui.intro/close" label="Close this Page" />
+				
+				<group id="footer">
+					<text id="footer_text">&#169; 2012 Elektrobit Automotive GmbH</text>
+				</group>
+			</group>
+		</group>
+		<!-- frame -->
+	</page>
+
+
+	<!-- Standby page -->
+	<page id="standby" alt-style="" style="style.css" style-id="page">
+		<anchor id="head-anchor" />
+		<!-- <title style-id="intro-header">EB tresos Studio</title> -->
+		<group id="standby-title">
+			<text>EB tresos</text>
+		</group>
+
+		<group id="standby-quick">
+			<link
+				url="http://org.eclipse.ui.intro/runAction?class=dreisoft.tresos.launcher2.gui.actions.LicenseAction&amp;pluginId=dreisoft.tresos.launcher2.plugin&amp;standby=true"
+				label="Open the License Dialog" />
+		</group>
+
+		<group id="standby-external">
+			<link
+				url="http://org.eclipse.ui.intro/openBrowser?url=http://www.tresos.de/"
+				label="EB tresos Homepage" />
+			<link
+				url="http://org.eclipse.ui.intro/openBrowser?url=http://www.automotive.elektrobit.com/"
+				label="Elektrobit Automotive Homepage" id="dreisoft_homepage" />
+		</group>
+
+		<group id="standby-quick">
+			<link url="http://org.eclipse.ui.intro/setStandbyMode?standby=false"
+				label="Show welcome screen" />
+		</group>
+
+
+	</page>
+
+</introContent>

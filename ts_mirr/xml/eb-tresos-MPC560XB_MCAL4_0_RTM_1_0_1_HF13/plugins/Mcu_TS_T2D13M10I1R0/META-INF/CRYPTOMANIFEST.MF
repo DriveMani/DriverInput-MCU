@@ -1,0 +1,113 @@
+
+Name: generate_PC/Mcu_RegOperations.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421382649530656018846109487917069864313632179904646
+ 4574451371168640884597961949350312436311772068445641
+SignatureKeyID: Freescale
+
+Name: generate_PC/Mcu_checkvalues.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420627220667558415756581448862910380586569622238756
+ 0675058478919773613386108711938170906591179253054904
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Mcu_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422661028876197013155371811123516580823815078932908
+ 0834817410225369446134506702467000589251681263624901
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Reg_eSys_MagicCarpet.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426500317269294246630799651241710724952524514919770
+ 8374479389110631967911316195225620770155869388173380
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_Dmamux_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773969501618531365756904518673466174387881520141594
+ 499405630490822199873404016670046316280063129506439734
+SignatureKeyID: Freescale
+
+Name: generate_PB/Mcu_RegOperations.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594746430971788659922429541801279422647856698928077384
+ 831105924862432360114497643517949638191478853832807228
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_MC_Monitor_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426340010532091939182794643187100794437486971965525
+ 0627390770100895062136231308684664495432803559096785
+SignatureKeyID: Freescale
+
+Name: config/Mcu.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426979735015986044412843671206775818797636897527039
+ 3685027096847086694628858858555649770946168486175632
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_MC_Reset_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594746158614176471221905746039011580864177366076051398
+ 228021259916787302061111823535526208029529423289759627
+SignatureKeyID: Freescale
+
+Name: config_ext/McuPreConfiguration.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594749704915278374267358148049916106903948027488175160
+ 198850244984669768749861905774980820207055156163692043
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_MC_Modes_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426696172719191549110497603496998316815950228237533
+ 3156907747281810084481843730674534502265954244502561
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Mcu_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773966635168690850191240873658609387748995247799172
+ 965065745454320091620792583387777003000437248440004809
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Mcu_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773973925683369987371259219093779342166772736018330
+ 475537412166636997148319280489632695149637114272100544
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_MC_Clocks_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594741912062706018744845584179679455825454797296760770
+ 428448404003922113436238911835861724210276334548523215
+SignatureKeyID: Freescale
+
+Name: generate_PB/Mcu_checkvalues.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420746942258384889009090759910116318924970945222473
+ 3652137446181929053479289869748320500921965172233504
+SignatureKeyID: Freescale
+
+Name: generate/src/Mcu_MC_Power_LLD.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594738499816065956675192036079303460244003603002483584
+ 086789457370228828400231660694320146716853187781503786
+SignatureKeyID: Freescale
+

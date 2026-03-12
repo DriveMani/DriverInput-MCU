@@ -1,0 +1,22 @@
+
+Name: config/Base.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422791540253038590802618562838406477076531516108507
+ 4962772009343433001307632479316409642217738026174799
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/modules.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420301392630894217280336292680635051802470766578524
+ 8808834795965642560300969220263162370133713619490934
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Soc_Ips.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426333295549115466410101407231764553969377571635587
+ 3149324185183430366723734938982370327759124997155732
+SignatureKeyID: Freescale
+

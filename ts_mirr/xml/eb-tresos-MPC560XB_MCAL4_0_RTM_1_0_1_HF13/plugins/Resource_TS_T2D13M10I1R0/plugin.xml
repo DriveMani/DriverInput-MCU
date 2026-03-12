@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+
+<!--
+*   @file    plugin.xml
+*   @version 1.0.1
+*
+*   @brief   AUTOSAR Resource_TS_T2D13M10I1R0 - Tresos Studio plugin configuration file.
+*   @details This file contains the configuration for and Resource Tresos Studio plugin.
+-->
+<!--
+====================================================================================================
+*   Project              : AUTOSAR 4.0 MCAL
+*   Platform             : PA
+*   Peripheral           : XPC560XB
+*   Dependencies         : none
+*
+*   Autosar Version      : 4.0.3
+*   Autosar Revision     : ASR_REL_4_0_REV_0003
+*   Autosar Conf.Variant :
+*   SW Version           : 1.0.1
+*   Build Version        : MPC560xB_MCAL_1_0_1_RTM_ASR_REL_4_0_REV_0003_20140606
+*
+*   (c) Copyright 2006-2014 Freescale Semiconductor Inc and STMicroelectronics
+*   All rights exclusively reserved for Freescale Semiconductor Inc and STMicroelectronics, 
+*   unless expressly agreed to otherwise.
+====================================================================================================
+====================================================================================================
+====================================================================================================
+-->
+
+<plugin>
+  <extension point="dreisoft.tresos.launcher2.plugin.module"
+             id="Resource_TS_T2D13M10I1R0_ModuleId"
+             name="Resource_TS_T2D13M10I1R0 Module">
+
+    <module id="Resource_TS_T2D13M10I1R0"
+            label="Resource"
+            mandatory="true"
+            allowMultiple="false"
+            description="Resource BSW module"
+            copyright="(c) 2006-2014 Freescale Semiconductor Inc and STMicroelectronics"
+            swVersionMajor="1"
+            swVersionMinor="0"
+            swVersionPatch="1"
+            swVersionSuffix="RTM"
+            specVersionMajor="0"
+            specVersionMinor="0"
+            specVersionPatch="0"
+            specVersionSuffix=""
+            relVersionPrefix="AUTOSAR"
+            relVersionMajor="4"
+            relVersionMinor="0"
+            relVersionPatch="3"
+            relVersionSuffix="0003"
+            categoryType="Resource"
+            categoryLayer="MCAL"
+            categoryCategory="EB"
+            categoryComponent="ECUC">
+      <ecuType target="PA" derivate="XPC560XB"/>
+    </module>
+    </extension>
+	
+  <extension point="dreisoft.tresos.launcher2.plugin.configuration"
+             id="Resource_TS_T2D13M10I1R0_ConfigId"
+             name="Resource_TS_T2D13M10I1R0 Configuration">
+    <configuration moduleId="Resource_TS_T2D13M10I1R0">
+      <schema>
+        <manager class="dreisoft.tresos.autosar2.resourcehandling.AutosarSchemaManager"/>
+          <!-- register the main xdm configuration schema for Resource -->
+          <resource value="config/Resource.xdm" type="xdm"/>
+
+
+
+
+      </schema>
+
+      <data>
+        <manager class="dreisoft.tresos.autosar2.resourcehandling.AutosarConfigManager"/>
+        <schemaNode path="ASPath:/TS_T2D13M10I1R0/Resource"/>
+      </data>
+
+      <editor id="Resource_TS_T2D13M10I1R0_EditorId"
+              label="Default"
+              tooltip="Resource BSW module">
+        <class class="dreisoft.tresos.launcher2.editor.GenericConfigEditor">
+          <parameter name="schema" value="ASPath:/TS_T2D13M10I1R0/Resource"/>
+          <parameter name="title" value="Resource"/>
+          <parameter name="noTabs" value="false"/>
+          <parameter name="noLinks" value="true"/>
+          <parameter name="groupLinks" value="false"/>
+          <parameter name="groupContainers" value="false"/>
+          <parameter name="groupTables" value="true"/>
+          <parameter name="optionalGeneralTab" value="true"/>
+        </class>
+      </editor>
+    </configuration>
+  </extension>
+
+ <extension point="dreisoft.tresos.launcher2.plugin.generator"
+             id="EPCGenerator"
+             name="EPC Generator">
+  <generator moduleId="Resource_TS_T2D13M10I1R0"
+               id="Resource_TS_T2D13M10I1R0"
+               class="dreisoft.tresos.autosar2.generator.EPCFileGenerator">
+  <parameter name="cfgFilePath" value="output"/>
+  <parameter name="generateAllModules" value="false"/>
+  <parameter name="generateIntoOneFile" value="false"/>
+  <parameter name="contentType" value="asc:4.0.3"/>
+  </generator>
+ </extension>
+
+  <extension point="dreisoft.tresos.launcher2.plugin.generator"
+              id="Resource_TS_T2D13M10I1R0_GeneratorId"
+              name="Resource_TS_T2D13M10I1R0 Generator">
+    <generator moduleId="Resource_TS_T2D13M10I1R0"
+               class="dreisoft.tresos.launcher2.generator.TemplateBasedCodeGenerator">
+
+      <!-- common template path parameters -->
+      <parameter name="templates" mode="generate,verify" value="generate"/>
+    </generator>
+  </extension>
+ 
+  <extension point="dreisoft.tresos.autosar2.api.plugin.ecuresource">
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5601dxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5601dxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5601dxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5601dxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602dxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5602dxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602dxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5602dxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602bxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5602bxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602bxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5602bxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602bxlq_lqfp144.properties">
+      <parameter name="subderivative" value="mpc5602bxlq_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602cxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5602cxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5602cxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5602cxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5603bxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5603bxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5603bxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5603bxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5603bxlq_lqfp144.properties">
+      <parameter name="subderivative" value="mpc5603bxlq_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5603cxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5603cxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5603cxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5603cxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604bxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5604bxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604bxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5604bxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604bxlq_lqfp144.properties">
+      <parameter name="subderivative" value="mpc5604bxlq_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604bxmg_mapbga208.properties">
+      <parameter name="subderivative" value="mpc5604bxmg_mapbga208"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604cxlh_lqfp64.properties">
+      <parameter name="subderivative" value="mpc5604cxlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5604cxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5604cxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5605bxll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5605bxll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5605bxlq_lqfp144.properties">
+      <parameter name="subderivative" value="mpc5605bxlq_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5605bxlu_lqfp176.properties">
+      <parameter name="subderivative" value="mpc5605bxlu_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5606bkll_lqfp100.properties">
+      <parameter name="subderivative" value="mpc5606bkll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5606bxlq_lqfp144.properties">
+      <parameter name="subderivative" value="mpc5606bxlq_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5606bxlu_lqfp176.properties">
+      <parameter name="subderivative" value="mpc5606bxlu_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5607bxlu_lqfp176.properties">
+      <parameter name="subderivative" value="mpc5607bxlu_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_mpc5607bxmg_mapbga208.properties">
+      <parameter name="subderivative" value="mpc5607bxmg_mapbga208"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560d30xlh_lqfp64.properties">
+      <parameter name="subderivative" value="spc560d30xlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560d30xll_lqfp100.properties">
+      <parameter name="subderivative" value="spc560d30xll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560d40xlh_lqfp64.properties">
+      <parameter name="subderivative" value="spc560d40xlh_lqfp64"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560d40xll_lqfp100.properties">
+      <parameter name="subderivative" value="spc560d40xll_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b40_lqfp100.properties">
+      <parameter name="subderivative" value="spc560b40_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b40_lqfp144.properties">
+      <parameter name="subderivative" value="spc560b40_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560c40_lqfp100.properties">
+      <parameter name="subderivative" value="spc560c40_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b44_lqfp100.properties">
+      <parameter name="subderivative" value="spc560b44_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b44_lqfp144.properties">
+      <parameter name="subderivative" value="spc560b44_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560c44_lqfp100.properties">
+      <parameter name="subderivative" value="spc560c44_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b50_lqfp100.properties">
+      <parameter name="subderivative" value="spc560b50_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b50_lqfp144.properties">
+      <parameter name="subderivative" value="spc560b50_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b50_mapbga208.properties">
+      <parameter name="subderivative" value="spc560b50_mapbga208"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560c50_lqfp100.properties">
+      <parameter name="subderivative" value="spc560c50_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b54_lqfp100.properties">
+      <parameter name="subderivative" value="spc560b54_lqfp100"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b54_lqfp144.properties">
+      <parameter name="subderivative" value="spc560b54_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b54_lqfp176.properties">
+      <parameter name="subderivative" value="spc560b54_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b60_lqfp144.properties">
+      <parameter name="subderivative" value="spc560b60_lqfp144"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b60_lqfp176.properties">
+      <parameter name="subderivative" value="spc560b60_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b64_lqfp176.properties">
+      <parameter name="subderivative" value="spc560b64_lqfp176"/>
+    </ecuresource>
+    <ecuresource
+      target="PA"
+      derivate="XPC560XB"
+      moduleId="Resource_TS_T2D13M10I1R0"
+      file="resource/PA_XPC560XB_spc560b64_mapbga208.properties">
+      <parameter name="subderivative" value="spc560b64_mapbga208"/>
+    </ecuresource>
+  </extension>
+
+  <extension point="dreisoft.tresos.autosar2.api.plugin.ecuresourcefinder">
+    <ecuresourcefinder>
+      <finder class="dreisoft.tresos.autosar2.api.ecuresource.DefaultEcuResourceFinder">
+        <parameter name="name" value="subderivative"/>
+        <parameter name="path" value="ASPath:/TS_T2D13M10I1R0/Resource/ResourceGeneral/ResourceSubderivative"/>
+      </finder>
+    </ecuresourcefinder>
+  </extension>
+
+  <extension point="org.eclipse.help.toc">
+    <toc file="anchors.xml" primary="true"/>
+    <toc file="$nl$/Resource/toc.xml" primary="false"/>
+    <!-- toc file="$nl$/ReleaseNotes/toc.xml" primary="false"/ !-->
+  </extension>
+</plugin>

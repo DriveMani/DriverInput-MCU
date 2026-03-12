@@ -1,0 +1,29 @@
+
+Name: config/Fls.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773969642189130017850222596213284528456695631792861
+ 607724580885875036071697818930264102050476225876479975
+SignatureKeyID: Freescale
+
+Name: generate/src/Fls_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423770617615348515796086877045290775658997365445321
+ 0615882949280948943552759820781863263970409035470501
+SignatureKeyID: Freescale
+
+Name: generate/src/Fls_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424435898876086069634578898205144191992625747440467
+ 2976796251039785535093987911541069709481457751070620
+SignatureKeyID: Freescale
+
+Name: generate/include/Fls_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425623463731629498336731825825973169433108134250418
+ 9471873647996896930951813652128274054705176549154187
+SignatureKeyID: Freescale
+

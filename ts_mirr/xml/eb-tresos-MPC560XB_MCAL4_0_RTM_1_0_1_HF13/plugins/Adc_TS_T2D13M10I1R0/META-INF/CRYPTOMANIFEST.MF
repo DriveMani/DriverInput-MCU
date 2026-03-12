@@ -1,0 +1,78 @@
+
+Name: generate_PB/Adc_RegOperations_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422113191585884786887109066127647777108777488071073
+ 3075631737251398824617513438567259253504632874299286
+SignatureKeyID: Freescale
+
+Name: generate_PC/Adc_VersionCheck_Inc.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426120636169862889092138825931052994212419294638215
+ 4028884395862319447514303507591132985250154980772502
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Adc_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424547637775130267563874608598817090909683102182030
+ 0893389839372151791352224311739161925871514416856505
+SignatureKeyID: Freescale
+
+Name: generate_PB/Adc_VersionCheck_Src_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377422867620127678692073450568659684417428528246767503
+ 6435111179441429896646728966373796613107475189012776
+SignatureKeyID: Freescale
+
+Name: generate_PC/Adc_RegOperations.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425166801910541101284959425543361295289788639302771
+ 5014090595441188444922993487043964000369347224901898
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Adc_CTU_ipversion.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421876487594384345000683677441927417624329854078391
+ 8275327751132606600435830778499773653859740467241294
+SignatureKeyID: Freescale
+
+Name: generate_PB/Adc_RegOperations.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426848429186954301333193222297096830248591905163334
+ 4954193788096567728747077201160117945794186860053548
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Adc_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420981587380063430530534822767315531784712375779889
+ 5426814771213624022447446515484692768517952843517946
+SignatureKeyID: Freescale
+
+Name: config/Adc.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424886027102781808241277865797040553037674382628707
+ 1357493432707295086562709755923941377004315535012072
+SignatureKeyID: Freescale
+
+Name: generate_PC/Adc_VersionCheck_Src.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421745863660415433867740909891771440886083176884993
+ 4509254435637762135988747096867233248165752970001053
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Adc_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426530346801805303982026333075899089214918808825644
+ 1238316669659000813309027915423558981198752473377743
+SignatureKeyID: Freescale
+

@@ -1,0 +1,29 @@
+
+Name: config/Gpt.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420737374094432130831400451232942849040990852476294
+ 7090391772325146494228457201521244316652729648289219
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Gpt_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 74155374890361970791486108877575021836552985865251161668225
+ 34478902499665440194437409695923329040519523915016023129
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Gpt_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773964327181415311676061586478474609821305776616045
+ 772935566743337543026136948193029240126703131800106503
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Gpt_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423175865862109176975801828474635097498857587193341
+ 9442524886436578419697641530988583534096708755090717
+SignatureKeyID: Freescale
+

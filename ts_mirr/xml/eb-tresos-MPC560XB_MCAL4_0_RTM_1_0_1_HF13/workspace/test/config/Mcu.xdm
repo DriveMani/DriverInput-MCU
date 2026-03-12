@@ -1,0 +1,287 @@
+<?xml version='1.0'?>
+<datamodel version="3.0" 
+           xmlns="http://www.tresos.de/_projects/DataModel2/08/root.xsd" 
+           xmlns:a="http://www.tresos.de/_projects/DataModel2/08/attribute.xsd" 
+           xmlns:v="http://www.tresos.de/_projects/DataModel2/06/schema.xsd" 
+           xmlns:d="http://www.tresos.de/_projects/DataModel2/06/data.xsd">
+
+  <d:ctr type="AUTOSAR" factory="autosar" 
+         xmlns:ad="http://www.tresos.de/_projects/DataModel2/08/admindata.xsd" 
+         xmlns:icc="http://www.tresos.de/_projects/DataModel2/08/implconfigclass.xsd" 
+         xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd" >
+    <d:lst type="TOP-LEVEL-PACKAGES">
+      <d:ctr name="Mcu" type="AR-PACKAGE">
+        <d:lst type="ELEMENTS">
+          <d:chc name="Mcu" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+            <d:ctr type="MODULE-CONFIGURATION">
+              <a:a name="DEF" value="ASPath:/TS_T2D13M10I1R0/Mcu"/>
+              <a:a name="IMPORTER_INFO" value="@PRE"/>
+              <d:ctr name="McuPublishedInformation" type="IDENTIFIABLE">
+                <a:a name="IMPORTER_INFO" value="@PRE"/>
+                <a:a name="READONLY" value="true"/>
+                <d:lst name="McuResetReasonConf" type="MAP">
+                  <d:ctr name="MCU_POWER_ON_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="0">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_WATCHDOG_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="1">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_SW_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="2">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_RESET_UNDEFINED" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="3">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_2_7_LOW_VOLTAGE" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="4">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_2_7_LV_VREG_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="5">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_1_2_LV_PW_DOMAIN_0" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="6">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_1_2_LV_PW_DOMAIN_1" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="7">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_EXR_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="8">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_JTAG_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="9">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_CORE_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="10">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_CHECKSTOP_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="11">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_PLL0_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="12">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_CMU_OLR_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="13">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_CMU_FHL_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="14">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_4_5_LOW_VOLTAGE" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="15">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                  <d:ctr name="MCU_FLASH_RESET" type="IDENTIFIABLE">
+                    <a:a name="IMPORTER_INFO" value="@PRE"/>
+                    <a:a name="READONLY" value="true"/>
+                    <d:var name="McuResetReason" type="INTEGER" value="16">
+                      <a:a name="IMPORTER_INFO" value="@PRE"/>
+                      <a:a name="READONLY" value="true"/>
+                    </d:var>
+                  </d:ctr>
+                </d:lst>
+              </d:ctr>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:ctr name="NonAutosar" type="IDENTIFIABLE">
+                <d:var name="McuGetDeviceInfoApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuDisableDemReportErrorStatus" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuSscmGetSystemStatus" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuSscmGetMemConfig" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:ctr name="McuGeneralConfiguration" type="IDENTIFIABLE">
+                <d:var name="McuDevErrorDetect" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuGetRamStateApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuInitClock" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuNoPll" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuPerformResetApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuCalloutBeforePerformReset" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuPerformResetCallout" type="FUNCTION-NAME" 
+                       value="NULL_PTR">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuVersionInfoApi" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuConfigureFlash" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuDmaInit" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuLPTransitionCheck" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuEnterLowPowerMode" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuSkipFunction" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McueMiosConfigureGPRENApi" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuEnableDisableNotificationApi" type="BOOLEAN" 
+                       value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuNotification" type="FUNCTION-NAME" 
+                       value="NULL_PTR">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuConfClkOutput" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuSscmPAE" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuSscmRAE" type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="McuDisablePeripheralDuringInitclock" 
+                       type="BOOLEAN" value="true">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+              <d:lst name="McuModuleConfiguration" type="MAP"/>
+              <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
+                <d:var name="ArReleaseMajorVersion" type="INTEGER" value="4">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ArReleaseMinorVersion" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ArReleaseRevisionVersion" type="INTEGER" value="3">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="ModuleId" type="INTEGER" value="101">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwMajorVersion" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwMinorVersion" type="INTEGER" value="0">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="SwPatchVersion" type="INTEGER" value="1">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorApiInfix" type="STRING" value="">
+                  <a:a name="ENABLE" value="false"/>
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+                <d:var name="VendorId" type="INTEGER" value="43">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                </d:var>
+              </d:ctr>
+            </d:ctr>
+          </d:chc>
+        </d:lst>
+      </d:ctr>
+    </d:lst>
+  </d:ctr>
+
+</datamodel>

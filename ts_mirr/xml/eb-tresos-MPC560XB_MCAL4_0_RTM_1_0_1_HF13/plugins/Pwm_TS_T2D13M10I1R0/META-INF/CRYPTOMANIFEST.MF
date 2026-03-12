@@ -1,0 +1,78 @@
+
+Name: generate_PB/Pwm_NotifyCheck_Src_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424439720336724538208626166717476775717729984350755
+ 4371359359293770646655623842010424715798864015906548
+SignatureKeyID: Freescale
+
+Name: generate_PB/Pwm_Clock_Tree.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773974070583923045612332976107571185443148420329483
+ 983432694378489798722461408215668936128040890815389771
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Pwm_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423927154082011035007375627408094592805138008444253
+ 0618577162469070559683723828942370668947097658662691
+SignatureKeyID: Freescale
+
+Name: generate_PC/Pwm_NotifyCheck_Src.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420522884079172754008766528931631760120599936073603
+ 4450502079889900868065300702060799961072806304173191
+SignatureKeyID: Freescale
+
+Name: generate_PC/Pwm_VersionCheck_Inc.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426925883556569694838497028808081857494479925113098
+ 8445751511091325465051499657681212914321487987039200
+SignatureKeyID: Freescale
+
+Name: generate_PC/Pwm_VersionCheck_Src.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424558604007015789814039197550350225443135658687551
+ 7549410461946488446657774507984992862681854063937710
+SignatureKeyID: Freescale
+
+Name: config/Pwm.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 74155374890370675353677842588592251563195425807425216792870
+ 71097478385364419017714892016773299957596920595800188746
+SignatureKeyID: Freescale
+
+Name: generate_PB/Pwm_VersionCheck_Src_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594749417818294590990384603528060072391142834157358618
+ 017696472586533257486085826549604201297971037610331943
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Pwm_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426088462443889172696846083502814571806657773772653
+ 5218167695318657119225181665641871895213071588694143
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Pwm_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594739439637985492848830227985641331574492885359264590
+ 378431990353725778230368260937334405986161508807597179
+SignatureKeyID: Freescale
+
+Name: generate_PC/Pwm_Clock_Tree.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425774652491005718936308722002412736704045421345603
+ 0990590388977888575876437041331398291224622072947810
+SignatureKeyID: Freescale
+

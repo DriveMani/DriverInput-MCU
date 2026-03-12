@@ -1,0 +1,22 @@
+
+Name: config/Dem.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377420754388665175084900387527274422935565685781056288
+ 8726794209787701781734017932219120825556550692275902
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Dem_IntErrId.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421842010862075869809228992715765323294804740347760
+ 3119607904428100239181876417019597288162619754710732
+SignatureKeyID: Freescale
+
+Name: config_ext/DemRecConfiguration_MCALDemIDs.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426962790952484409047430400583720245739677549213832
+ 6777235977175223585370274104795386606469615933841259
+SignatureKeyID: Freescale
+

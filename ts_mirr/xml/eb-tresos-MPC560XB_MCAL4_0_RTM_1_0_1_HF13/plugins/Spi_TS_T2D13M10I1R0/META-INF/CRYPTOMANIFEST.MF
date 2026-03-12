@@ -1,0 +1,57 @@
+
+Name: config/Spi.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424090297332813674376788144104571497583015269257282
+ 6879956185057876568134093095823314440137691801351346
+SignatureKeyID: Freescale
+
+Name: generate_LT/src/Spi_Lcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423121043518763359294484457390389662859404237094652
+ 7524053212488809913009635813626378036544487237190594
+SignatureKeyID: Freescale
+
+Name: generate_PB/src/Spi_PBcfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377421027803056519828333975380063125705242004130801483
+ 6609765358431453798033415819382322232025019606441572
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/Spi_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 28964594773974032449341384363087532740121240033508530512416
+ 760407988235884578768576928499944245162667986281161774
+SignatureKeyID: Freescale
+
+Name: generate_PC/Spi_VersionCheck_Src.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425573896423815813228874495693957300769201780149271
+ 7274145849853985415958207588647282388188371505082316
+SignatureKeyID: Freescale
+
+Name: generate_PC/Spi_VersionCheck_Inc.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425450265772053422124316835438898537777076526150714
+ 9678139422523251985255850920904524623334509523834075
+SignatureKeyID: Freescale
+
+Name: generate_PB/Spi_VersionCheck_Src_PB.m
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377426711768897969774318221720405137383493070217897747
+ 6119210716397910223868867632511394040887254535429332
+SignatureKeyID: Freescale
+
+Name: generate_PC/src/Spi_Cfg.c
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377424508532348037868371858687414343153580105025421852
+ 2515074220457933400994783370540593031493252560683862
+SignatureKeyID: Freescale
+

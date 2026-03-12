@@ -1,0 +1,15 @@
+
+Name: config/EcuM.xdm
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377423983238743845327480868241071331111664715608810995
+ 3642479504773686674033391771844443996450950008766804
+SignatureKeyID: Freescale
+
+Name: generate_PC/include/EcuM_Cfg.h
+SignatureAlgorithmID: DSA
+SignatureKeyProviderID: plugin.launcher2.licenseFileKeyProvider
+Signature: 11313377425719350968297490284329984427205930664271613418216
+ 8209340212406607856179617673711938191403444550886829
+SignatureKeyID: Freescale
+
