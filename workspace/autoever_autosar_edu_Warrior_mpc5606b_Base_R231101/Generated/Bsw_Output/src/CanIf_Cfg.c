@@ -108,7 +108,7 @@ CONST(CanIf_ControllerConfigType, CANIF_CONST)CanIf_GaaControllerConfigType[] =
     &CanIf_GaaTxLpdu[0],
 
     /* ddNoOfTxPdu */
-    0x0F
+    0x10
   }
 };
 
@@ -238,6 +238,21 @@ CONST(CanIf_Hrh, CANIF_CONST) CanIf_GaaHrh[] =
 
     /* ucFilterMethod */
     0x03
+  },
+
+  /* HRH 8 - CanGeneralCntrl0Hrh8 */
+  {
+    /* ddRxLpduIndex */
+    0x0008,
+
+    /* ddNoOfRxLpdusRange */
+    0x00,
+
+    /* ddNoOfRxLpdusList */
+    0x01,
+
+    /* ucFilterMethod */
+    0x03
   }
 };
 
@@ -252,7 +267,7 @@ CONST(CanIf_HrhInit, CANIF_CONST)CanIf_GaaHrhInit[] =
   /* HRH_INIT 0 - CanGeneral */
   {
     /* ucMaxHrhId */
-    0x07
+    0x08
   }
 };
 
@@ -278,7 +293,9 @@ CONST(uint8, CANIF_CONST) CanIf_GaaHrhMapArray[] =
 
   0x06,
 
-  0x07
+  0x07,
+
+  0x08
 };
 
 #define CANIF_STOP_SEC_CONST_8
@@ -290,7 +307,7 @@ CONST(uint8, CANIF_CONST) CanIf_GaaHrhMapArray[] =
 /* Structure for Rx L-PDU(Range Or List) */
 CONST(CanIf_RxLpdu, CANIF_VAR) CanIf_GaaRxLpdu[] =
 {
-  /* RX-LIST-RANGE 0 - Ctrl_Lis2015_CanIfRxPduCfg_IN_ECU1_Project_0x7df_GST_Msg_TP_Func */
+  /* RX-LIST-RANGE 0 - Ctrl_Lis2015_CanIfRxPduCfg_IN_ECU1_Project_0x7df_Project_GST_Msg_TP_Func */
   {
     /* ddCanIdLl */
     0x000007DF,
@@ -299,7 +316,7 @@ CONST(CanIf_RxLpdu, CANIF_VAR) CanIf_GaaRxLpdu[] =
     0x00000000,
 
     /* ddRxPduId */
-    0x0000,
+    0x0008,
 
     /* ddTargetId */
     0x0003,
@@ -317,145 +334,37 @@ CONST(CanIf_RxLpdu, CANIF_VAR) CanIf_GaaRxLpdu[] =
     0x00
   },
 
-  /* RX-LIST-RANGE 1 - Ctrl_Lis1799_CanIfRxPduCfg_IN_ECU1_Project_0x707_GST_Msg_TP2 */
+  /* RX-LIST-RANGE 1 - Ctrl_Lis1901_CanIfRxPduCfg_IN_ECU1_Project_0x76d_Project_VCURegenStatus */
+  {
+    /* ddCanIdLl */
+    0x0000076D,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0007,
+
+    /* ddTargetId */
+    0x0000,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x08,
+
+    /* *ucRxUserOrNotifSts */
+    0x00,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 2 - Ctrl_Lis1799_CanIfRxPduCfg_IN_ECU1_Project_0x707_Project_GST_Msg_TP2 */
   {
     /* ddCanIdLl */
     0x00000707,
-
-    /* ddCanIdUl */
-    0x00000000,
-
-    /* ddRxPduId */
-    0x0001,
-
-    /* ddTargetId */
-    0x0001,
-
-    /* ucCallbackIndex */
-    0xFF,
-
-    /* ucDlc */
-    0x08,
-
-    /* *ucRxUserOrNotifSts */
-    0x01,
-
-    /* ucControllerId */
-    0x00
-  },
-
-  /* RX-LIST-RANGE 2 - Ctrl_Lis1798_CanIfRxPduCfg_IN_ECU1_Project_0x706_GST_Msg_TP1 */
-  {
-    /* ddCanIdLl */
-    0x00000706,
-
-    /* ddCanIdUl */
-    0x00000000,
-
-    /* ddRxPduId */
-    0x0002,
-
-    /* ddTargetId */
-    0x0000,
-
-    /* ucCallbackIndex */
-    0xFF,
-
-    /* ucDlc */
-    0x08,
-
-    /* *ucRxUserOrNotifSts */
-    0x01,
-
-    /* ucControllerId */
-    0x00
-  },
-
-  /* RX-LIST-RANGE 3 - Ctrl_Lis1795_CanIfRxPduCfg_IN_ECU1_Project_0x703_GST_Msg_TP_Phys */
-  {
-    /* ddCanIdLl */
-    0x00000703,
-
-    /* ddCanIdUl */
-    0x00000000,
-
-    /* ddRxPduId */
-    0x0003,
-
-    /* ddTargetId */
-    0x0002,
-
-    /* ucCallbackIndex */
-    0xFF,
-
-    /* ucDlc */
-    0x08,
-
-    /* *ucRxUserOrNotifSts */
-    0x01,
-
-    /* ucControllerId */
-    0x00
-  },
-
-  /* RX-LIST-RANGE 4 - Ctrl_Lis1283_CanIfRxPduCfg_IN_ECU1_Project_0x503_ECU2_Msg_P1 */
-  {
-    /* ddCanIdLl */
-    0x00000503,
-
-    /* ddCanIdUl */
-    0x00000000,
-
-    /* ddRxPduId */
-    0x0004,
-
-    /* ddTargetId */
-    0x0003,
-
-    /* ucCallbackIndex */
-    0xFF,
-
-    /* ucDlc */
-    0x02,
-
-    /* *ucRxUserOrNotifSts */
-    0x00,
-
-    /* ucControllerId */
-    0x00
-  },
-
-  /* RX-LIST-RANGE 5 - Ctrl_Lis769_CanIfRxPduCfg_IN_ECU1_Project_0x301_ECU2_Msg_PIF1 */
-  {
-    /* ddCanIdLl */
-    0x00000301,
-
-    /* ddCanIdUl */
-    0x00000000,
-
-    /* ddRxPduId */
-    0x0005,
-
-    /* ddTargetId */
-    0x0000,
-
-    /* ucCallbackIndex */
-    0xFF,
-
-    /* ucDlc */
-    0x08,
-
-    /* *ucRxUserOrNotifSts */
-    0x00,
-
-    /* ucControllerId */
-    0x00
-  },
-
-  /* RX-LIST-RANGE 6 - Ctrl_Lis259_CanIfRxPduCfg_IN_ECU1_Project_0x103_ECU2_Msg_POE1 */
-  {
-    /* ddCanIdLl */
-    0x00000103,
 
     /* ddCanIdUl */
     0x00000000,
@@ -473,13 +382,148 @@ CONST(CanIf_RxLpdu, CANIF_VAR) CanIf_GaaRxLpdu[] =
     0x08,
 
     /* *ucRxUserOrNotifSts */
+    0x01,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 3 - Ctrl_Lis1798_CanIfRxPduCfg_IN_ECU1_Project_0x706_Project_GST_Msg_TP1 */
+  {
+    /* ddCanIdLl */
+    0x00000706,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0005,
+
+    /* ddTargetId */
+    0x0000,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x08,
+
+    /* *ucRxUserOrNotifSts */
+    0x01,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 4 - Ctrl_Lis1795_CanIfRxPduCfg_IN_ECU1_Project_0x703_Project_GST_Msg_TP_Phys */
+  {
+    /* ddCanIdLl */
+    0x00000703,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0004,
+
+    /* ddTargetId */
+    0x0002,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x08,
+
+    /* *ucRxUserOrNotifSts */
+    0x01,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 5 - Ctrl_Lis1283_CanIfRxPduCfg_IN_ECU1_Project_0x503_Project_ECU2_Msg_P1 */
+  {
+    /* ddCanIdLl */
+    0x00000503,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0003,
+
+    /* ddTargetId */
+    0x0004,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x02,
+
+    /* *ucRxUserOrNotifSts */
     0x00,
 
     /* ucControllerId */
     0x00
   },
 
-  /* RX-LIST-RANGE 7 - Ctrl_Lis3_CanIfRxPduCfg_IN_ECU1_Project_0x3_ECU2_Msg_OE1 */
+  /* RX-LIST-RANGE 6 - Ctrl_Lis769_CanIfRxPduCfg_IN_ECU1_Project_0x301_Project_ECU2_Msg_PIF1 */
+  {
+    /* ddCanIdLl */
+    0x00000301,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0002,
+
+    /* ddTargetId */
+    0x0001,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x08,
+
+    /* *ucRxUserOrNotifSts */
+    0x00,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 7 - Ctrl_Lis259_CanIfRxPduCfg_IN_ECU1_Project_0x103_Project_ECU2_Msg_POE1 */
+  {
+    /* ddCanIdLl */
+    0x00000103,
+
+    /* ddCanIdUl */
+    0x00000000,
+
+    /* ddRxPduId */
+    0x0001,
+
+    /* ddTargetId */
+    0x0002,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucDlc */
+    0x08,
+
+    /* *ucRxUserOrNotifSts */
+    0x00,
+
+    /* ucControllerId */
+    0x00
+  },
+
+  /* RX-LIST-RANGE 8 - Ctrl_Lis3_CanIfRxPduCfg_IN_ECU1_Project_0x3_Project_ECU2_Msg_OE1 */
   {
     /* ddCanIdLl */
     0x00000003,
@@ -488,10 +532,10 @@ CONST(CanIf_RxLpdu, CANIF_VAR) CanIf_GaaRxLpdu[] =
     0x00000000,
 
     /* ddRxPduId */
-    0x0007,
+    0x0000,
 
     /* ddTargetId */
-    0x0002,
+    0x0003,
 
     /* ucCallbackIndex */
     0xFF,
@@ -543,6 +587,8 @@ CONST(uint16, CANIF_CONST) CanIf_GaaTxBasicPduIndexMapping[] =
 
   CANIF_INVALID,
 
+  CANIF_INVALID,
+
   CANIF_INVALID
 };
 
@@ -556,16 +602,16 @@ CONST(uint16, CANIF_CONST) CanIf_GaaTxBasicPduIndexMapping[] =
 /* Structure for Transmit L-PDU */
 CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
 {
-  /* TX LPDU 0 - CanIfTxPduCfg_OUT_ECU1_Project_0x1_ECU1_Msg_OE1 */
+  /* TX LPDU 0 - CanIfTxPduCfg_OUT_ECU1_Project_0x1_Project_ECU1_Msg_OE1 */
   {
     /* ddCanId */
     0x00000001,
 
     /* ddHthIdorBufferId */
-    0x08,
+    0x09,
 
     /* ddTxConfirmPduId */
-    0x000B,
+    0x000C,
 
     /* ddTxPduId */
     0x0000,
@@ -580,16 +626,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 1 - CanIfTxPduCfg_OUT_ECU1_Project_0x2_ECU1_Msg_OE2 */
+  /* TX LPDU 1 - CanIfTxPduCfg_OUT_ECU1_Project_0x2_Project_ECU1_Msg_OE2 */
   {
     /* ddCanId */
     0x00000002,
 
     /* ddHthIdorBufferId */
-    0x09,
+    0x0A,
 
     /* ddTxConfirmPduId */
-    0x000A,
+    0x000B,
 
     /* ddTxPduId */
     0x0001,
@@ -604,16 +650,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 2 - CanIfTxPduCfg_OUT_ECU1_Project_0x55_ECU1_Msg_GW1 */
+  /* TX LPDU 2 - CanIfTxPduCfg_OUT_ECU1_Project_0x55_Project_ECU1_Msg_GW1 */
   {
     /* ddCanId */
     0x00000055,
 
     /* ddHthIdorBufferId */
-    0x0A,
+    0x0B,
 
     /* ddTxConfirmPduId */
-    0x0000,
+    0x0001,
 
     /* ddTxPduId */
     0x0002,
@@ -628,16 +674,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 3 - CanIfTxPduCfg_OUT_ECU1_Project_0x100_ECU1_Msg_POE3 */
+  /* TX LPDU 3 - CanIfTxPduCfg_OUT_ECU1_Project_0x100_Project_ECU1_Msg_POE3 */
   {
     /* ddCanId */
     0x00000100,
 
     /* ddHthIdorBufferId */
-    0x0B,
+    0x0C,
 
     /* ddTxConfirmPduId */
-    0x0002,
+    0x0003,
 
     /* ddTxPduId */
     0x0003,
@@ -652,16 +698,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 4 - CanIfTxPduCfg_OUT_ECU1_Project_0x101_ECU1_Msg_POE1 */
+  /* TX LPDU 4 - CanIfTxPduCfg_OUT_ECU1_Project_0x101_Project_ECU1_Msg_POE1 */
   {
     /* ddCanId */
     0x00000101,
 
     /* ddHthIdorBufferId */
-    0x0C,
+    0x0D,
 
     /* ddTxConfirmPduId */
-    0x0009,
+    0x000A,
 
     /* ddTxPduId */
     0x0004,
@@ -676,16 +722,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 5 - CanIfTxPduCfg_OUT_ECU1_Project_0x102_ECU1_Msg_POE2 */
+  /* TX LPDU 5 - CanIfTxPduCfg_OUT_ECU1_Project_0x102_Project_ECU1_Msg_POE2 */
   {
     /* ddCanId */
     0x00000102,
 
     /* ddHthIdorBufferId */
-    0x0D,
+    0x0E,
 
     /* ddTxConfirmPduId */
-    0x0008,
+    0x0009,
 
     /* ddTxPduId */
     0x0005,
@@ -700,16 +746,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 6 - CanIfTxPduCfg_OUT_ECU1_Project_0x200_ECU1_Msg_IF1 */
+  /* TX LPDU 6 - CanIfTxPduCfg_OUT_ECU1_Project_0x200_Project_ECU1_Msg_IF1 */
   {
     /* ddCanId */
     0x00000200,
 
     /* ddHthIdorBufferId */
-    0x0E,
+    0x0F,
 
     /* ddTxConfirmPduId */
-    0x0001,
+    0x0002,
 
     /* ddTxPduId */
     0x0006,
@@ -724,16 +770,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 7 - CanIfTxPduCfg_OUT_ECU1_Project_0x300_ECU1_Msg_PIF1 */
+  /* TX LPDU 7 - CanIfTxPduCfg_OUT_ECU1_Project_0x300_Project_ECU1_Msg_PIF1 */
   {
     /* ddCanId */
     0x00000300,
 
     /* ddHthIdorBufferId */
-    0x0F,
+    0x10,
 
     /* ddTxConfirmPduId */
-    0x0005,
+    0x0006,
 
     /* ddTxPduId */
     0x0007,
@@ -748,16 +794,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 8 - CanIfTxPduCfg_OUT_ECU1_Project_0x501_ECU1_Msg_P1 */
+  /* TX LPDU 8 - CanIfTxPduCfg_OUT_ECU1_Project_0x501_Project_ECU1_Msg_P1 */
   {
     /* ddCanId */
     0x00000501,
 
     /* ddHthIdorBufferId */
-    0x10,
+    0x11,
 
     /* ddTxConfirmPduId */
-    0x0007,
+    0x0008,
 
     /* ddTxPduId */
     0x0008,
@@ -772,16 +818,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 9 - CanIfTxPduCfg_OUT_ECU1_Project_0x502_ECU1_Msg_P2 */
+  /* TX LPDU 9 - CanIfTxPduCfg_OUT_ECU1_Project_0x502_Project_ECU1_Msg_P2 */
   {
     /* ddCanId */
     0x00000502,
 
     /* ddHthIdorBufferId */
-    0x11,
+    0x12,
 
     /* ddTxConfirmPduId */
-    0x0006,
+    0x0007,
 
     /* ddTxPduId */
     0x0009,
@@ -796,16 +842,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 10 - CanIfTxPduCfg_OUT_ECU1_Project_0x601_ECU1_Msg_P3 */
+  /* TX LPDU 10 - CanIfTxPduCfg_OUT_ECU1_Project_0x601_Project_ECU1_Msg_P3 */
   {
     /* ddCanId */
     0x00000601,
 
     /* ddHthIdorBufferId */
-    0x12,
+    0x13,
 
     /* ddTxConfirmPduId */
-    0x0004,
+    0x0005,
 
     /* ddTxPduId */
     0x000A,
@@ -820,16 +866,16 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 11 - CanIfTxPduCfg_OUT_ECU1_Project_0x602_ECU1_Msg_P4 */
+  /* TX LPDU 11 - CanIfTxPduCfg_OUT_ECU1_Project_0x602_Project_ECU1_Msg_P4 */
   {
     /* ddCanId */
     0x00000602,
 
     /* ddHthIdorBufferId */
-    0x13,
+    0x14,
 
     /* ddTxConfirmPduId */
-    0x0003,
+    0x0004,
 
     /* ddTxPduId */
     0x000B,
@@ -844,13 +890,13 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 12 - CanIfTxPduCfg_OUT_ECU1_Project_0x701_ECU1_Msg_TP1 */
+  /* TX LPDU 12 - CanIfTxPduCfg_OUT_ECU1_Project_0x701_Project_ECU1_Msg_TP1 */
   {
     /* ddCanId */
     0x00000701,
 
     /* ddHthIdorBufferId */
-    0x14,
+    0x15,
 
     /* ddTxConfirmPduId */
     0x0000,
@@ -868,13 +914,13 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 13 - CanIfTxPduCfg_OUT_ECU1_Project_0x704_ECU1_Msg_TP2 */
+  /* TX LPDU 13 - CanIfTxPduCfg_OUT_ECU1_Project_0x704_Project_ECU1_Msg_TP2 */
   {
     /* ddCanId */
     0x00000704,
 
     /* ddHthIdorBufferId */
-    0x15,
+    0x16,
 
     /* ddTxConfirmPduId */
     0x0001,
@@ -892,13 +938,13 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
     0x01
   },
 
-  /* TX LPDU 14 - CanIfTxPduCfg_OUT_ECU1_Project_0x705_ECU1_GST_Msg_TP */
+  /* TX LPDU 14 - CanIfTxPduCfg_OUT_ECU1_Project_0x705_Project_ECU1_GST_Msg_TP */
   {
     /* ddCanId */
     0x00000705,
 
     /* ddHthIdorBufferId */
-    0x16,
+    0x17,
 
     /* ddTxConfirmPduId */
     0x0002,
@@ -911,6 +957,30 @@ CONST(CanIf_TxLpdu, CANIF_CONST)CanIf_GaaTxLpdu[] =
 
     /* ucTxCbkUser */
     0x01,
+
+    /* ucHTHTypeOrTXPN */
+    0x01
+  },
+
+  /* TX LPDU 15 - CanIfTxPduCfg_OUT_ECU1_Project_0x76c_Project_DriverStatus */
+  {
+    /* ddCanId */
+    0x0000076C,
+
+    /* ddHthIdorBufferId */
+    0x18,
+
+    /* ddTxConfirmPduId */
+    0x0000,
+
+    /* ddTxPduId */
+    0x000F,
+
+    /* ucCallbackIndex */
+    0xFF,
+
+    /* ucTxCbkUser */
+    0x00,
 
     /* ucHTHTypeOrTXPN */
     0x01

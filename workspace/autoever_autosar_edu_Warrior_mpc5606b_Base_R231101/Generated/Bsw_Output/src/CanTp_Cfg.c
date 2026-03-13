@@ -217,7 +217,7 @@ CONST(CanTp_RxExtPdus, CANTP_CONST) CanTp_GaaRxExtPdus[] =
 
 CONST(CanTp_RxNSduDynamic, CANTP_CONST) CanTp_GaaRxSduDynamic[] =
 {
-  /* RxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_GST_Msg_TP1_0 */
+  /* RxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_0 */
   {
     /* ddUpTargetPduId */
     0x0001,
@@ -238,7 +238,7 @@ CONST(CanTp_RxNSduDynamic, CANTP_CONST) CanTp_GaaRxSduDynamic[] =
     0x0000
   },
 
-  /* RxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_GST_Msg_TP2_1 */
+  /* RxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_1 */
   {
     /* ddUpTargetPduId */
     0x0000,
@@ -259,7 +259,7 @@ CONST(CanTp_RxNSduDynamic, CANTP_CONST) CanTp_GaaRxSduDynamic[] =
     0x0000
   },
 
-  /* RxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_2 */
+  /* RxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_2 */
   {
     /* ddUpTargetPduId */
     0x0002,
@@ -280,7 +280,7 @@ CONST(CanTp_RxNSduDynamic, CANTP_CONST) CanTp_GaaRxSduDynamic[] =
     0x0000
   },
 
-  /* RxNSDU 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_GST_Msg_TP_Func_3 */
+  /* RxNSDU 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_Project_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_Project_GST_Msg_TP_Func_3 */
   {
     /* ddUpTargetPduId */
     0x0003,
@@ -311,13 +311,13 @@ CONST(CanTp_RxNSduDynamic, CANTP_CONST) CanTp_GaaRxSduDynamic[] =
 CONST(CanTp_ChannelType, CANTP_CONST) CanTp_GaaRxSduMap[] =
 {
   /* Index 0 */
-  0x01,
+  0x00,
 
   /* Index 1 */
-  0x02,
+  0x01,
 
   /* Index 2 */
-  0x03
+  0x02
 };
 
 #define CANTP_STOP_SEC_CONST_UNSPECIFIED
@@ -328,7 +328,22 @@ CONST(CanTp_ChannelType, CANTP_CONST) CanTp_GaaRxSduMap[] =
 
 CONST(CanTp_RxNsduStatic, CANTP_CONST) CanTp_GaaRxSduStatic[] =
 {
-  /* RxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_GST_Msg_TP1 */
+  /* RxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1 */
+  {
+    /* ddChannelId */
+    0,
+
+    /* usRxSduLength */
+    0x0001,
+
+    /* ucTaType */
+    0x00,
+
+    /* blRxPaddingActivation */
+    CANTP_TRUE
+  },
+
+  /* RxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2 */
   {
     /* ddChannelId */
     1,
@@ -343,7 +358,7 @@ CONST(CanTp_RxNsduStatic, CANTP_CONST) CanTp_GaaRxSduStatic[] =
     CANTP_TRUE
   },
 
-  /* RxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_GST_Msg_TP2 */
+  /* RxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys */
   {
     /* ddChannelId */
     2,
@@ -358,25 +373,10 @@ CONST(CanTp_RxNsduStatic, CANTP_CONST) CanTp_GaaRxSduStatic[] =
     CANTP_TRUE
   },
 
-  /* RxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_GST_Msg_TP_Phys */
+  /* RxNSDU 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_Project_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_Project_GST_Msg_TP_Func */
   {
     /* ddChannelId */
     3,
-
-    /* usRxSduLength */
-    0x0001,
-
-    /* ucTaType */
-    0x00,
-
-    /* blRxPaddingActivation */
-    CANTP_TRUE
-  },
-
-  /* RxNSDU 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_GST_Msg_TP_Func */
-  {
-    /* ddChannelId */
-    0,
 
     /* usRxSduLength */
     0x0001,
@@ -397,7 +397,7 @@ CONST(CanTp_RxNsduStatic, CANTP_CONST) CanTp_GaaRxSduStatic[] =
 
 VAR(CanTp_STminBs, CANTP_VAR) CanTp_GaaSTminBs[] =
 {
-  /* RxNSduRam 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_GST_Msg_TP1 */
+  /* RxNSduRam 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_CanTpRxNSdu_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1 */
   {
     /* ucBlockSize */
     0xFF,
@@ -406,7 +406,7 @@ VAR(CanTp_STminBs, CANTP_VAR) CanTp_GaaSTminBs[] =
     0x05
   },
 
-  /* RxNSduRam 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_GST_Msg_TP2 */
+  /* RxNSduRam 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_CanTpRxNSdu_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2 */
   {
     /* ucBlockSize */
     0xFF,
@@ -415,7 +415,7 @@ VAR(CanTp_STminBs, CANTP_VAR) CanTp_GaaSTminBs[] =
     0x05
   },
 
-  /* RxNSduRam 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_GST_Msg_TP_Phys */
+  /* RxNSduRam 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_CanTpRxNSdu_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys */
   {
     /* ucBlockSize */
     0xFF,
@@ -424,7 +424,7 @@ VAR(CanTp_STminBs, CANTP_VAR) CanTp_GaaSTminBs[] =
     0x05
   },
 
-  /* RxNSduRam 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_GST_Msg_TP_Func */
+  /* RxNSduRam 3 - CanTpConfig_CanTpChannel_3_RxOnly_Pdu_DcmIPdu_Project_GST_Msg_TP_Func_CanTpRxNSdu_3_Pdu_DcmIPdu_Project_GST_Msg_TP_Func */
   {
     /* ucBlockSize */
     0xFF,
@@ -460,7 +460,7 @@ CONST(uint8, CANTP_CONST) CanTp_GaaSTminMapping[10] =
 
 CONST(CanTp_TxNSduDynamic, CANTP_CONST) CanTp_GaaTxSduDynamic[] =
 {
-  /* TxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_GST_Msg_TP1_CanTpTxNSdu_0_Pdu_ISignalIPdu_ECU1_Msg_TP1_0 */
+  /* TxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_CanTpTxNSdu_0_Pdu_ISignalIPdu_Project_ECU1_Msg_TP1_0 */
   {
     /* ddUpConfirmationSduId */
     0x0002,
@@ -478,7 +478,7 @@ CONST(CanTp_TxNSduDynamic, CANTP_CONST) CanTp_GaaTxSduDynamic[] =
     0x0000
   },
 
-  /* TxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_GST_Msg_TP2_CanTpTxNSdu_1_Pdu_ISignalIPdu_ECU1_Msg_TP2_1 */
+  /* TxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_CanTpTxNSdu_1_Pdu_ISignalIPdu_Project_ECU1_Msg_TP2_1 */
   {
     /* ddUpConfirmationSduId */
     0x0001,
@@ -496,7 +496,7 @@ CONST(CanTp_TxNSduDynamic, CANTP_CONST) CanTp_GaaTxSduDynamic[] =
     0x0000
   },
 
-  /* TxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_CanTpTxNSdu_2_Pdu_DcmIPdu_ECU1_GST_Msg_TP_2 */
+  /* TxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_CanTpTxNSdu_2_Pdu_DcmIPdu_Project_ECU1_GST_Msg_TP_2 */
   {
     /* ddUpConfirmationSduId */
     0x0000,
@@ -523,7 +523,19 @@ CONST(CanTp_TxNSduDynamic, CANTP_CONST) CanTp_GaaTxSduDynamic[] =
 
 CONST(CanTp_TxNsduStatic, CANTP_CONST) CanTp_GaaTxSduStatic[] =
 {
-  /* TxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_GST_Msg_TP1_CanTpTxNSdu_0_Pdu_ISignalIPdu_ECU1_Msg_TP1 */
+  /* TxNSDU 0 - CanTpConfig_CanTpChannel_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1_CanTpTxNSdu_0_Pdu_ISignalIPdu_Project_ECU1_Msg_TP1 */
+  {
+    /* ddChannelId */
+    0,
+
+    /* usTxSduLength */
+    0x0001,
+
+    /* blTxPaddingActivation */
+    CANTP_TRUE
+  },
+
+  /* TxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2_CanTpTxNSdu_1_Pdu_ISignalIPdu_Project_ECU1_Msg_TP2 */
   {
     /* ddChannelId */
     1,
@@ -535,22 +547,10 @@ CONST(CanTp_TxNsduStatic, CANTP_CONST) CanTp_GaaTxSduStatic[] =
     CANTP_TRUE
   },
 
-  /* TxNSDU 1 - CanTpConfig_CanTpChannel_1_Pdu_ISignalIPdu_GST_Msg_TP2_CanTpTxNSdu_1_Pdu_ISignalIPdu_ECU1_Msg_TP2 */
+  /* TxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys_CanTpTxNSdu_2_Pdu_DcmIPdu_Project_ECU1_GST_Msg_TP */
   {
     /* ddChannelId */
     2,
-
-    /* usTxSduLength */
-    0x0001,
-
-    /* blTxPaddingActivation */
-    CANTP_TRUE
-  },
-
-  /* TxNSDU 2 - CanTpConfig_CanTpChannel_2_Pdu_DcmIPdu_GST_Msg_TP_Phys_CanTpTxNSdu_2_Pdu_DcmIPdu_ECU1_GST_Msg_TP */
-  {
-    /* ddChannelId */
-    3,
 
     /* usTxSduLength */
     0x0001,

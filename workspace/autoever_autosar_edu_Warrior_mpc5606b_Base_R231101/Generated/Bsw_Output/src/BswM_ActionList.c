@@ -47,11 +47,11 @@
 #include "ComM_EcuMBswM.h"
 #include "Rte_BswM.h"
 #include "Com.h"
-#include "Rte_Main.h"
 #include "Mem_Integration.h"
 #include "Dem.h"
-#include "WdgM.h"
+#include "Rte_Main.h"
 #include "FiM.h"
+#include "WdgM.h"
 
 
 /*******************************************************************************
@@ -316,6 +316,8 @@ FUNC(void, BSWM_CODE) AL_ComModeRequest_ALL_NO_COM(void)
 FUNC(void, BSWM_CODE) AL_DriverDeinit(void)
 {
   WdgM_DeInit();
+  
+  Com_DeInit();
   
   ComM_DeInit();
   

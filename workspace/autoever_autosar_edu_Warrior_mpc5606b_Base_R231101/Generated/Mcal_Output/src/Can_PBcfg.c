@@ -216,7 +216,7 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
     {
         
         
-        /* IN_HwObj_ECU1_Project_0x7df_GST_Msg_TP_Func Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x7df_Project_GST_Msg_TP_Func Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -237,7 +237,28 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x707_GST_Msg_TP2 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x76d_Project_VCURegenStatus Message Buffer of Can Controller ID = 0U */
+        {
+            /* IdMaskIndex */
+            (Can_HwHandleType)CAN_MAXMASKCOUNT,
+            /* ControllerId  - based on the order from CanController list */
+            (uint8)0U,
+            /* ID type: EXTENDED, STANDARD, MIXED */
+            (CanIdType)CAN_STANDARD,
+            /* Receive/Transmit MB configuration */
+            (Can_ObjType)CAN_RECEIVE,
+            /* MessageId */
+            (Can_IdType)0x76dU,
+            /* Local priority bits used for arbitration */
+            (uint8)0x0U,
+            /* Hardware Object ID */
+            (Can_HwHandleType)0x1U,
+            /* Read/Write period reference used when polling mode is selected for the controller */
+            (uint8)0U /* HOH configured for interrupt mode, reference not used */
+        },
+        
+        
+        /* IN_HwObj_ECU1_Project_0x707_Project_GST_Msg_TP2 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -252,13 +273,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x1U,
+            (Can_HwHandleType)0x2U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x706_GST_Msg_TP1 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x706_Project_GST_Msg_TP1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -273,13 +294,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x2U,
+            (Can_HwHandleType)0x3U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x703_GST_Msg_TP_Phys Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x703_Project_GST_Msg_TP_Phys Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -294,13 +315,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x3U,
+            (Can_HwHandleType)0x4U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x503_ECU2_Msg_P1 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x503_Project_ECU2_Msg_P1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -315,13 +336,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x4U,
+            (Can_HwHandleType)0x5U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x301_ECU2_Msg_PIF1 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x301_Project_ECU2_Msg_PIF1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -336,13 +357,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x5U,
+            (Can_HwHandleType)0x6U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x103_ECU2_Msg_POE1 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x103_Project_ECU2_Msg_POE1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -357,13 +378,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x6U,
+            (Can_HwHandleType)0x7U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* IN_HwObj_ECU1_Project_0x3_ECU2_Msg_OE1 Message Buffer of Can Controller ID = 0U */
+        /* IN_HwObj_ECU1_Project_0x3_Project_ECU2_Msg_OE1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)CAN_MAXMASKCOUNT,
@@ -378,13 +399,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x7U,
+            (Can_HwHandleType)0x8U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x1_ECU1_Msg_OE1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x1_Project_ECU1_Msg_OE1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -399,13 +420,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x8U,
+            (Can_HwHandleType)0x9U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x2_ECU1_Msg_OE2 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x2_Project_ECU1_Msg_OE2 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -420,13 +441,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x9U,
+            (Can_HwHandleType)0xaU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x55_ECU1_Msg_GW1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x55_Project_ECU1_Msg_GW1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -441,13 +462,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xaU,
+            (Can_HwHandleType)0xbU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x100_ECU1_Msg_POE3 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x100_Project_ECU1_Msg_POE3 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -462,13 +483,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xbU,
+            (Can_HwHandleType)0xcU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x101_ECU1_Msg_POE1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x101_Project_ECU1_Msg_POE1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -483,13 +504,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xcU,
+            (Can_HwHandleType)0xdU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x102_ECU1_Msg_POE2 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x102_Project_ECU1_Msg_POE2 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -504,13 +525,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xdU,
+            (Can_HwHandleType)0xeU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x200_ECU1_Msg_IF1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x200_Project_ECU1_Msg_IF1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -525,13 +546,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xeU,
+            (Can_HwHandleType)0xfU,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x300_ECU1_Msg_PIF1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x300_Project_ECU1_Msg_PIF1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -546,13 +567,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0xfU,
+            (Can_HwHandleType)0x10U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x501_ECU1_Msg_P1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x501_Project_ECU1_Msg_P1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -567,13 +588,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x10U,
+            (Can_HwHandleType)0x11U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x502_ECU1_Msg_P2 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x502_Project_ECU1_Msg_P2 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -588,13 +609,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x11U,
+            (Can_HwHandleType)0x12U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x601_ECU1_Msg_P3 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x601_Project_ECU1_Msg_P3 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -609,13 +630,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x12U,
+            (Can_HwHandleType)0x13U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x602_ECU1_Msg_P4 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x602_Project_ECU1_Msg_P4 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -630,13 +651,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x13U,
+            (Can_HwHandleType)0x14U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x701_ECU1_Msg_TP1 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x701_Project_ECU1_Msg_TP1 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -651,13 +672,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x14U,
+            (Can_HwHandleType)0x15U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x704_ECU1_Msg_TP2 Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x704_Project_ECU1_Msg_TP2 Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -672,13 +693,13 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x15U,
+            (Can_HwHandleType)0x16U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         },
         
         
-        /* OUT_HwObj_ECU1_Project_0x705_ECU1_GST_Msg_TP Message Buffer of Can Controller ID = 0U */
+        /* OUT_HwObj_ECU1_Project_0x705_Project_ECU1_GST_Msg_TP Message Buffer of Can Controller ID = 0U */
         {
             /* IdMaskIndex */
             (Can_HwHandleType)0U,
@@ -693,7 +714,28 @@ CONST(Can_MBConfigObjectType, CAN_CONST) MessageBufferConfigs0_PB[CAN_MAXMBCOUNT
             /* Local priority bits used for arbitration */
             (uint8)0x0U,
             /* Hardware Object ID */
-            (Can_HwHandleType)0x16U,
+            (Can_HwHandleType)0x17U,
+            /* Read/Write period reference used when polling mode is selected for the controller */
+            (uint8)0U /* HOH configured for interrupt mode, reference not used */
+        },
+        
+        
+        /* OUT_HwObj_ECU1_Project_0x76c_Project_DriverStatus Message Buffer of Can Controller ID = 0U */
+        {
+            /* IdMaskIndex */
+            (Can_HwHandleType)0U,
+            /* ControllerId  - based on the order from CanController list */
+            (uint8)0U,
+            /* ID type: EXTENDED, STANDARD, MIXED */
+            (CanIdType)CAN_STANDARD,
+            /* Receive/Transmit MB configuration */
+            (Can_ObjType)CAN_TRANSMIT,
+            /* MessageId */
+            (Can_IdType)0x76cU,
+            /* Local priority bits used for arbitration */
+            (uint8)0x0U,
+            /* Hardware Object ID */
+            (Can_HwHandleType)0x18U,
             /* Read/Write period reference used when polling mode is selected for the controller */
             (uint8)0U /* HOH configured for interrupt mode, reference not used */
         }
@@ -812,7 +854,7 @@ CONST(Can_ControlerDescriptorType, CAN_CONST) ControlerDescriptors0_PB[CAN_MAXCO
 
             /* No. of Message Buffers for current controller */
             
-            (uint8)23U,
+            (uint8)25U,
             
             /* No. of BaudRate configured for current controller */
             (uint8)1U,
@@ -917,7 +959,7 @@ CONST(Can_ConfigType, CAN_CONST) CanConfigSet =
             MessageBufferConfigs0_PB,
 
             /* MessageBufferConfigCount */
-            (Can_HwHandleType)23U,
+            (Can_HwHandleType)25U,
         },
 
         /* FlexCAN controller description */
@@ -931,10 +973,10 @@ CONST(Can_ConfigType, CAN_CONST) CanConfigSet =
   
 
         /*Maximum Object IDs configured */
-        (uint32)23U,
+        (uint32)25U,
 
         /*Controller ID mapping*/
-        {0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U},
+        {0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U,0U},
 
         /*Can Object Type mapping*/
         {(Can_ObjType)CAN_RECEIVE,
@@ -945,6 +987,8 @@ CONST(Can_ConfigType, CAN_CONST) CanConfigSet =
 (Can_ObjType)CAN_RECEIVE,
 (Can_ObjType)CAN_RECEIVE,
 (Can_ObjType)CAN_RECEIVE,
+(Can_ObjType)CAN_RECEIVE,
+(Can_ObjType)CAN_TRANSMIT,
 (Can_ObjType)CAN_TRANSMIT,
 (Can_ObjType)CAN_TRANSMIT,
 (Can_ObjType)CAN_TRANSMIT,

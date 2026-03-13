@@ -3672,7 +3672,7 @@ VAR(Dcm_PduIdTable, DCM_VAR) Dcm_GaaPduIdTableConfig[DCM_NUM_OF_PDUIDTABLECONFIG
     SchM_Switch_Dcm_DcmCommunicationControl_0,
 
     /* ddTxPduId */
-    0x00,
+    0x01,
 
     /* ddProtocolId */
     0x03,
@@ -3717,7 +3717,7 @@ VAR(Dcm_PduIdTable, DCM_VAR) Dcm_GaaPduIdTableConfig[DCM_NUM_OF_PDUIDTABLECONFIG
     SchM_Switch_Dcm_DcmCommunicationControl_0,
 
     /* ddTxPduId */
-    0x00,
+    0x01,
 
     /* ddProtocolId */
     0x03,

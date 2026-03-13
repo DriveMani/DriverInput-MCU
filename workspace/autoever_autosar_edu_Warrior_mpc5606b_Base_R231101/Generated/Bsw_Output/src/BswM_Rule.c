@@ -47,11 +47,12 @@
 #include "NvM.h"
 #include "Rte_BswM.h"
 #include "Rte.h"
-#include "Rte_Main.h"
 #include "Mem_Integration.h"
 #include "Dem.h"
-#include "WdgM.h"
+#include "Rte_Main.h"
 #include "FiM.h"
+#include "WdgM.h"
+#include "Com.h"
 
 
 /*******************************************************************************

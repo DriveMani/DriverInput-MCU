@@ -20,67 +20,67 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\Ecud_Com.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\Ecud_Det.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\Ecud_Os.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\ECU\Ecud_Rte.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Composition\EcuExtract.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\DBImport\Project.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R230414\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Com.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Det.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Os.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DBImport\Project.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -375,10 +375,10 @@ static VAR(boolean, RTE_VAR_INIT) SchM_GblBIT_NvM_BITP_CallCyclicMemFunction = R
 #include "MemMap.h"
 #define RTE_START_SEC_VAR_INIT_8
 #include "MemMap.h"
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_AppModeRequestInterface_69_AppMode_1 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComMModeRequestInterface_Project_76_ComMMode_Project_2 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_79_fullComRequestors_713 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_79_fullComRequestors_714 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_713 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_714 = RTE_E_UNCONNECTED;
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_728 = RTE_E_UNCONNECTED;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Count = RTE_ZERO;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Queue = RTE_ZERO;
@@ -397,10 +397,10 @@ static VAR(TickType, RTE_DATA) Rte_GddBaseCntValueInSchMOsCounter_0 = 0;
 
 #define RTE_START_SEC_VAR_CLEARED_8
 #include "MemMap.h"
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_79_fullComRequestors_713;
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_79_fullComRequestors_714;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucAppModeRequestInterface_69_AppMode_1;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucComMModeRequestInterface_Project_76_ComMMode_Project_2;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_713;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_714;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucAppModeRequestInterface_71_AppMode_1;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2;
 static VAR(uint8, RTE_VAR_CLEARED) Rte_GucTestModeRequestInterface_41_TestMode_728;
 
 #define RTE_STOP_SEC_VAR_CLEARED_8
@@ -726,9 +726,9 @@ Rte_Write_SWC_AppMode_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) D
 
   SuspendAllInterrupts();
   
-  Rte_GucAppModeRequestInterface_69_AppMode_1 = Data;
+  Rte_GucAppModeRequestInterface_71_AppMode_1 = Data;
   
-  Rte_GucStatus_AppModeRequestInterface_69_AppMode_1 = RTE_E_OK;
+  Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_AppMode_modeRequestPort_AppMode_AppMode_BswM = RTE_TRUE;
   
@@ -754,9 +754,9 @@ Rte_Write_SWC_AppMode_modeRequestPort_ComMMode_Project_ComMMode_Project(IN VAR(u
 
   SuspendAllInterrupts();
   
-  Rte_GucComMModeRequestInterface_Project_76_ComMMode_Project_2 = Data;
+  Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2 = Data;
   
-  Rte_GucStatus_ComMModeRequestInterface_Project_76_ComMMode_Project_2 = RTE_E_OK;
+  Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_ComMMode_Project_modeRequestPort_ComMMode_Project_ComMMode_Project_BswM = RTE_TRUE;
   
@@ -796,9 +796,9 @@ Rte_Write_SWC_ErrM_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) Data
 
   SuspendAllInterrupts();
   
-  Rte_GucAppModeRequestInterface_69_AppMode_1 = Data;
+  Rte_GucAppModeRequestInterface_71_AppMode_1 = Data;
   
-  Rte_GucStatus_AppModeRequestInterface_69_AppMode_1 = RTE_E_OK;
+  Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_AppMode_modeRequestPort_AppMode_AppMode_BswM = RTE_TRUE;
   
@@ -827,7 +827,7 @@ Rte_Read_BswM_modeRequestPort_AppMode_AppMode(OUT P2VAR(uint8, AUTOMATIC, RTE_AP
   
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucAppModeRequestInterface_69_AppMode_1;
+    *Data = Rte_GucAppModeRequestInterface_71_AppMode_1;
   }
   
   ResumeAllInterrupts();
@@ -835,7 +835,7 @@ Rte_Read_BswM_modeRequestPort_AppMode_AppMode(OUT P2VAR(uint8, AUTOMATIC, RTE_AP
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_BswM_modeRequestPort_AppMode_AppMode_Return(Data);
 
-  return Rte_GucStatus_AppModeRequestInterface_69_AppMode_1;
+  return Rte_GucStatus_AppModeRequestInterface_71_AppMode_1;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -848,7 +848,7 @@ Rte_Read_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project(OUT P2VAR(uint8,
   
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucComMModeRequestInterface_Project_76_ComMMode_Project_2;
+    *Data = Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2;
   }
   
   ResumeAllInterrupts();
@@ -856,7 +856,7 @@ Rte_Read_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project(OUT P2VAR(uint8,
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project_Return(Data);
 
-  return Rte_GucStatus_ComMModeRequestInterface_Project_76_ComMMode_Project_2;
+  return Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -870,7 +870,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_79_fullComRequestors_713,
+      &Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_713,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -878,7 +878,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR000_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_79_fullComRequestors_713;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_713;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -892,7 +892,7 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_79_fullComRequestors_714,
+      &Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_714,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -900,7 +900,7 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR001_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_79_fullComRequestors_714;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_714;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)

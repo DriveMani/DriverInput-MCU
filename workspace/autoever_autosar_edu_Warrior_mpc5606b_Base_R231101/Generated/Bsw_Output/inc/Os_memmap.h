@@ -2,7 +2,7 @@
 *
 *       Freescale(TM) and the Freescale logo are trademarks of Freescale Semiconductor, Inc.
 *       All other product or service names are the property of their respective owners.
-*       (C) Freescale Semiconductor, Inc. 2023
+*       (C) Freescale Semiconductor, Inc. 2026
 *
 *       THIS SOURCE CODE IS CONFIDENTIAL AND PROPRIETARY AND MAY NOT
 *       BE USED OR DISTRIBUTED WITHOUT THE WRITTEN PERMISSION OF

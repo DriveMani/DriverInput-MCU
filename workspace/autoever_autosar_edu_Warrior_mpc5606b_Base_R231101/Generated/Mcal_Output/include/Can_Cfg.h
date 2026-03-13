@@ -153,95 +153,103 @@ extern "C"{
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x7df_GST_Msg_TP_Func (0U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x7df_Project_GST_Msg_TP_Func (0U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x707_GST_Msg_TP2 (1U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x76d_Project_VCURegenStatus (1U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x706_GST_Msg_TP1 (2U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x707_Project_GST_Msg_TP2 (2U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x703_GST_Msg_TP_Phys (3U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x706_Project_GST_Msg_TP1 (3U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x503_ECU2_Msg_P1 (4U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x703_Project_GST_Msg_TP_Phys (4U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x301_ECU2_Msg_PIF1 (5U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x503_Project_ECU2_Msg_P1 (5U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x103_ECU2_Msg_POE1 (6U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x301_Project_ECU2_Msg_PIF1 (6U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x3_ECU2_Msg_OE1 (7U) /* RECEIVE object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x103_Project_ECU2_Msg_POE1 (7U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x1_ECU1_Msg_OE1 (8U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_IN_HwObj_ECU1_Project_0x3_Project_ECU2_Msg_OE1 (8U) /* RECEIVE object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x2_ECU1_Msg_OE2 (9U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x1_Project_ECU1_Msg_OE1 (9U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x55_ECU1_Msg_GW1 (10U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x2_Project_ECU1_Msg_OE2 (10U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x100_ECU1_Msg_POE3 (11U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x55_Project_ECU1_Msg_GW1 (11U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x101_ECU1_Msg_POE1 (12U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x100_Project_ECU1_Msg_POE3 (12U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x102_ECU1_Msg_POE2 (13U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x101_Project_ECU1_Msg_POE1 (13U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x200_ECU1_Msg_IF1 (14U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x102_Project_ECU1_Msg_POE2 (14U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x300_ECU1_Msg_PIF1 (15U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x200_Project_ECU1_Msg_IF1 (15U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x501_ECU1_Msg_P1 (16U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x300_Project_ECU1_Msg_PIF1 (16U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x502_ECU1_Msg_P2 (17U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x501_Project_ECU1_Msg_P1 (17U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x601_ECU1_Msg_P3 (18U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x502_Project_ECU1_Msg_P2 (18U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x602_ECU1_Msg_P4 (19U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x601_Project_ECU1_Msg_P3 (19U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x701_ECU1_Msg_TP1 (20U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x602_Project_ECU1_Msg_P4 (20U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x704_ECU1_Msg_TP2 (21U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x701_Project_ECU1_Msg_TP1 (21U) /* TRANSMIT object of Can Controller ID = 0 */
 
 /* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
 /* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
-#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x705_ECU1_GST_Msg_TP (22U) /* TRANSMIT object of Can Controller ID = 0 */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x704_Project_ECU1_Msg_TP2 (22U) /* TRANSMIT object of Can Controller ID = 0 */
+
+/* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
+/* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x705_Project_ECU1_GST_Msg_TP (23U) /* TRANSMIT object of Can Controller ID = 0 */
+
+/* @violates @ref Can_Cfg_h_REF_3 Violates MISRA 2004 Required Rule 1.4, Identifier clash */
+/* @violates @ref Can_Cfg_h_REF_5 This is required as per autosar Requirement. */
+#define CanConf_CanHwObj_OUT_HwObj_ECU1_Project_0x76c_Project_DriverStatus (24U) /* TRANSMIT object of Can Controller ID = 0 */
 
 
 /*
@@ -326,7 +334,7 @@ extern "C"{
 *
 * @implements     DCAN02050
 */
-#define CAN_IDENTICAL_ID_CANCELLATION (STD_ON)
+#define CAN_IDENTICAL_ID_CANCELLATION (STD_OFF)
 
 /*
 * @brief          Support for Special MB Abort API
@@ -374,7 +382,7 @@ extern "C"{
 * @implements     DCAN02616
 */
 
-#define CAN_MAXMBCOUNT_0 23U
+#define CAN_MAXMBCOUNT_0 25U
 
 
 /*
@@ -407,7 +415,7 @@ extern "C"{
 *
 * @implements     DCAN02061
 */
-#define CAN_MAXMB_CONFIGURED (23U)
+#define CAN_MAXMB_CONFIGURED (25U)
 
 /*
 * @brief          Maximum possible controllers per specific derivative.
@@ -773,7 +781,7 @@ extern "C"{
 /*
 @brief    Macro used to define the maximum of Can object IDs configured  .
 */
-#define CAN_MAX_OBJECT_ID ((uint32)23U)
+#define CAN_MAX_OBJECT_ID ((uint32)25U)
 /*==================================================================================================
 *                                      DEFINES AND MACROS
 ==================================================================================================*/

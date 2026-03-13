@@ -346,56 +346,60 @@
 /*******************************************************************************
 **                      Tx L-PDU Handles                                      **
 *******************************************************************************/
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x1_ECU1_Msg_OE1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x1_Project_ECU1_Msg_OE1\
   ((PduIdType)0)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x2_ECU1_Msg_OE2\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x2_Project_ECU1_Msg_OE2\
   ((PduIdType)1)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x55_ECU1_Msg_GW1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x55_Project_ECU1_Msg_GW1\
   ((PduIdType)2)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x100_ECU1_Msg_POE3\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x100_Project_ECU1_Msg_POE3\
   ((PduIdType)3)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x101_ECU1_Msg_POE1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x101_Project_ECU1_Msg_POE1\
   ((PduIdType)4)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x102_ECU1_Msg_POE2\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x102_Project_ECU1_Msg_POE2\
   ((PduIdType)5)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x200_ECU1_Msg_IF1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x200_Project_ECU1_Msg_IF1\
   ((PduIdType)6)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x300_ECU1_Msg_PIF1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x300_Project_ECU1_Msg_PIF1\
   ((PduIdType)7)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x501_ECU1_Msg_P1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x501_Project_ECU1_Msg_P1\
   ((PduIdType)8)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x502_ECU1_Msg_P2\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x502_Project_ECU1_Msg_P2\
   ((PduIdType)9)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x601_ECU1_Msg_P3\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x601_Project_ECU1_Msg_P3\
   ((PduIdType)10)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x602_ECU1_Msg_P4\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x602_Project_ECU1_Msg_P4\
   ((PduIdType)11)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x701_ECU1_Msg_TP1\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x701_Project_ECU1_Msg_TP1\
   ((PduIdType)12)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x704_ECU1_Msg_TP2\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x704_Project_ECU1_Msg_TP2\
   ((PduIdType)13)
-#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x705_ECU1_GST_Msg_TP\
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x705_Project_ECU1_GST_Msg_TP\
   ((PduIdType)14)
+#define CanIfConf_CanIfTxPduCfg_CanIfTxPduCfg_OUT_ECU1_Project_0x76c_Project_DriverStatus\
+  ((PduIdType)15)
 
 /*******************************************************************************
 **                      Rx L-PDU Handles                                      **
 *******************************************************************************/
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x7df_GST_Msg_TP_Func\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x3_Project_ECU2_Msg_OE1\
   ((PduIdType)0)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x707_GST_Msg_TP2\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x103_Project_ECU2_Msg_POE1\
   ((PduIdType)1)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x706_GST_Msg_TP1\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x301_Project_ECU2_Msg_PIF1\
   ((PduIdType)2)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x703_GST_Msg_TP_Phys\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x503_Project_ECU2_Msg_P1\
   ((PduIdType)3)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x503_ECU2_Msg_P1\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x703_Project_GST_Msg_TP_Phys\
   ((PduIdType)4)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x301_ECU2_Msg_PIF1\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x706_Project_GST_Msg_TP1\
   ((PduIdType)5)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x103_ECU2_Msg_POE1\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x707_Project_GST_Msg_TP2\
   ((PduIdType)6)
-#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x3_ECU2_Msg_OE1\
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x76d_Project_VCURegenStatus\
   ((PduIdType)7)
+#define CanIfConf_CanIfRxPduCfg_CanIfRxPduCfg_IN_ECU1_Project_0x7df_Project_GST_Msg_TP_Func\
+  ((PduIdType)8)
 
 /*******************************************************************************
 **                      TRCVDRV Handles                                      **
@@ -419,13 +423,13 @@
 #define CANIF_NO_OF_CANDRIVER                ((uint8)1)
 
 /* Number of Rx L-PDU */
-#define CANIF_NO_OF_RXLPDU                   ((PduIdType)8)
+#define CANIF_NO_OF_RXLPDU                   ((PduIdType)9)
 
 /* Number of Tx L-PDU */
-#define CANIF_NO_OF_TXLPDU                   ((PduIdType)15)
+#define CANIF_NO_OF_TXLPDU                   ((PduIdType)16)
 
 /* Number of Hrh */
-#define CANIF_NO_OF_HRH                      ((uint16)8)
+#define CANIF_NO_OF_HRH                      ((uint16)9)
 
 /* Number of Dynamic Tx L-PDU */
 #define CANIF_NO_OF_DYNAMIC_TXLPDU           ((PduIdType)0)

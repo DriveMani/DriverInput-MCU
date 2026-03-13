@@ -14,6 +14,17 @@
           <CONTAINERS>
             <ECUC-CONTAINER-VALUE>
               <SHORT-NAME>IcuConfigSet_0</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                    <SD GID="IcuMaxChannel">true</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                    <SD GID="IcuMaxChannel"
+                        T="2026-03-13T13:51:27Z">3</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T2D13M10I1R0/Icu/IcuConfigSet</DEFINITION-REF>
               <PARAMETER-VALUES>
                 <ECUC-NUMERICAL-PARAM-VALUE>

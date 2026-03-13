@@ -312,13 +312,13 @@
 #define COM_IPDUGROUP_COUNT                 2
 
 /* Total number of Tx I-PDUs */
-#define COM_TX_IPDU_COUNT                   14
+#define COM_TX_IPDU_COUNT                   15
 
 /* Total number of Tx I-PDUs for DM */
 #define COM_TX_IPDU_DM_COUNT                0
 
 /* Total number of Tx Signals */
-#define COM_TX_SIGNAL_COUNT                 29
+#define COM_TX_SIGNAL_COUNT                 35
 
 /* Total number of Tx Signals in Signal Groups */
 #define COM_TX_SIGINGROUP_COUNT             0
@@ -330,10 +330,10 @@
 #define COM_RX_IPDU_DM_COUNT                0
 
 /* Total number of Rx I-PDUs */
-#define COM_RX_IPDU_COUNT                   6
+#define COM_RX_IPDU_COUNT                   7
 
 /* Total number of Rx Signals */
-#define COM_RX_SIGNAL_COUNT                 10
+#define COM_RX_SIGNAL_COUNT                 13
 
 /* Total number of Rx Signals in Signal Group */
 #define COM_RX_SIGINGROUP_COUNT             0
@@ -366,10 +366,10 @@
 #define COM_MAX_TOTAL_PDU_SIZE              8
 
 /* Tx Signal GroupSignal Boundary */
-#define COM_TX_SIG_GRPSIG_BOUNDARY          ((Com_SignalIdType)29)
+#define COM_TX_SIG_GRPSIG_BOUNDARY          ((Com_SignalIdType)35)
 
 /* Rx Signal GroupSignal Boundary */
-#define COM_RX_SIG_GRPSIG_BOUNDARY          ((Com_SignalIdType)10)
+#define COM_RX_SIG_GRPSIG_BOUNDARY          ((Com_SignalIdType)13)
 
 
 
@@ -392,7 +392,7 @@
 #define COM_TX_IPDU_CONFIRM                 0
 
 /* Tx I-PDU Mode Count */
-#define COM_TX_MODE_COUNT                   14
+#define COM_TX_MODE_COUNT                   15
 
 /* Rx Invaldiation Count */
 #define COM_RX_INV_COUNT                    0
@@ -428,7 +428,7 @@
 #define COM_FILTER_STATUS_COUNT             0
 
 /* Tx I-PDU Periodic Timer Count */
-#define COM_TX_PERIOD_TIMER_COUNT           8
+#define COM_TX_PERIOD_TIMER_COUNT           9
 
 /* Tx I-PDU Repeat Timer Count */
 #define COM_TX_REPT_TIMER_COUNT             8
@@ -467,10 +467,10 @@
 #define COM_RX_IPDU_TP_LEN_SIZE             2
 
 /* Rx I-PDU Group Count */
-#define COM_RX_IPDU_GROUP_COUNT             6
+#define COM_RX_IPDU_GROUP_COUNT             7
 
 /* Tx I-PDU Group Count */
-#define COM_TX_IPDU_GROUP_COUNT             14
+#define COM_TX_IPDU_GROUP_COUNT             15
 
 /* Tx I-PDU Callout Count */
 #define COM_TX_IPDU_CALLOUT_COUNT           0
@@ -503,10 +503,10 @@
 #define COM_RX_REPLI_STATUS_SIZE            0
 
 /* Total number of Rx Unpack */
-#define COM_UNPACK_FUNC_COUNT               10
+#define COM_UNPACK_FUNC_COUNT               13
 
 /* Total number of Tx Pack */
-#define COM_PACK_FUNC_COUNT                 29
+#define COM_PACK_FUNC_COUNT                 35
 
 /* Total number of Tx Pack */
 #define COM_RX_SIG_GRP_GW_MAX               0
@@ -559,31 +559,33 @@ typedef uint16 Com_RxPduIdType;
 /*******************************************************************************
 **                      Rx I-PDU Handles                                      **
 *******************************************************************************/
-#define ComConf_ComIPdu_ComIPdu_ECU2_Msg_OE1 ((PduIdType)0)
-#define ComConf_ComIPdu_ComIPdu_ECU2_Msg_P1 ((PduIdType)1)
-#define ComConf_ComIPdu_ComIPdu_ECU2_Msg_PIF1 ((PduIdType)2)
-#define ComConf_ComIPdu_ComIPdu_ECU2_Msg_POE1 ((PduIdType)3)
-#define ComConf_ComIPdu_ComIPdu_GST_Msg_TP1 ((PduIdType)4)
-#define ComConf_ComIPdu_ComIPdu_GST_Msg_TP2 ((PduIdType)5)
+#define ComConf_ComIPdu_ComIPdu_Project_VCURegenStatus ((PduIdType)0)
+#define ComConf_ComIPdu_ComIPdu_Project_GST_Msg_TP2 ((PduIdType)1)
+#define ComConf_ComIPdu_ComIPdu_Project_GST_Msg_TP1 ((PduIdType)2)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU2_Msg_PIF1 ((PduIdType)3)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU2_Msg_POE1 ((PduIdType)4)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU2_Msg_OE1 ((PduIdType)5)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU2_Msg_P1 ((PduIdType)6)
 
 
 /*******************************************************************************
 **                      Tx I-PDU Handles                                      **
 *******************************************************************************/
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_TP1 ((PduIdType)0)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_TP2 ((PduIdType)1)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_IF1 ((PduIdType)2)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_GW1 ((PduIdType)3)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_OE2 ((PduIdType)4)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_OE1 ((PduIdType)5)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_P1 ((PduIdType)6)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_PIF1 ((PduIdType)7)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_P4 ((PduIdType)8)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_P3 ((PduIdType)9)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_P2 ((PduIdType)10)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_POE2 ((PduIdType)11)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_POE1 ((PduIdType)12)
-#define ComConf_ComIPdu_ComIPdu_ECU1_Msg_POE3 ((PduIdType)13)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_TP2 ((PduIdType)0)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_TP1 ((PduIdType)1)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_IF1 ((PduIdType)2)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_GW1 ((PduIdType)3)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_OE2 ((PduIdType)4)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_OE1 ((PduIdType)5)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_P1 ((PduIdType)6)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_PIF1 ((PduIdType)7)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_P4 ((PduIdType)8)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_P3 ((PduIdType)9)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_P2 ((PduIdType)10)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_POE2 ((PduIdType)11)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_POE1 ((PduIdType)12)
+#define ComConf_ComIPdu_ComIPdu_Project_ECU1_Msg_POE3 ((PduIdType)13)
+#define ComConf_ComIPdu_ComIPdu_Project_DriverStatus ((PduIdType)14)
 
 
 /*******************************************************************************
@@ -609,50 +611,59 @@ typedef uint16 Com_RxPduIdType;
 /*******************************************************************************
 **                      Rx Signal Handles                                     **
 *******************************************************************************/
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_OE1_ECU2_Msg_OE1_Sig2 ((Com_SignalIdType)0)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_OE1_ECU2_Msg_OE1_Sig1 ((Com_SignalIdType)1)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_P1_ECU2_Msg_P1_Sig2 ((Com_SignalIdType)2)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_P1_ECU2_Msg_P1_Sig1 ((Com_SignalIdType)3)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_PIF1_ECU2_Msg_PIF1_Sig2 ((Com_SignalIdType)4)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_PIF1_ECU2_Msg_PIF1_Sig1 ((Com_SignalIdType)5)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_POE1_ECU2_Msg_POE1_Sig1 ((Com_SignalIdType)6)
-#define ComConf_ComSignal_ComISignal_ECU2_Msg_POE1_ECU2_Msg_POE1_Sig2 ((Com_SignalIdType)7)
-#define ComConf_ComSignal_ComISignal_GST_Msg_TP1_GST_Msg_TP1_signal ((Com_SignalIdType)8)
-#define ComConf_ComSignal_ComISignal_GST_Msg_TP2_GST_Msg_TP2_signal ((Com_SignalIdType)9)
+#define ComConf_ComSignal_ComISignal_Project_VCURegenStatus_RegenEnable ((Com_SignalIdType)0)
+#define ComConf_ComSignal_ComISignal_Project_VCURegenStatus_RegenLevel ((Com_SignalIdType)1)
+#define ComConf_ComSignal_ComISignal_Project_VCURegenStatus_LimitReason ((Com_SignalIdType)2)
+#define ComConf_ComSignal_ComISignal_Project_GST_Msg_TP2_Project_GST_Msg_TP2_signal ((Com_SignalIdType)3)
+#define ComConf_ComSignal_ComISignal_Project_GST_Msg_TP1_Project_GST_Msg_TP1_signal ((Com_SignalIdType)4)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_PIF1_ECU2_Msg_PIF1_Sig1 ((Com_SignalIdType)5)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_PIF1_ECU2_Msg_PIF1_Sig2 ((Com_SignalIdType)6)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_POE1_ECU2_Msg_POE1_Sig2 ((Com_SignalIdType)7)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_POE1_ECU2_Msg_POE1_Sig1 ((Com_SignalIdType)8)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_OE1_ECU2_Msg_OE1_Sig1 ((Com_SignalIdType)9)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_OE1_ECU2_Msg_OE1_Sig2 ((Com_SignalIdType)10)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_P1_ECU2_Msg_P1_Sig1 ((Com_SignalIdType)11)
+#define ComConf_ComSignal_ComISignal_Project_ECU2_Msg_P1_ECU2_Msg_P1_Sig2 ((Com_SignalIdType)12)
 
 
 /*******************************************************************************
 **                      Tx Signal Handles                                     **
 *******************************************************************************/
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_TP1_ECU1_Msg_TP1_signal ((Com_SignalIdType)0)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_TP2_ECU1_Msg_TP2_signal ((Com_SignalIdType)1)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_IF1_ECU1_Msg_IF1_Sig2 ((Com_SignalIdType)2)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_IF1_ECU1_Msg_IF1_Sig1 ((Com_SignalIdType)3)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_GW1_ECU1_Msg_GW1_Sig2 ((Com_SignalIdType)4)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_GW1_ECU1_Msg_GW1_Sig1 ((Com_SignalIdType)5)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig5 ((Com_SignalIdType)6)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig4 ((Com_SignalIdType)7)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig3 ((Com_SignalIdType)8)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig2 ((Com_SignalIdType)9)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig1 ((Com_SignalIdType)10)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE1_ECU1_Msg_OE1_Sig2 ((Com_SignalIdType)11)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_OE1_ECU1_Msg_OE1_Sig1 ((Com_SignalIdType)12)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P1_ECU1_Msg_P1_Sig2 ((Com_SignalIdType)13)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P1_ECU1_Msg_P1_Sig1 ((Com_SignalIdType)14)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_PIF1_ECU1_Msg_PIF1_Sig2 ((Com_SignalIdType)15)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_PIF1_ECU1_Msg_PIF1_Sig1 ((Com_SignalIdType)16)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P4_ECU1_Msg_P4_Sig2 ((Com_SignalIdType)17)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P4_ECU1_Msg_P4_Sig1 ((Com_SignalIdType)18)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P3_ECU1_Msg_P3_Sig2 ((Com_SignalIdType)19)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P3_ECU1_Msg_P3_Sig1 ((Com_SignalIdType)20)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P2_ECU1_Msg_P2_Sig2 ((Com_SignalIdType)21)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_P2_ECU1_Msg_P2_Sig1 ((Com_SignalIdType)22)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE2_ECU1_Msg_POE2_Sig2 ((Com_SignalIdType)23)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE2_ECU1_Msg_POE2_Sig1 ((Com_SignalIdType)24)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE1_ECU1_Msg_POE1_Sig2 ((Com_SignalIdType)25)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE1_ECU1_Msg_POE1_Sig1 ((Com_SignalIdType)26)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE3_ECU1_Msg_POE3_Sig2 ((Com_SignalIdType)27)
-#define ComConf_ComSignal_ComISignal_ECU1_Msg_POE3_ECU1_Msg_POE3_Sig1 ((Com_SignalIdType)28)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_TP2_Project_ECU1_Msg_TP2_signal ((Com_SignalIdType)0)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_TP1_Project_ECU1_Msg_TP1_signal ((Com_SignalIdType)1)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_IF1_ECU1_Msg_IF1_Sig1 ((Com_SignalIdType)2)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_IF1_ECU1_Msg_IF1_Sig2 ((Com_SignalIdType)3)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_GW1_ECU1_Msg_GW1_Sig1 ((Com_SignalIdType)4)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_GW1_ECU1_Msg_GW1_Sig2 ((Com_SignalIdType)5)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig1 ((Com_SignalIdType)6)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig2 ((Com_SignalIdType)7)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig3 ((Com_SignalIdType)8)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig4 ((Com_SignalIdType)9)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE2_ECU1_Msg_OE2_Sig5 ((Com_SignalIdType)10)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE1_ECU1_Msg_OE1_Sig1 ((Com_SignalIdType)11)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_OE1_ECU1_Msg_OE1_Sig2 ((Com_SignalIdType)12)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P1_ECU1_Msg_P1_Sig1 ((Com_SignalIdType)13)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P1_ECU1_Msg_P1_Sig2 ((Com_SignalIdType)14)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_PIF1_ECU1_Msg_PIF1_Sig1 ((Com_SignalIdType)15)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_PIF1_ECU1_Msg_PIF1_Sig2 ((Com_SignalIdType)16)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P4_ECU1_Msg_P4_Sig1 ((Com_SignalIdType)17)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P4_ECU1_Msg_P4_Sig2 ((Com_SignalIdType)18)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P3_ECU1_Msg_P3_Sig1 ((Com_SignalIdType)19)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P3_ECU1_Msg_P3_Sig2 ((Com_SignalIdType)20)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P2_ECU1_Msg_P2_Sig1 ((Com_SignalIdType)21)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_P2_ECU1_Msg_P2_Sig2 ((Com_SignalIdType)22)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE2_ECU1_Msg_POE2_Sig1 ((Com_SignalIdType)23)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE2_ECU1_Msg_POE2_Sig2 ((Com_SignalIdType)24)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE1_ECU1_Msg_POE1_Sig1 ((Com_SignalIdType)25)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE1_ECU1_Msg_POE1_Sig2 ((Com_SignalIdType)26)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE3_ECU1_Msg_POE3_Sig1 ((Com_SignalIdType)27)
+#define ComConf_ComSignal_ComISignal_Project_ECU1_Msg_POE3_ECU1_Msg_POE3_Sig2 ((Com_SignalIdType)28)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_BrakeSw ((Com_SignalIdType)29)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_AccelSw ((Com_SignalIdType)30)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_SocLevel ((Com_SignalIdType)31)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_DriverInputFault ((Com_SignalIdType)32)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_AliveCounter ((Com_SignalIdType)33)
+#define ComConf_ComSignal_ComISignal_Project_DriverStatus_VehicleSpeed ((Com_SignalIdType)34)
 
 
 

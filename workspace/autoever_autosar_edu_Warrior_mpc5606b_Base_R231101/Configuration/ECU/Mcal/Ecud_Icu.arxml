@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE>
       <SHORT-NAME>Icu</SHORT-NAME>
@@ -12,6 +12,16 @@
           <CONTAINERS>
             <ECUC-CONTAINER-VALUE>
               <SHORT-NAME>IcuConfigSet_0</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="ODIN_AUTO_CONFIG_PROPERTY">
+                    <SD GID="IcuMaxChannel">true</SD>
+                  </SDG>
+                  <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
+                    <SD T="2026-03-13T13:51:27Z" GID="IcuMaxChannel">3</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
               <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T2D13M10I1R0/Icu/IcuConfigSet</DEFINITION-REF>
               <PARAMETER-VALUES>
                 <ECUC-NUMERICAL-PARAM-VALUE>
@@ -442,3 +452,4 @@
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>
+

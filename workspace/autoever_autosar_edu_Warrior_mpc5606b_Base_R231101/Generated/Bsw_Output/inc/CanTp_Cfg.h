@@ -192,21 +192,21 @@ typedef uint8 CanTp_ChannelType;
 **                      Global Data Types                                     **
 *******************************************************************************/
 /* CanTp Tx Nsdu Handle(s) */
-#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_0_Pdu_ISignalIPdu_ECU1_Msg_TP1\
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_0_Pdu_ISignalIPdu_Project_ECU1_Msg_TP1\
   ((PduIdType)0)
-#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_1_Pdu_ISignalIPdu_ECU1_Msg_TP2\
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_1_Pdu_ISignalIPdu_Project_ECU1_Msg_TP2\
   ((PduIdType)1)
-#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_2_Pdu_DcmIPdu_ECU1_GST_Msg_TP\
+#define CanTpConf_CanTpTxNSdu_CanTpTxNSdu_2_Pdu_DcmIPdu_Project_ECU1_GST_Msg_TP\
   ((PduIdType)2)
 
 /* CanTp Rx Nsdu Handle(s) */
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_0_Pdu_ISignalIPdu_GST_Msg_TP1\
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_0_Pdu_ISignalIPdu_Project_GST_Msg_TP1\
   ((PduIdType)0)
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_1_Pdu_ISignalIPdu_GST_Msg_TP2\
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_1_Pdu_ISignalIPdu_Project_GST_Msg_TP2\
   ((PduIdType)1)
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_2_Pdu_DcmIPdu_GST_Msg_TP_Phys\
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_2_Pdu_DcmIPdu_Project_GST_Msg_TP_Phys\
   ((PduIdType)2)
-#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_3_Pdu_DcmIPdu_GST_Msg_TP_Func\
+#define CanTpConf_CanTpRxNSdu_CanTpRxNSdu_3_Pdu_DcmIPdu_Project_GST_Msg_TP_Func\
   ((PduIdType)3)
 
 /* CanTp Rx NPdu Handle(s) */
