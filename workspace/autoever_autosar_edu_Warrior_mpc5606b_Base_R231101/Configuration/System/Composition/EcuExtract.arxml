@@ -731,7 +731,15 @@
                     </COMPONENT-IREF>
                     <COMPONENT-IREF>
                       <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECU_EXTRACT/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_DummyRx</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECU_EXTRACT/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
                       <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_ErrM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECU_EXTRACT/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</TARGET-COMPONENT-REF>
                     </COMPONENT-IREF>
                     <COMPONENT-IREF>
                       <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/ECU_EXTRACT/EcuExtract/RootSwCompositionPrototype</CONTEXT-COMPOSITION-REF>
@@ -1244,9 +1252,17 @@
               <SHORT-NAME>SWC_DiagnosticService</SHORT-NAME>
               <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppSwComponent_Dcm/SwComponentType/SWC_DiagnosticService</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="2d750fdb-e90f-4d51-b08c-4a81e207e423">
+              <SHORT-NAME>SWC_DummyRx</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/HwInput/SWC_DummyRx</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
             <SW-COMPONENT-PROTOTYPE UUID="61646c0e-e6ad-4b1e-bfde-c4fbb43f9071">
               <SHORT-NAME>SWC_ErrM</SHORT-NAME>
               <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ErrM/ApplicationSwComponentTypes/SWC_ErrM</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="bfcce556-9e02-426d-8aca-c3e4667cad2b">
+              <SHORT-NAME>SWC_HwInput</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/HwInput/SWC_HwInput</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
             <SW-COMPONENT-PROTOTYPE UUID="bb016ebb-5b4c-4c21-8555-9e85b2ccb371">
               <SHORT-NAME>SWC_TestModeManager</SHORT-NAME>
