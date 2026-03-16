@@ -19,9 +19,9 @@
 *******************************************************************************/
 
 /*
- * INPUT FILE:    Configuration\ECU\Ecud_Dcm.arxml
- *                Configuration\ECU\Ecud_Dem.arxml
+ * INPUT FILE:    Configuration\ECU\Ecud_Dem.arxml
  *                Configuration\ECU\Ecud_NvM.arxml
+ *                Configuration\ECU\Ecud_Dcm.arxml
  * GENERATED ON:  This timestamp is removed.
  */
 
@@ -432,10 +432,10 @@
 **                      HandleId's Information                                **
 *******************************************************************************/
 
-/* Handles for NvM related Macros /AUTOSAR/NvM/NvMBlock_DemNonVolatileData */
-#define DEM_NVM_BLK_ID_NON_VOLATILE_DATA 2
 /* Handles for NvM related Macros /AUTOSAR/NvM/NvMBlock_DemEventStatusNvRamBlock */
 #define DEM_NVM_BLK_ID_EVENT_STATUS 3
+/* Handles for NvM related Macros /AUTOSAR/NvM/NvMBlock_DemNonVolatileData */
+#define DEM_NVM_BLK_ID_NON_VOLATILE_DATA 2
 
 /* The handles for each StorageCondition configured */
 
