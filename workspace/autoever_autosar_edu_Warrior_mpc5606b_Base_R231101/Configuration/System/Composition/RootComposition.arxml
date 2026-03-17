@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE UUID="09157ed0-6d0a-4255-9ca0-4234c50fc720">
       <SHORT-NAME>AUTOSAR</SHORT-NAME>
@@ -43,9 +43,18 @@
               <SHORT-NAME>SWC_TestModeManager</SHORT-NAME>
               <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppMode/ApplicationSwComponentTypes/SWC_TestModeManager</TYPE-TREF>
             </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="901bd81b-1273-41b9-b524-5d2c6197b8c1">
+              <SHORT-NAME>SWC_DummyHwInput</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_InputDiag/SWC_DummyHwInput</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="10195d9b-6c37-4a28-b9b8-e87e358abeca">
+              <SHORT-NAME>SWC_InputDiag</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_InputDiag/SWC_InputDiag</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
           </COMPONENTS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>
+

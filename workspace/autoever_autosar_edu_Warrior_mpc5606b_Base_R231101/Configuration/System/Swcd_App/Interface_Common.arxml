@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="efbfa6d4-aaef-4cf9-b00e-3550ab0ddbfe">
+      <SHORT-NAME>Interface</SHORT-NAME>
+      <ELEMENTS>
+        <SENDER-RECEIVER-INTERFACE UUID="54e8b271-9fd6-4c34-af4f-43c755e8575d">
+          <SHORT-NAME>If_DriverInputData</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="53c171df-f7ec-4a38-a757-ac6510d55a92">
+              <SHORT-NAME>BrakeSw</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+            <VARIABLE-DATA-PROTOTYPE UUID="de2c3e29-deb9-455c-bec6-a95d78531fe0">
+              <SHORT-NAME>AccelSw</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+            <VARIABLE-DATA-PROTOTYPE UUID="7682cbae-e4a3-4d5c-8efb-233976b17cee">
+              <SHORT-NAME>SocLevel</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+            <VARIABLE-DATA-PROTOTYPE UUID="ce07f806-551a-46d2-bbb5-f35a51da5bbc">
+              <SHORT-NAME>VehicleSpeed</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+            <VARIABLE-DATA-PROTOTYPE UUID="f7953566-9454-42b6-a0a1-46161584d10a">
+              <SHORT-NAME>ReadStatus</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE UUID="a6e4ba98-5807-4fdd-9fda-29d4a257840e">
+          <SHORT-NAME>If_DriverDiagData</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE UUID="ab30659a-3d7a-4160-89c8-2e50b8a74c30">
+              <SHORT-NAME>DriverInputFault</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
