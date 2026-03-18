@@ -22,7 +22,7 @@
  * INPUT FILE:    Configuration\ECU\Ecud_Com.arxml
  *                Configuration\ECU\Ecud_EcuC.arxml
  *                Configuration\ECU\Ecud_PduR.arxml
- * GENERATED ON:  This timestamp is removed.
+ * GENERATED ON:  19-Mar-2026 - 07:02:08
  */
 
 #ifndef COM_CFG_H
@@ -91,7 +91,7 @@
 #define COM_SIG_ERR_CBK_NOTIFY              STD_OFF
 
 /* Rx Signals with Notification */
-#define COM_RX_SIGNAL_NOTIFY                STD_OFF
+#define COM_RX_SIGNAL_NOTIFY                STD_ON
 
 /* Rx Signals with Filter */
 #define COM_RX_SIGNAL_FILTER                STD_OFF
@@ -476,7 +476,7 @@
 #define COM_TX_IPDU_CALLOUT_COUNT           0
 
 /* Signal Notification Callback Count */
-#define COM_SIG_NOTIF_CBK_COUNT             0
+#define COM_SIG_NOTIF_CBK_COUNT             3
 
 /* Signal Error Callback Count */
 #define COM_SIG_ERROR_CBK_COUNT             0

@@ -26,7 +26,7 @@
 /*
  * INPUT FILE:    Configuration\ECU\Ecud_Dem.arxml
  *                Configuration\ECU\Ecud_FiM.arxml
- * GENERATED ON:  This timestamp is removed.
+ * GENERATED ON:  19-Mar-2026 - 07:02:06
  */  
 
 #ifndef FIM_CFG_H

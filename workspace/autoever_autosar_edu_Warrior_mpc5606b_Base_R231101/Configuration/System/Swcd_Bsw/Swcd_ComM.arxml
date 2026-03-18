@@ -592,7 +592,7 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Svc_ComM/ComM_CurrentChannelRequest</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="24202f9b-468d-4a38-9edf-3702ae113724">
+            <P-PORT-PROTOTYPE UUID="5f4b382d-e02c-4c83-9df7-d473639bccb4">
               <SHORT-NAME>PPortPrototype_ComMUser_Project</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
@@ -767,7 +767,7 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_ComM/ComM_UserRequest/GetCurrentComMode</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="2bbce533-5e52-43a3-aafe-9fe8c0457e67">
+                <OPERATION-INVOKED-EVENT UUID="1b3e0f1e-339a-4daf-b750-5877868337c8">
                   <SHORT-NAME>OperationInvokedEvent_RequestComMode_ComMUser_Project</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_ComM/ComM/SwcIB_ComM/RequestComMode</START-ON-EVENT-REF>
                   <OPERATION-IREF>
@@ -775,7 +775,7 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_ComM/ComM_UserRequest/RequestComMode</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="184f7aae-c4c9-45ff-85d7-30176139c25e">
+                <OPERATION-INVOKED-EVENT UUID="6cdaf414-eaf2-4ec9-95c3-afb10d4a808f">
                   <SHORT-NAME>OperationInvokedEvent_GetCurrentComMode_ComMUser_Project</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_ComM/ComM/SwcIB_ComM/GetCurrentComMode</START-ON-EVENT-REF>
                   <OPERATION-IREF>
@@ -783,7 +783,7 @@
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_ComM/ComM_UserRequest/GetCurrentComMode</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT UUID="c6bdb441-c18a-47c3-8239-d4b243061e8b">
+                <OPERATION-INVOKED-EVENT UUID="c690259f-977a-4a78-b100-ef99f3ab1cb7">
                   <SHORT-NAME>OperationInvokedEvent_GetRequestedComMode_ComMUser_Project</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_ComM/ComM/SwcIB_ComM/GetRequestedComMode</START-ON-EVENT-REF>
                   <OPERATION-IREF>

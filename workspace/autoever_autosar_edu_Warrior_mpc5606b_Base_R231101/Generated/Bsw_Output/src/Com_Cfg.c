@@ -22,7 +22,7 @@
  * INPUT FILE:    Configuration\ECU\Ecud_Com.arxml
  *                Configuration\ECU\Ecud_EcuC.arxml
  *                Configuration\ECU\Ecud_PduR.arxml
- * GENERATED ON:  This timestamp is removed.
+ * GENERATED ON:  19-Mar-2026 - 07:02:08
  */
 
 /*******************************************************************************
@@ -1061,7 +1061,33 @@ CONST(Com_WrFuncPtr, COM_CONST) Com_GaaWrFuncPtr[] =
 #include "MemMap.h"
 
 
-/* CONST(Com_SigNotifCbk, COM_CONST) Com_GaaSigNotifCbk[]; */
+#define COM_START_SEC_CONST_UNSPECIFIED
+#include "MemMap.h"
+/* Array for notification signal callbacks */
+CONST(Com_SigNotifCbk, COM_CONST) Com_GaaSigNotifCbk[] =
+{
+  /* NOTIF SIGNAL 0 - ComISignal_Project_VCURegenStatus_LimitReason */
+  {
+    /* *pSigNotifCbk */
+    &Rte_COMCbk_ComISignal_Project_VCURegenStatus_LimitReason
+  },
+
+  /* NOTIF SIGNAL 1 - ComISignal_Project_VCURegenStatus_RegenEnable */
+  {
+    /* *pSigNotifCbk */
+    &Rte_COMCbk_ComISignal_Project_VCURegenStatus_RegenEnable
+  },
+
+  /* NOTIF SIGNAL 2 - ComISignal_Project_VCURegenStatus_RegenLevel */
+  {
+    /* *pSigNotifCbk */
+    &Rte_COMCbk_ComISignal_Project_VCURegenStatus_RegenLevel
+  }
+};
+
+#define COM_STOP_SEC_CONST_UNSPECIFIED
+#include "MemMap.h"
+
 
 /* CONST(Com_SigErrorCbk, COM_CONST) Com_GaaSigErrorCbk[]; */
 
@@ -3389,7 +3415,7 @@ CONST(Com_RxIpdu, COM_CONST) Com_GaaRxIpdu[] =
     0x00,
 
     /* ucRxConfig */
-    0x09
+    0x0B
   },
 
   /* RX I-PDU 1 - ComIPdu_Project_GST_Msg_TP2 */
@@ -3680,8 +3706,11 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     0UL,
 
+    /* *ddNotifCbkIndex */
+    1UL,
+
     /* ucRxSigConfig */
-    0x00,
+    0x01,
 
     /* ddSignalEndByte */
     0x0001
@@ -3695,8 +3724,11 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     0UL,
 
+    /* *ddNotifCbkIndex */
+    2UL,
+
     /* ucRxSigConfig */
-    0x00,
+    0x01,
 
     /* ddSignalEndByte */
     0x0001
@@ -3710,8 +3742,11 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     0UL,
 
+    /* *ddNotifCbkIndex */
+    0UL,
+
     /* ucRxSigConfig */
-    0x00,
+    0x01,
 
     /* ddSignalEndByte */
     0x0002
@@ -3724,6 +3759,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
 
     /* *ddRxpduId */
     1UL,
+
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
 
     /* ucRxSigConfig */
     0x00,
@@ -3740,6 +3778,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     2UL,
 
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
+
     /* ucRxSigConfig */
     0x00,
 
@@ -3754,6 +3795,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
 
     /* *ddRxpduId */
     3UL,
+
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
 
     /* ucRxSigConfig */
     0x00,
@@ -3770,6 +3814,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     3UL,
 
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
+
     /* ucRxSigConfig */
     0x00,
 
@@ -3784,6 +3831,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
 
     /* *ddRxpduId */
     4UL,
+
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
 
     /* ucRxSigConfig */
     0x00,
@@ -3800,6 +3850,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     4UL,
 
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
+
     /* ucRxSigConfig */
     0x00,
 
@@ -3814,6 +3867,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
 
     /* *ddRxpduId */
     5UL,
+
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
 
     /* ucRxSigConfig */
     0x00,
@@ -3830,6 +3886,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     5UL,
 
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
+
     /* ucRxSigConfig */
     0x00,
 
@@ -3845,6 +3904,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
     /* *ddRxpduId */
     6UL,
 
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
+
     /* ucRxSigConfig */
     0x00,
 
@@ -3859,6 +3921,9 @@ CONST(Com_RxSignal, COM_CONST) Com_GaaRxSignal[] =
 
     /* *ddRxpduId */
     6UL,
+
+    /* *ddNotifCbkIndex */
+    COM_INVALID_NONE,
 
     /* ucRxSigConfig */
     0x00,

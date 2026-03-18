@@ -47,9 +47,9 @@
                         <SD GID="ComMMainFunctionPeriod">true</SD>
                       </SDG>
                       <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                        <SD T="2026-03-13T13:51:27Z" GID="ComMBusType">COMM_BUS_TYPE_CAN</SD>
-                        <SD T="2026-03-13T13:51:27Z" GID="ComMChannelId">0</SD>
-                        <SD T="2026-03-13T13:51:27Z" GID="ComMMainFunctionPeriod">0.005</SD>
+                        <SD T="2026-03-19T06:46:19Z" GID="ComMBusType">COMM_BUS_TYPE_CAN</SD>
+                        <SD T="2026-03-19T06:46:19Z" GID="ComMChannelId">0</SD>
+                        <SD T="2026-03-19T06:46:19Z" GID="ComMMainFunctionPeriod">0.005</SD>
                       </SDG>
                     </SDGS>
                   </ADMIN-DATA>
@@ -96,9 +96,9 @@
                             <SD GID="ComMPncNmRequest">true</SD>
                           </SDG>
                           <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                            <SD T="2026-03-13T13:51:27Z" GID="ComMNmLightTimeout">0</SD>
-                            <SD T="2026-03-13T13:51:27Z" GID="ComMNmVariant">LIGHT</SD>
-                            <SD T="2026-03-13T13:51:27Z" GID="ComMPncNmRequest">0</SD>
+                            <SD T="2026-03-19T06:46:19Z" GID="ComMNmLightTimeout">0</SD>
+                            <SD T="2026-03-19T06:46:19Z" GID="ComMNmVariant">LIGHT</SD>
+                            <SD T="2026-03-19T06:46:19Z" GID="ComMPncNmRequest">0</SD>
                           </SDG>
                         </SDGS>
                       </ADMIN-DATA>
@@ -127,7 +127,7 @@
                             <SD GID="ComMUserChannel">true</SD>
                           </SDG>
                           <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                            <SD T="2026-03-13T13:51:27Z" GID="ComMUserChannel">/AUTOSAR/ComM/ComMConfigSet/ComMUser_Project</SD>
+                            <SD T="2026-03-19T06:46:19Z" GID="ComMUserChannel">/AUTOSAR/ComM/ComMConfigSet/ComMUser_Project</SD>
                           </SDG>
                         </SDGS>
                       </ADMIN-DATA>
@@ -150,7 +150,7 @@
                         <SD GID="ComMUserIdentifier">true</SD>
                       </SDG>
                       <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                        <SD T="2026-03-13T13:51:27Z" GID="ComMUserIdentifier">0</SD>
+                        <SD T="2026-03-19T06:46:19Z" GID="ComMUserIdentifier">0</SD>
                       </SDG>
                     </SDGS>
                   </ADMIN-DATA>

@@ -22,7 +22,7 @@
  * INPUT FILE:    Configuration\ECU\Ecud_CanIf.arxml
  *                Configuration\ECU\Ecud_CanTp.arxml
  *                Configuration\ECU\Ecud_PduR.arxml
- * GENERATED ON:  This timestamp is removed.
+ * GENERATED ON:  19-Mar-2026 - 07:02:06
  */
 
 #ifndef CANTP_CFG_H

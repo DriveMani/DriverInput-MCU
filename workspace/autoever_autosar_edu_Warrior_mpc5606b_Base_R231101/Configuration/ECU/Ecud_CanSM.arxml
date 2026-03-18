@@ -43,7 +43,7 @@
                         <SD GID="CanSMComMNetworkHandleRef">true</SD>
                       </SDG>
                       <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                        <SD T="2026-03-13T13:51:28Z" GID="CanSMComMNetworkHandleRef">/AUTOSAR/ComM/ComMConfigSet/ComMChannel_Project</SD>
+                        <SD T="2026-03-19T06:46:20Z" GID="CanSMComMNetworkHandleRef">/AUTOSAR/ComM/ComMConfigSet/ComMChannel_Project</SD>
                       </SDG>
                     </SDGS>
                   </ADMIN-DATA>
@@ -86,7 +86,7 @@
                             <SD GID="CanSMControllerId">true</SD>
                           </SDG>
                           <SDG GID="ODIN_WRITER_TYPE:AUTO_CONFIGURED">
-                            <SD T="2026-03-13T13:51:28Z" GID="CanSMControllerId">/AUTOSAR/CanIf/CanIfCtrlDrvCfg0/CanIfCtrlCfg_ECU1_Project</SD>
+                            <SD T="2026-03-19T06:46:20Z" GID="CanSMControllerId">/AUTOSAR/CanIf/CanIfCtrlDrvCfg0/CanIfCtrlCfg_ECU1_Project</SD>
                           </SDG>
                         </SDGS>
                       </ADMIN-DATA>

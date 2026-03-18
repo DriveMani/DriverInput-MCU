@@ -334,7 +334,7 @@ extern "C"{
 *
 * @implements     DCAN02050
 */
-#define CAN_IDENTICAL_ID_CANCELLATION (STD_OFF)
+#define CAN_IDENTICAL_ID_CANCELLATION (STD_ON)
 
 /*
 * @brief          Support for Special MB Abort API

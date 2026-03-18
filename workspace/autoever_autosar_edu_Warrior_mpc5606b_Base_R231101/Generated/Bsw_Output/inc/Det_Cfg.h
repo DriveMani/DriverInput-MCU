@@ -25,7 +25,7 @@
 
 /*
  * INPUT FILE:    Configuration\ECU\Ecud_Det.arxml
- * GENERATED ON:  This timestamp is removed.
+ * GENERATED ON:  19-Mar-2026 - 07:02:06
  */
 
 #ifndef DET_CFG_H
@@ -66,11 +66,11 @@
 /* The Ram Buffer Storage Size */
 #define DET_RAM_BUFFER_SIZE                 (uint8)255
 
-/* To enable / disable the Ram Buffer Storage */
-#define DET_RAM_BUFFER                      STD_ON
-
 /* Total number of Error Hooks configured */
 #define DET_TOTAL_ERROR_HOOKS               (uint8)1
+
+/* To enable / disable the Ram Buffer Storage */
+#define DET_RAM_BUFFER                      STD_ON
 
 
 extern Std_ReturnType Det_ErrorHook(uint16 LusModuleId, uint8 LucInstanceId,

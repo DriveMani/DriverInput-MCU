@@ -310,7 +310,11 @@
               <SHORT-NAME>PS_NvMBlock_ConfigID</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -318,11 +322,7 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -334,7 +334,7 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -353,7 +353,19 @@
               <SHORT-NAME>PS_NvMBlock_DemNonVolatileData</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -362,18 +374,6 @@
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -387,15 +387,7 @@
               <SHORT-NAME>PS_NvMBlock_DemEventStatusNvRamBlock</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -403,15 +395,23 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -421,15 +421,7 @@
               <SHORT-NAME>PS_NvMBlock_DemPrimaryEventMemory_0</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -437,15 +429,23 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -459,19 +459,7 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -479,7 +467,19 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -489,6 +489,14 @@
               <SHORT-NAME>PS_NvMBlock_DemPrimaryEventMemory_2</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
@@ -497,23 +505,15 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -527,18 +527,6 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
@@ -548,6 +536,18 @@
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -566,11 +566,15 @@
               <SHORT-NAME>PS_NvMBlock_IntTst_TestBlock2</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -578,15 +582,11 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
                   <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -609,23 +609,7 @@
               <SHORT-NAME>PS_NvMBlock_IntTst_TestBlock3</SHORT-NAME>
               <PROVIDED-COM-SPECS>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
-                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
-                </SERVER-COM-SPEC>
-                <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
@@ -633,7 +617,23 @@
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
                 <SERVER-COM-SPEC>
-                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</OPERATION-REF>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</OPERATION-REF>
+                  <QUEUE-LENGTH>1</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</OPERATION-REF>
                   <QUEUE-LENGTH>1</QUEUE-LENGTH>
                 </SERVER-COM-SPEC>
               </PROVIDED-COM-SPECS>
@@ -654,19 +654,11 @@
               <SHORT-NAME>IB_NvM</SHORT-NAME>
               <EVENTS>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_ReadBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_GetErrorStatus</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -678,27 +670,11 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_RestoreBlockDefaults</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_GetErrorStatus</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_ReadBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_InvalidateNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -710,43 +686,27 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_GetErrorStatus</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_ReadBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_RestoreBlockDefaults</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_RestoreBlockDefaults</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_InvalidateNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_ConfigID_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_ConfigID</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -758,27 +718,51 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_ReadBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_GetErrorStatus</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_RestoreBlockDefaults</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemNonVolatileData_InvalidateNvBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemNonVolatileData</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_GetErrorStatus</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -790,27 +774,19 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_WriteBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_RestoreBlockDefaults</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -822,35 +798,27 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_GetErrorStatus</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_GetErrorStatus</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_ReadBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemEventStatusNvRamBlock_WriteBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemEventStatusNvRamBlock</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -870,6 +838,38 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_GetErrorStatus</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_ReadBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_0</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_0_WriteBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
@@ -886,35 +886,11 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_InvalidateNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_ReadBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_RestoreBlockDefaults</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -926,6 +902,14 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_EraseNvBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
@@ -934,35 +918,19 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_GetErrorStatus</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_WriteBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_InvalidateNvBlock</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_InvalidateNvBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_1_RestoreBlockDefaults</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -974,11 +942,19 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_InvalidateNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -990,51 +966,27 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_ReadBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_RestoreBlockDefaults</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_CancelJobs</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_CancelJobs</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_WriteBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_InvalidateNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_GetErrorStatus</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_GetErrorStatus</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_DemPrimaryEventMemory_2_WriteBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_DemPrimaryEventMemory_2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -1046,27 +998,59 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_WriteBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_InvalidateNvBlock</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_InvalidateNvBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_ReadBlock</SHORT-NAME>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_RestoreBlockDefaults</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_WriteBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_GetErrorStatus</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock1_ReadBlock</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock1</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -1078,11 +1062,19 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_InvalidateNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/InvalidateNvBlock</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/InvalidateNvBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_WriteBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
@@ -1094,10 +1086,58 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock2_ReadBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock2</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_WriteBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_GetErrorStatus</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_CancelJobs</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_ReadBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_EraseNvBlock</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
@@ -1110,51 +1150,11 @@
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
                 <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_WriteBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/WriteBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/WriteBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_ReadBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/ReadBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/ReadBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_CancelJobs</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/CancelJobs</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/CancelJobs</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
                   <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_RestoreBlockDefaults</SHORT-NAME>
                   <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/RestoreBlockDefaults</START-ON-EVENT-REF>
                   <OPERATION-IREF>
                     <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
                     <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/RestoreBlockDefaults</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_EraseNvBlock</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/EraseNvBlock</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/EraseNvBlock</TARGET-PROVIDED-OPERATION-REF>
-                  </OPERATION-IREF>
-                </OPERATION-INVOKED-EVENT>
-                <OPERATION-INVOKED-EVENT>
-                  <SHORT-NAME>OperationInvokedEvent_PS_NvMBlock_IntTst_TestBlock3_GetErrorStatus</SHORT-NAME>
-                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Svc_NvM/NvM/IB_NvM/GetErrorStatus</START-ON-EVENT-REF>
-                  <OPERATION-IREF>
-                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_NvM/NvM/PS_NvMBlock_IntTst_TestBlock3</CONTEXT-P-PORT-REF>
-                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_NvM/NvMService/GetErrorStatus</TARGET-PROVIDED-OPERATION-REF>
                   </OPERATION-IREF>
                 </OPERATION-INVOKED-EVENT>
               </EVENTS>
@@ -1307,15 +1307,18 @@
               </PORT-API-OPTIONS>
               <RUNNABLES>
                 <RUNNABLE-ENTITY>
-                  <SHORT-NAME>EraseNvBlock</SHORT-NAME>
+                  <SHORT-NAME>WriteBlock</SHORT-NAME>
                   <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <ARGUMENTS>
                     <RUNNABLE-ENTITY-ARGUMENT>
                       <SYMBOL>BlockId</SYMBOL>
                     </RUNNABLE-ENTITY-ARGUMENT>
+                    <RUNNABLE-ENTITY-ARGUMENT>
+                      <SYMBOL>NvM_SrcPtr</SYMBOL>
+                    </RUNNABLE-ENTITY-ARGUMENT>
                   </ARGUMENTS>
                   <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
-                  <SYMBOL>NvM_EraseNvBlock</SYMBOL>
+                  <SYMBOL>NvM_WriteBlock</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
                   <SHORT-NAME>GetErrorStatus</SHORT-NAME>
@@ -1332,7 +1335,7 @@
                   <SYMBOL>NvM_GetErrorStatus</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
-                  <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                  <SHORT-NAME>CancelJobs</SHORT-NAME>
                   <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <ARGUMENTS>
                     <RUNNABLE-ENTITY-ARGUMENT>
@@ -1340,21 +1343,7 @@
                     </RUNNABLE-ENTITY-ARGUMENT>
                   </ARGUMENTS>
                   <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
-                  <SYMBOL>NvM_InvalidateNvBlock</SYMBOL>
-                </RUNNABLE-ENTITY>
-                <RUNNABLE-ENTITY>
-                  <SHORT-NAME>WriteBlock</SHORT-NAME>
-                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
-                  <ARGUMENTS>
-                    <RUNNABLE-ENTITY-ARGUMENT>
-                      <SYMBOL>BlockId</SYMBOL>
-                    </RUNNABLE-ENTITY-ARGUMENT>
-                    <RUNNABLE-ENTITY-ARGUMENT>
-                      <SYMBOL>NvM_SrcPtr</SYMBOL>
-                    </RUNNABLE-ENTITY-ARGUMENT>
-                  </ARGUMENTS>
-                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
-                  <SYMBOL>NvM_WriteBlock</SYMBOL>
+                  <SYMBOL>NvM_CancelJobs</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
                   <SHORT-NAME>ReadBlock</SHORT-NAME>
@@ -1371,7 +1360,7 @@
                   <SYMBOL>NvM_ReadBlock</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
-                  <SHORT-NAME>CancelJobs</SHORT-NAME>
+                  <SHORT-NAME>EraseNvBlock</SHORT-NAME>
                   <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <ARGUMENTS>
                     <RUNNABLE-ENTITY-ARGUMENT>
@@ -1379,7 +1368,7 @@
                     </RUNNABLE-ENTITY-ARGUMENT>
                   </ARGUMENTS>
                   <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
-                  <SYMBOL>NvM_CancelJobs</SYMBOL>
+                  <SYMBOL>NvM_EraseNvBlock</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
                   <SHORT-NAME>RestoreBlockDefaults</SHORT-NAME>
@@ -1394,6 +1383,17 @@
                   </ARGUMENTS>
                   <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
                   <SYMBOL>NvM_RestoreBlockDefaults</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>InvalidateNvBlock</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <ARGUMENTS>
+                    <RUNNABLE-ENTITY-ARGUMENT>
+                      <SYMBOL>BlockId</SYMBOL>
+                    </RUNNABLE-ENTITY-ARGUMENT>
+                  </ARGUMENTS>
+                  <CAN-BE-INVOKED-CONCURRENTLY>true</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>NvM_InvalidateNvBlock</SYMBOL>
                 </RUNNABLE-ENTITY>
                 <RUNNABLE-ENTITY>
                   <SHORT-NAME>MainFunction</SHORT-NAME>
