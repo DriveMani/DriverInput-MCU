@@ -26,7 +26,7 @@
  *                Configuration\ECU\Ecud_WdgIf.arxml
  *                Configuration\ECU\Ecud_WdgM.arxml
  *                Configuration\ECU\Mcal\Ecud_Mcu.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:07
+ * GENERATED ON:  This timestamp is removed.
  */
 
 /*******************************************************************************

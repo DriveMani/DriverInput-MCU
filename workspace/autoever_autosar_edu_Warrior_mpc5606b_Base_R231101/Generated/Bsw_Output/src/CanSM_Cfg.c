@@ -22,7 +22,7 @@
  *                Configuration\ECU\Ecud_CanSM.arxml
  *                Configuration\ECU\Ecud_ComM.arxml
  *                Configuration\ECU\Ecud_Dem.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:07
+ * GENERATED ON:  This timestamp is removed.
  */
 
 /*******************************************************************************

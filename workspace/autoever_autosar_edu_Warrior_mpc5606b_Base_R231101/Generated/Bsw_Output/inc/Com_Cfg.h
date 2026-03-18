@@ -22,7 +22,7 @@
  * INPUT FILE:    Configuration\ECU\Ecud_Com.arxml
  *                Configuration\ECU\Ecud_EcuC.arxml
  *                Configuration\ECU\Ecud_PduR.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:08
+ * GENERATED ON:  This timestamp is removed.
  */
 
 #ifndef COM_CFG_H

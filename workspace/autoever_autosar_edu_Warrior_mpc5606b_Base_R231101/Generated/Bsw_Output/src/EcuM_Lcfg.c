@@ -48,7 +48,7 @@
  *                Configuration\ECU\Ecud_Det.arxml
  *                Configuration\ECU\Mcal\Ecud_Dio.arxml
  *                Configuration\ECU\Mcal\Ecud_Gpt.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:08
+ * GENERATED ON:  This timestamp is removed.
  */
 
 /*******************************************************************************

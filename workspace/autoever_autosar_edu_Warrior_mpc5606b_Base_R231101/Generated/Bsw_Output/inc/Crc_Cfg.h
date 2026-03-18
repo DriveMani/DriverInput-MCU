@@ -20,7 +20,7 @@
 
 /*
  * INPUT FILE:    Configuration\ECU\Ecud_Crc.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:06
+ * GENERATED ON:  This timestamp is removed.
  */
 
 #ifndef CRC_CFG_H

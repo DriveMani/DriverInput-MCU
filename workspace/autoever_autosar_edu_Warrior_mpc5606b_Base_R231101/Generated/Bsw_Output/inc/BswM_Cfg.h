@@ -30,7 +30,7 @@
  *                Configuration\ECU\Ecud_BswM.arxml
  *                Configuration\ECU\Ecud_ComM.arxml
  *                Configuration\ECU\Ecud_NvM.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:08
+ * GENERATED ON:  This timestamp is removed.
  */
 
 #ifndef BSWM_CFG_H

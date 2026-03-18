@@ -23,7 +23,7 @@
  *                Configuration\ECU\Mcal\Ecud_Fee.arxml
  *                Configuration\ECU\Mcal\Ecud_Fls.arxml
  *                Configuration\ECU\Ecud_NvM.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:06
+ * GENERATED ON:  This timestamp is removed.
  */
 
 #ifndef MEMIF_H

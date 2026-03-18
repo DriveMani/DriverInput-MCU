@@ -41,7 +41,7 @@
  *                C:\realwk\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Mcal\Ecud_Dio.arxml
  *                C:\realwk\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Mcal\Ecud_Mcu.arxml
  *                C:\realwk\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Os.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:08
+ * GENERATED ON:  This timestamp is removed.
  */
 
 /*******************************************************************************

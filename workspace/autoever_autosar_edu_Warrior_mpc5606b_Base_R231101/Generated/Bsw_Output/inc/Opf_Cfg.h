@@ -21,7 +21,7 @@
 /*
  * INPUT FILE:    Configuration\ECU\Ecud_OsProfiler.arxml
  *                Configuration\ECU\Ecud_Os.arxml
- * GENERATED ON:  19-Mar-2026 - 07:02:07
+ * GENERATED ON:  This timestamp is removed.
  */
 
 /*******************************************************************************
