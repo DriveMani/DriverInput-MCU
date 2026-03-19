@@ -20,67 +20,69 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Com.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Det.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Os.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Rte.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Composition\EcuExtract.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DBImport\Project.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\test_workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Com.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Det.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Os.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DBImport\Project.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_InputDiag.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_App\Interface_Common.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\MOBIUS Project\DriverInput-MCU\workspace\autoever_autosar_edu_Warrior_mpc5606b_Base_R231101\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -133,7 +135,9 @@
 #include "Rte_SWC_ComM.h"
 #include "Rte_SWC_DiagnosticMonitor.h"
 #include "Rte_SWC_DiagnosticService.h"
+#include "Rte_SWC_DummyHwInput.h"
 #include "Rte_SWC_ErrM.h"
+#include "Rte_SWC_InputDiag.h"
 #include "Rte_SWC_TestModeManager.h"
 #include "Rte_SWC_TestModeUser.h"
 #include "Rte_SWC_WdgMTest.h"
@@ -271,6 +275,8 @@ enum {
   MSE_SwcModeSwitchEvent_globalMode_OK_SWC_WdgMTest,
   MSE_SwcModeSwitchEvent_globalMode_STOPPED_SWC_WdgMTest,
   TE_TE_AppMode_Test_SWC_AppMode,
+  TE_TE_RE_CheckInputFault_SWC_InputDiag,
+  TE_TE_RE_ReadHwInput_SWC_DummyHwInput,
   TE_TE_Run_Actuator_SWC_Actuator,
   TE_TE_TestModeUser_B_SWC_TestModeUser,
   TE_TE_WdgMTest_SWC_WdgMTest,
@@ -375,11 +381,16 @@ static VAR(boolean, RTE_VAR_INIT) SchM_GblBIT_NvM_BITP_CallCyclicMemFunction = R
 #include "MemMap.h"
 #define RTE_START_SEC_VAR_INIT_8
 #include "MemMap.h"
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_713 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_714 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_728 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_AppModeRequestInterface_73_AppMode_1 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComMModeRequestInterface_Project_80_ComMMode_Project_2 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_83_fullComRequestors_713 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_83_fullComRequestors_714 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_69_AccelSw_734 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_69_BrakeSw_735 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_69_ReadStatus_736 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_69_SocLevel_737 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_69_VehicleSpeed_738 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_739 = RTE_E_UNCONNECTED;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Count = RTE_ZERO;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Queue = RTE_ZERO;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBIT_NvM_BITP_CallCyclicMemFunction_Count = RTE_ZERO;
@@ -397,11 +408,16 @@ static VAR(TickType, RTE_DATA) Rte_GddBaseCntValueInSchMOsCounter_0 = 0;
 
 #define RTE_START_SEC_VAR_CLEARED_8
 #include "MemMap.h"
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_713;
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_714;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucAppModeRequestInterface_71_AppMode_1;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucTestModeRequestInterface_41_TestMode_728;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_83_fullComRequestors_713;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_83_fullComRequestors_714;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_69_AccelSw_734;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_69_BrakeSw_735;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_69_ReadStatus_736;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucAppModeRequestInterface_73_AppMode_1;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucComMModeRequestInterface_Project_80_ComMMode_Project_2;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_69_SocLevel_737;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_69_VehicleSpeed_738;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucTestModeRequestInterface_41_TestMode_739;
 
 #define RTE_STOP_SEC_VAR_CLEARED_8
 #include "MemMap.h"
@@ -465,7 +481,11 @@ const struct Rte_CDS_SWC_DiagnosticMonitor Rte_Inst_SWC_DiagnosticMonitor = {0};
 
 const struct Rte_CDS_SWC_DiagnosticService Rte_Inst_SWC_DiagnosticService = {0};
 
+const struct Rte_CDS_SWC_DummyHwInput Rte_Inst_SWC_DummyHwInput = {0};
+
 const struct Rte_CDS_SWC_ErrM Rte_Inst_SWC_ErrM = {0};
+
+const struct Rte_CDS_SWC_InputDiag Rte_Inst_SWC_InputDiag = {0};
 
 const struct Rte_CDS_SWC_TestModeManager Rte_Inst_SWC_TestModeManager = {0};
 
@@ -726,9 +746,9 @@ Rte_Write_SWC_AppMode_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) D
 
   SuspendAllInterrupts();
   
-  Rte_GucAppModeRequestInterface_71_AppMode_1 = Data;
+  Rte_GucAppModeRequestInterface_73_AppMode_1 = Data;
   
-  Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
+  Rte_GucStatus_AppModeRequestInterface_73_AppMode_1 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_AppMode_modeRequestPort_AppMode_AppMode_BswM = RTE_TRUE;
   
@@ -754,9 +774,9 @@ Rte_Write_SWC_AppMode_modeRequestPort_ComMMode_Project_ComMMode_Project(IN VAR(u
 
   SuspendAllInterrupts();
   
-  Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2 = Data;
+  Rte_GucComMModeRequestInterface_Project_80_ComMMode_Project_2 = Data;
   
-  Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2 = RTE_E_OK;
+  Rte_GucStatus_ComMModeRequestInterface_Project_80_ComMMode_Project_2 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_ComMMode_Project_modeRequestPort_ComMMode_Project_ComMMode_Project_BswM = RTE_TRUE;
   
@@ -787,6 +807,76 @@ Rte_Write_SWC_AppMode_modeRequestPort_TestMode_TestMode(IN VAR(uint8, AUTOMATIC)
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_DummyHwInput_P_DriverInput_AccelSw(IN VAR(boolean, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_AccelSw_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_AccelSw_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_DummyHwInput_P_DriverInput_BrakeSw(IN VAR(boolean, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_BrakeSw_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_BrakeSw_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_DummyHwInput_P_DriverInput_ReadStatus(IN VAR(boolean, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_ReadStatus_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_ReadStatus_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_DummyHwInput_P_DriverInput_SocLevel(IN VAR(uint8, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_SocLevel_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_SocLevel_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_DummyHwInput_P_DriverInput_VehicleSpeed(IN VAR(uint8, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_VehicleSpeed_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_DummyHwInput_P_DriverInput_VehicleSpeed_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_ErrM_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
@@ -796,9 +886,9 @@ Rte_Write_SWC_ErrM_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) Data
 
   SuspendAllInterrupts();
   
-  Rte_GucAppModeRequestInterface_71_AppMode_1 = Data;
+  Rte_GucAppModeRequestInterface_73_AppMode_1 = Data;
   
-  Rte_GucStatus_AppModeRequestInterface_71_AppMode_1 = RTE_E_OK;
+  Rte_GucStatus_AppModeRequestInterface_73_AppMode_1 = RTE_E_OK;
   
   Rte_GblDRE_DRE_BswM_Immediate_SwcModeRequest_AppMode_modeRequestPort_AppMode_AppMode_BswM = RTE_TRUE;
   
@@ -810,6 +900,20 @@ Rte_Write_SWC_ErrM_modeRequestPort_AppMode_AppMode(IN VAR(uint8, AUTOMATIC) Data
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_ErrM_modeRequestPort_AppMode_AppMode_Return(Data);
+
+  return LddRetVal;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_InputDiag_P_DriverDiag_DriverInputFault(IN VAR(uint8, AUTOMATIC) Data)
+{
+  VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_InputDiag_P_DriverDiag_DriverInputFault_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_WriteHook_SWC_InputDiag_P_DriverDiag_DriverInputFault_Return(Data);
 
   return LddRetVal;
 }
@@ -827,7 +931,7 @@ Rte_Read_BswM_modeRequestPort_AppMode_AppMode(OUT P2VAR(uint8, AUTOMATIC, RTE_AP
   
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucAppModeRequestInterface_71_AppMode_1;
+    *Data = Rte_GucAppModeRequestInterface_73_AppMode_1;
   }
   
   ResumeAllInterrupts();
@@ -835,7 +939,7 @@ Rte_Read_BswM_modeRequestPort_AppMode_AppMode(OUT P2VAR(uint8, AUTOMATIC, RTE_AP
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_BswM_modeRequestPort_AppMode_AppMode_Return(Data);
 
-  return Rte_GucStatus_AppModeRequestInterface_71_AppMode_1;
+  return Rte_GucStatus_AppModeRequestInterface_73_AppMode_1;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -848,7 +952,7 @@ Rte_Read_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project(OUT P2VAR(uint8,
   
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucComMModeRequestInterface_Project_78_ComMMode_Project_2;
+    *Data = Rte_GucComMModeRequestInterface_Project_80_ComMMode_Project_2;
   }
   
   ResumeAllInterrupts();
@@ -856,7 +960,7 @@ Rte_Read_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project(OUT P2VAR(uint8,
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_BswM_modeRequestPort_ComMMode_Project_ComMMode_Project_Return(Data);
 
-  return Rte_GucStatus_ComMModeRequestInterface_Project_78_ComMMode_Project_2;
+  return Rte_GucStatus_ComMModeRequestInterface_Project_80_ComMMode_Project_2;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -870,7 +974,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_713,
+      &Rte_GstComM_CurrentChannelRequest_83_fullComRequestors_713,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -878,7 +982,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR000_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_713;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_83_fullComRequestors_713;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -892,7 +996,7 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_81_fullComRequestors_714,
+      &Rte_GstComM_CurrentChannelRequest_83_fullComRequestors_714,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -900,7 +1004,92 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR001_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_81_fullComRequestors_714;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_83_fullComRequestors_714;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_InputDiag_R_DriverInput_AccelSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data)
+{
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Start(Data);
+
+  if (Data != NULL_PTR)
+  {
+    *Data = Rte_GblIf_DriverInputData_69_AccelSw_734;
+  }
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(Data);
+
+  return Rte_GucStatus_If_DriverInputData_69_AccelSw_734;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_InputDiag_R_DriverInput_BrakeSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data)
+{
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(Data);
+
+  if (Data != NULL_PTR)
+  {
+    *Data = Rte_GblIf_DriverInputData_69_BrakeSw_735;
+  }
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(Data);
+
+  return Rte_GucStatus_If_DriverInputData_69_BrakeSw_735;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_InputDiag_R_DriverInput_ReadStatus(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data)
+{
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(Data);
+
+  if (Data != NULL_PTR)
+  {
+    *Data = Rte_GblIf_DriverInputData_69_ReadStatus_736;
+  }
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(Data);
+
+  return Rte_GucStatus_If_DriverInputData_69_ReadStatus_736;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_InputDiag_R_DriverInput_SocLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data)
+{
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(Data);
+
+  if (Data != NULL_PTR)
+  {
+    *Data = Rte_GucIf_DriverInputData_69_SocLevel_737;
+  }
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(Data);
+
+  return Rte_GucStatus_If_DriverInputData_69_SocLevel_737;
+}
+
+FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_InputDiag_R_DriverInput_VehicleSpeed(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data)
+{
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_VehicleSpeed_Start(Data);
+
+  if (Data != NULL_PTR)
+  {
+    *Data = Rte_GucIf_DriverInputData_69_VehicleSpeed_738;
+  }
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ReadHook_SWC_InputDiag_R_DriverInput_VehicleSpeed_Return(Data);
+
+  return Rte_GucStatus_If_DriverInputData_69_VehicleSpeed_738;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -911,13 +1100,13 @@ Rte_Read_SWC_TestModeManager_TestModeRequestInterface_TestMode(OUT P2VAR(uint8, 
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucTestModeRequestInterface_41_TestMode_728;
+    *Data = Rte_GucTestModeRequestInterface_41_TestMode_739;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_TestModeManager_TestModeRequestInterface_TestMode_Return(Data);
 
-  return Rte_GucStatus_TestModeRequestInterface_41_TestMode_728;
+  return Rte_GucStatus_TestModeRequestInterface_41_TestMode_739;
 }
 
 /*******************************************************************************
@@ -5943,6 +6132,8 @@ TASK(OsTask_ASW_FG1_10ms)
     RE_WdgMTest();
     Run_Actuator();
     TestModeUser_B();
+    ReadHwInput_func();
+    CheckInputFault_func();
   }
   else
   {
