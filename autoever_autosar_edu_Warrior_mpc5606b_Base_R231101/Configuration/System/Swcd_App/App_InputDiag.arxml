@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="a0449bff-326f-4da1-bd45-feec36dc78e2">
+      <SHORT-NAME>App_InputDiag</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="b490729f-cf24-49e7-874e-a70266f196f0">
+          <SHORT-NAME>SWC_InputDiag</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="ece88520-1e69-4a6e-bd92-f6c785bf225c">
+              <SHORT-NAME>P_DriverInputValidatedData</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverValidatedData/DriverValidatedData</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverValidatedData</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="66252008-2411-4e70-8bdb-cafe9f0f4c6a">
+              <SHORT-NAME>R_DriverInput</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/BrakeSw</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/AccelSw</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/SocLevel</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/VehicleSpeed</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/ReadStatus</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputData</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="6802bc52-13d5-4085-9eda-27ef77e7518e">
+              <SHORT-NAME>InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="c48d3c25-cd2f-445f-bfcd-709aee45f7a6">
+                  <SHORT-NAME>TE_RE_CheckInputFault</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/App_InputDiag/SWC_InputDiag/InternalBehavior/RE_CheckInputFault</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <PORT-API-OPTIONS>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-REF>
+                </PORT-API-OPTION>
+                <PORT-API-OPTION>
+                  <ENABLE-TAKE-ADDRESS>false</ENABLE-TAKE-ADDRESS>
+                  <INDIRECT-API>false</INDIRECT-API>
+                  <PORT-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-REF>
+                </PORT-API-OPTION>
+              </PORT-API-OPTIONS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="e96b3d78-51d8-4dce-9c61-bc0ded915b7c">
+                  <SHORT-NAME>RE_CheckInputFault</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="5d126dfb-6a87-4547-8a7d-807608eb4312">
+                      <SHORT-NAME>DRPBA_RE_CheckInputFault_R_DriverInput_AccelSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/AccelSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="15a9e8f2-4fef-4b6b-8ad8-e67f1df020d7">
+                      <SHORT-NAME>DRPBA_RE_CheckInputFault_R_DriverInput_BrakeSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="b5b657db-5987-4ed5-86e8-ea2cb6098dda">
+                      <SHORT-NAME>DRPBA_RE_CheckInputFault_R_DriverInput_ReadStatus</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/ReadStatus</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8231dbf5-5fb0-421c-be44-f019d463a884">
+                      <SHORT-NAME>DRPBA_RE_CheckInputFault_R_DriverInput_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8d559ad2-891f-4828-adf7-e356da52f6de">
+                      <SHORT-NAME>DRPBA_RE_CheckInputFault_R_DriverInput_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="3a3e51f4-aaf4-4ec9-9fe3-6335d9165613">
+                      <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_DriverValidatedData</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverValidatedData/DriverValidatedData</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>CheckInputFault_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="2e2d1792-033d-41c5-b6d2-60f39b0626d2">
+          <SHORT-NAME>SWC_DummyHwInput</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="b92f5ad5-56ea-4609-972d-5fb093fc5671">
+              <SHORT-NAME>P_DriverInput</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputData</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="f459dd7e-5380-4827-8985-4b068c94ea85">
+              <SHORT-NAME>InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="02084644-3aae-4de7-9267-bc6912cb04c7">
+                  <SHORT-NAME>TE_RE_ReadHwInput</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/App_InputDiag/SWC_DummyHwInput/InternalBehavior/RE_ReadHwInput</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="8b601eba-b50a-4a6c-9356-bc95056b2730">
+                  <SHORT-NAME>RE_ReadHwInput</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="1466bf99-bb99-47c2-8506-15fb5b3ef97c">
+                      <SHORT-NAME>DSP_RE_ReadHwInput_If_DriverInputData_AccelSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_DummyHwInput/P_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/AccelSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="e5969538-6dcd-44ca-98d1-50c9906f1f04">
+                      <SHORT-NAME>DSP_RE_ReadHwInput_If_DriverInputData_BrakeSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_DummyHwInput/P_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="304e1e81-4bf6-4042-bb20-efdc71d13284">
+                      <SHORT-NAME>DSP_RE_ReadHwInput_If_DriverInputData_ReadStatus</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_DummyHwInput/P_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/ReadStatus</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="20ec8d40-8bb7-4c04-8c7b-de52d9be5e48">
+                      <SHORT-NAME>DSP_RE_ReadHwInput_If_DriverInputData_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_DummyHwInput/P_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="97776aa0-2861-4f86-945d-709da687bbb4">
+                      <SHORT-NAME>DSP_RE_ReadHwInput_If_DriverInputData_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_DummyHwInput/P_DriverInput</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputData/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>ReadHwInput_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
