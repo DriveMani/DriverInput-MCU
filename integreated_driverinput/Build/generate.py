@@ -697,7 +697,7 @@ try:
             Swcd_Bsw_Dem, Swcd_Bsw_EcuM, Swcd_FiM, Swcd_Bsw_NvM,
             Swcd_IoHwAb, Swcd_WdgM, Swcd_WdgM_Fixed,
             # Swcd_App
-            App_Dcm, App_Dem, App_FiM, App_ComM, App_CanCom, Interface_common,
+            App_Dcm, App_Dem, App_FiM, App_ComM, App_CanCom, Interface_Common,
             App_WdgM, App_ErrM, App_Mode, App_InputDiag, App_HwInput, App_LedCtrl,
             # DB
             Project,

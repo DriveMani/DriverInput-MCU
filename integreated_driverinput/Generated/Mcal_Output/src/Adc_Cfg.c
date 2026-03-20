@@ -951,10 +951,10 @@ STATIC CONST(Adc_LLD_ChannelConfiguration, ADC_CONST) Adc_Channels_CfgPC_0[] =
     (uint32)0
 #endif /* (ADC_ENABLE_LIMIT_CHECK == STD_ON) */
   },
-  /**< @brief Hardware Unit ADC_UNIT_0  --  ANS_3 */
+  /**< @brief Hardware Unit ADC_UNIT_0  --  ANX_0_CH_64 */
   {
     /**< @brief Adc physical channel */
-      (Adc_ChannelType)(ADC_ID_CHANNEL(35)), 
+      (Adc_ChannelType)(ADC_ID_CHANNEL(64)), 
         /**< @brief Threshold register configured */
     ADC_THRESHOLD_REG_0,
     /**< @brief Threshold register value */
@@ -977,10 +977,10 @@ STATIC CONST(Adc_LLD_ChannelConfiguration, ADC_CONST) Adc_Channels_CfgPC_0[] =
     (uint32)0
 #endif /* (ADC_ENABLE_LIMIT_CHECK == STD_ON) */
   },
-  /**< @brief Hardware Unit ADC_UNIT_0  --  ANS_4 */
+  /**< @brief Hardware Unit ADC_UNIT_0  --  ANX_0_CH_65 */
   {
     /**< @brief Adc physical channel */
-      (Adc_ChannelType)(ADC_ID_CHANNEL(36)), 
+      (Adc_ChannelType)(ADC_ID_CHANNEL(65)), 
         /**< @brief Threshold register configured */
     ADC_THRESHOLD_REG_0,
     /**< @brief Threshold register value */
@@ -2831,9 +2831,9 @@ STATIC CONST(Adc_LLD_GroupConfiguration, ADC_CONST) Adc_Groups_CfgPC[ADC_GROUPS]
     /**< @brief Precision configured channels */
     (uint32)0x0,
     /**< @brief Extended configured channels */
-    (uint32)0x8,
-    /**< @brief External configured channels */
     (uint32)0x0,
+    /**< @brief External configured channels */
+    (uint32)0x1,
   
     /**< @brief Presampling for Precision channels */
     (uint32)0x0U,
@@ -2864,9 +2864,9 @@ STATIC CONST(Adc_LLD_GroupConfiguration, ADC_CONST) Adc_Groups_CfgPC[ADC_GROUPS]
     /**< @brief Conversion time */
     (ADC_INPLATCH_VALUE(ADC_HALF_CLOCK_CYCLE)|ADC_INPCMP_VALUE(ADC_TWO_LATCH_CYCLE)|ADC_INPSAMP_VALUE(3)),
     /**< @brief Last Channel configured */
-    (uint32)(35),
+    (uint32)(64),
     /**< @brief First Channel Configured */
-    (ADC_ID_CHANNEL(35)<<(uint32)2),
+    (ADC_ID_CHANNEL(64)<<(uint32)2),
     /**< @brief Enables or Disables the ADC and DMA interrupts */
     (uint8)STD_ON
   },
@@ -2909,9 +2909,9 @@ STATIC CONST(Adc_LLD_GroupConfiguration, ADC_CONST) Adc_Groups_CfgPC[ADC_GROUPS]
     /**< @brief Precision configured channels */
     (uint32)0x0,
     /**< @brief Extended configured channels */
-    (uint32)0x10,
-    /**< @brief External configured channels */
     (uint32)0x0,
+    /**< @brief External configured channels */
+    (uint32)0x2,
   
     /**< @brief Presampling for Precision channels */
     (uint32)0x0U,
@@ -2942,9 +2942,9 @@ STATIC CONST(Adc_LLD_GroupConfiguration, ADC_CONST) Adc_Groups_CfgPC[ADC_GROUPS]
     /**< @brief Conversion time */
     (ADC_INPLATCH_VALUE(ADC_HALF_CLOCK_CYCLE)|ADC_INPCMP_VALUE(ADC_TWO_LATCH_CYCLE)|ADC_INPSAMP_VALUE(3)),
     /**< @brief Last Channel configured */
-    (uint32)(36),
+    (uint32)(65),
     /**< @brief First Channel Configured */
-    (ADC_ID_CHANNEL(36)<<(uint32)2),
+    (ADC_ID_CHANNEL(65)<<(uint32)2),
     /**< @brief Enables or Disables the ADC and DMA interrupts */
     (uint8)STD_ON
   },
@@ -3845,9 +3845,9 @@ STATIC CONST(Adc_LLD_GroupConfiguration, ADC_CONST) Adc_Groups_CfgPC[ADC_GROUPS]
     /**< @brief Precision configured channels */
     (uint32)0xffff,
     /**< @brief Extended configured channels */
-    (uint32)0xffff,
+    (uint32)0xffe7,
     /**< @brief External configured channels */
-    (uint32)0x0,
+    (uint32)0x3,
   
     /**< @brief Presampling for Precision channels */
     (uint32)0x0U,

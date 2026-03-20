@@ -11,17 +11,9 @@
               <SHORT-NAME>P_VcuToDrv</SHORT-NAME>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_VcuToDrv</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
-            <P-PORT-PROTOTYPE UUID="050a1cbc-c904-441f-afc7-4cb3550da8b7">
-              <SHORT-NAME>P_DrvToVcu</SHORT-NAME>
-              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DrvToVcu</PROVIDED-INTERFACE-TREF>
-            </P-PORT-PROTOTYPE>
             <R-PORT-PROTOTYPE UUID="cd1c18e2-1b6d-4b68-aa72-f571aa5a115f">
               <SHORT-NAME>R_DriverInputValidatedData</SHORT-NAME>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputValidatedData</REQUIRED-INTERFACE-TREF>
-            </R-PORT-PROTOTYPE>
-            <R-PORT-PROTOTYPE UUID="6e1686b0-89a9-4f3a-a685-7470dbb2a73a">
-              <SHORT-NAME>R_VcuToDrv</SHORT-NAME>
-              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_VcuToDrv</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="c9706e3c-1681-4fc2-9ca7-8dc8c1e96cbb">
               <SHORT-NAME>Project_DriverStatus</SHORT-NAME>
@@ -215,6 +207,7 @@
                   <SYMBOL>CanCom_Rx_func</SYMBOL>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>
         </APPLICATION-SW-COMPONENT-TYPE>

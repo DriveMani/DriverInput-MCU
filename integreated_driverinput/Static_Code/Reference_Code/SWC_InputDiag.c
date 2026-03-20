@@ -10,7 +10,7 @@ FUNC(void, SWC_InputDiag_CODE) CheckInputFault_func(void)
     boolean AccelSw = FALSE;
     uint8 SocLevel = 0U;
     uint8 VehicleSpeed = 0U;
-    uint8 DriverInputFault = 0U;
+    boolean DriverInputFault = FALSE;
 
 
     (void)Rte_Read_R_DriverInput_AccelSw(&accel);
@@ -21,7 +21,7 @@ FUNC(void, SWC_InputDiag_CODE) CheckInputFault_func(void)
 
     if (readStatus == FALSE)
     {
-        DriverInputFault = 2U;   /* 2: INPUT_READ_FAIL */
+        DriverInputFault = TRUE;   /* INPUT_READ_FAIL */
     }
     else if ((brake == TRUE) && (accel == TRUE))
     {
@@ -29,7 +29,7 @@ FUNC(void, SWC_InputDiag_CODE) CheckInputFault_func(void)
         AccelSw = accel;
         SocLevel = soc;
         VehicleSpeed = speed;
-        DriverInputFault = 1U;   /* 1: PEDAL_CONFLICT */
+        DriverInputFault = TRUE;   /* PEDAL_CONFLICT */
     }
     else
     {
@@ -37,14 +37,13 @@ FUNC(void, SWC_InputDiag_CODE) CheckInputFault_func(void)
         AccelSw = accel;
         SocLevel = soc;
         VehicleSpeed = speed;
-        DriverInputFault = 0U;   /* 0: NONE */
+        DriverInputFault = FALSE;
     }
 
-
-    	(void)Rte_Write_P_DriverInputValidatedData_BrakeSw(BrakeSw);
-        (void)Rte_Write_P_DriverInputValidatedData_AccelSw(AccelSw);
-        (void)Rte_Write_P_DriverInputValidatedData_SocLevel(SocLevel);
-        (void)Rte_Write_P_DriverInputValidatedData_VehicleSpeed(VehicleSpeed);
-        (void)Rte_Write_P_DriverInputValidatedData_DriverInputFault(DriverInputFault);
+	(void)Rte_Write_P_DriverInputValidatedData_BrakeSw(BrakeSw);
+	(void)Rte_Write_P_DriverInputValidatedData_AccelSw(AccelSw);
+	(void)Rte_Write_P_DriverInputValidatedData_SocLevel(SocLevel);
+	(void)Rte_Write_P_DriverInputValidatedData_VehicleSpeed(VehicleSpeed);
+	(void)Rte_Write_P_DriverInputValidatedData_DriverInputFault(DriverInputFault);
 
 }

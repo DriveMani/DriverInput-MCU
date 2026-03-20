@@ -147,6 +147,7 @@
                   <SYMBOL>LedCtrl_func</SYMBOL>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
             </SWC-INTERNAL-BEHAVIOR>
           </INTERNAL-BEHAVIORS>
         </APPLICATION-SW-COMPONENT-TYPE>

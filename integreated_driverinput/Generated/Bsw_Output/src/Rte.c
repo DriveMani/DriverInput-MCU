@@ -20,72 +20,72 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DBImport\Project.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\Interface_common.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DBImport\Project.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -385,17 +385,17 @@ static VAR(boolean, RTE_VAR_INIT) SchM_GblBIT_NvM_BITP_CallCyclicMemFunction = R
 #include "MemMap.h"
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_AppModeRequestInterface_75_AppMode_1 = RTE_E_UNCONNECTED;
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComMModeRequestInterface_Project_82_ComMMode_Project_2 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_748 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_749 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_AccelSw_835 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_BrakeSw_836 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_ReadStatus_837 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_SocLevel_838 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_839 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_842 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenEnable_874 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenLevel_875 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_876 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_739 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_740 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_AccelSw_826 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_BrakeSw_827 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_ReadStatus_828 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_SocLevel_829 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_830 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_833 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenEnable_865 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenLevel_866 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_867 = RTE_E_UNCONNECTED;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Count = RTE_ZERO;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBET_Dem_ReleasedTrigger_ToNvM_Queue = RTE_ZERO;
 static VAR(uint8, RTE_VAR_INIT) SchM_GucBIT_NvM_BITP_CallCyclicMemFunction_Count = RTE_ZERO;
@@ -413,19 +413,19 @@ static VAR(TickType, RTE_DATA) Rte_GddBaseCntValueInSchMOsCounter_0 = 0;
 
 #define RTE_START_SEC_VAR_CLEARED_8
 #include "MemMap.h"
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_748;
-static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_749;
-static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_AccelSw_835;
-static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_BrakeSw_836;
-static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_ReadStatus_837;
-static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_VcuToDrv_71_RegenEnable_874;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_739;
+static VAR(ComM_UserHandleArrayType, RTE_VAR_CLEARED) Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_740;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_AccelSw_826;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_BrakeSw_827;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputData_68_ReadStatus_828;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_DriverInputValidatedData_69_DriverInputFault_833;
+static VAR(boolean, RTE_VAR_CLEARED) Rte_GblIf_VcuToDrv_71_RegenEnable_865;
 static VAR(uint8, RTE_VAR_CLEARED) Rte_GucAppModeRequestInterface_75_AppMode_1;
 static VAR(uint8, RTE_VAR_CLEARED) Rte_GucComMModeRequestInterface_Project_82_ComMMode_Project_2;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_68_SocLevel_838;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_68_VehicleSpeed_839;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputValidatedData_69_DriverInputFault_842;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_VcuToDrv_71_RegenLevel_875;
-static VAR(uint8, RTE_VAR_CLEARED) Rte_GucTestModeRequestInterface_41_TestMode_876;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_68_SocLevel_829;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_DriverInputData_68_VehicleSpeed_830;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucIf_VcuToDrv_71_RegenLevel_866;
+static VAR(uint8, RTE_VAR_CLEARED) Rte_GucTestModeRequestInterface_41_TestMode_867;
 
 #define RTE_STOP_SEC_VAR_CLEARED_8
 #include "MemMap.h"
@@ -444,11 +444,11 @@ static VAR(Rte_ModeType_EcuMode, RTE_DATA) Rte_GucmodeSwitchPort_EcuMode_OldMode
 
 #define RTE_START_SEC_CONST_8
 #include "MemMap.h"
-CONST(boolean, RTE_CONST) Rte_GblProject_VCURegenStatus_63_RegenEnable_730_InitValue = 0U;
+CONST(boolean, RTE_CONST) Rte_GblProject_VCURegenStatus_63_RegenEnable_724_InitValue = 0U;
 CONST(boolean, RTE_CONST) Rte_GblSWC_CanCom_Project_DriverStatus_AccelSw_InitValue = 0U;
 CONST(boolean, RTE_CONST) Rte_GblSWC_CanCom_Project_DriverStatus_BrakeSw_InitValue = 0U;
-CONST(uint8, RTE_CONST) Rte_GucProject_VCURegenStatus_63_LimitReason_729_InitValue = 0U;
-CONST(uint8, RTE_CONST) Rte_GucProject_VCURegenStatus_63_RegenLevel_731_InitValue = 0U;
+CONST(uint8, RTE_CONST) Rte_GucProject_VCURegenStatus_63_LimitReason_723_InitValue = 0U;
+CONST(uint8, RTE_CONST) Rte_GucProject_VCURegenStatus_63_RegenLevel_725_InitValue = 0U;
 CONST(uint8, RTE_CONST) Rte_GucSWC_CanCom_Project_DriverStatus_AliveCounter_InitValue = 0U;
 CONST(uint8, RTE_CONST) Rte_GucSWC_CanCom_Project_DriverStatus_DriverInputFault_InitValue = 0U;
 CONST(uint8, RTE_CONST) Rte_GucSWC_CanCom_Project_DriverStatus_SocLevel_InitValue = 0U;
@@ -873,9 +873,9 @@ Rte_Write_SWC_HwInput_P_DriverInputData_AccelSw(IN VAR(boolean, AUTOMATIC) Data)
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start(Data);
 
-  Rte_GblIf_DriverInputData_68_AccelSw_835 = Data;
+  Rte_GblIf_DriverInputData_68_AccelSw_826 = Data;
   
-  Rte_GucStatus_If_DriverInputData_68_AccelSw_835 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputData_68_AccelSw_826 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return(Data);
@@ -891,9 +891,9 @@ Rte_Write_SWC_HwInput_P_DriverInputData_BrakeSw(IN VAR(boolean, AUTOMATIC) Data)
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_BrakeSw_Start(Data);
 
-  Rte_GblIf_DriverInputData_68_BrakeSw_836 = Data;
+  Rte_GblIf_DriverInputData_68_BrakeSw_827 = Data;
   
-  Rte_GucStatus_If_DriverInputData_68_BrakeSw_836 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputData_68_BrakeSw_827 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_BrakeSw_Return(Data);
@@ -909,9 +909,9 @@ Rte_Write_SWC_HwInput_P_DriverInputData_ReadStatus(IN VAR(boolean, AUTOMATIC) Da
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start(Data);
 
-  Rte_GblIf_DriverInputData_68_ReadStatus_837 = Data;
+  Rte_GblIf_DriverInputData_68_ReadStatus_828 = Data;
   
-  Rte_GucStatus_If_DriverInputData_68_ReadStatus_837 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputData_68_ReadStatus_828 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return(Data);
@@ -927,9 +927,9 @@ Rte_Write_SWC_HwInput_P_DriverInputData_SocLevel(IN VAR(uint8, AUTOMATIC) Data)
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start(Data);
 
-  Rte_GucIf_DriverInputData_68_SocLevel_838 = Data;
+  Rte_GucIf_DriverInputData_68_SocLevel_829 = Data;
   
-  Rte_GucStatus_If_DriverInputData_68_SocLevel_838 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputData_68_SocLevel_829 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return(Data);
@@ -945,9 +945,9 @@ Rte_Write_SWC_HwInput_P_DriverInputData_VehicleSpeed(IN VAR(uint8, AUTOMATIC) Da
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_VehicleSpeed_Start(Data);
 
-  Rte_GucIf_DriverInputData_68_VehicleSpeed_839 = Data;
+  Rte_GucIf_DriverInputData_68_VehicleSpeed_830 = Data;
   
-  Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_839 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_830 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_HwInput_P_DriverInputData_VehicleSpeed_Return(Data);
@@ -984,16 +984,16 @@ Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw(IN VAR(boolean, AUTOM
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
-Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault(IN VAR(uint8, AUTOMATIC) Data)
+Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault(IN VAR(boolean, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault_Start(Data);
 
-  Rte_GucIf_DriverInputValidatedData_69_DriverInputFault_842 = Data;
+  Rte_GblIf_DriverInputValidatedData_69_DriverInputFault_833 = Data;
   
-  Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_842 = RTE_E_OK;
+  Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_833 = RTE_E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault_Return(Data);
@@ -1077,7 +1077,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_748,
+      &Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_739,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -1085,7 +1085,7 @@ Rte_Read_SWC_ComM_CR000_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR000_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_748;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_739;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1099,7 +1099,7 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
     Rte_Memcpy
     (
       Data,
-      &Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_749,
+      &Rte_GstComM_CurrentChannelRequest_85_fullComRequestors_740,
       sizeof(ComM_UserHandleArrayType)
     );
   }
@@ -1107,7 +1107,7 @@ Rte_Read_SWC_ComM_CR001_R_fullComRequestors(OUT P2VAR(ComM_UserHandleArrayType, 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_ComM_CR001_R_fullComRequestors_Return(Data);
 
-  return Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_749;
+  return Rte_GucStatus_ComM_CurrentChannelRequest_85_fullComRequestors_740;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1118,13 +1118,13 @@ Rte_Read_SWC_InputDiag_R_DriverInput_AccelSw(OUT P2VAR(boolean, AUTOMATIC, RTE_A
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GblIf_DriverInputData_68_AccelSw_835;
+    *Data = Rte_GblIf_DriverInputData_68_AccelSw_826;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputData_68_AccelSw_835;
+  return Rte_GucStatus_If_DriverInputData_68_AccelSw_826;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1135,13 +1135,13 @@ Rte_Read_SWC_InputDiag_R_DriverInput_BrakeSw(OUT P2VAR(boolean, AUTOMATIC, RTE_A
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GblIf_DriverInputData_68_BrakeSw_836;
+    *Data = Rte_GblIf_DriverInputData_68_BrakeSw_827;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputData_68_BrakeSw_836;
+  return Rte_GucStatus_If_DriverInputData_68_BrakeSw_827;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1152,13 +1152,13 @@ Rte_Read_SWC_InputDiag_R_DriverInput_ReadStatus(OUT P2VAR(boolean, AUTOMATIC, RT
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GblIf_DriverInputData_68_ReadStatus_837;
+    *Data = Rte_GblIf_DriverInputData_68_ReadStatus_828;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputData_68_ReadStatus_837;
+  return Rte_GucStatus_If_DriverInputData_68_ReadStatus_828;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1169,13 +1169,13 @@ Rte_Read_SWC_InputDiag_R_DriverInput_SocLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_AP
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucIf_DriverInputData_68_SocLevel_838;
+    *Data = Rte_GucIf_DriverInputData_68_SocLevel_829;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputData_68_SocLevel_838;
+  return Rte_GucStatus_If_DriverInputData_68_SocLevel_829;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1186,30 +1186,30 @@ Rte_Read_SWC_InputDiag_R_DriverInput_VehicleSpeed(OUT P2VAR(uint8, AUTOMATIC, RT
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucIf_DriverInputData_68_VehicleSpeed_839;
+    *Data = Rte_GucIf_DriverInputData_68_VehicleSpeed_830;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_InputDiag_R_DriverInput_VehicleSpeed_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_839;
+  return Rte_GucStatus_If_DriverInputData_68_VehicleSpeed_830;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
-Rte_Read_SWC_LedCtrl_R_DriverInputValidatedData_DriverInputFault(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data)
+Rte_Read_SWC_LedCtrl_R_DriverInputValidatedData_DriverInputFault(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data)
 {
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_LedCtrl_R_DriverInputValidatedData_DriverInputFault_Start(Data);
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucIf_DriverInputValidatedData_69_DriverInputFault_842;
+    *Data = Rte_GblIf_DriverInputValidatedData_69_DriverInputFault_833;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_LedCtrl_R_DriverInputValidatedData_DriverInputFault_Return(Data);
 
-  return Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_842;
+  return Rte_GucStatus_If_DriverInputValidatedData_69_DriverInputFault_833;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1220,13 +1220,13 @@ Rte_Read_SWC_LedCtrl_R_VcuToDrv_RegenEnable(OUT P2VAR(boolean, AUTOMATIC, RTE_AP
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GblIf_VcuToDrv_71_RegenEnable_874;
+    *Data = Rte_GblIf_VcuToDrv_71_RegenEnable_865;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_LedCtrl_R_VcuToDrv_RegenEnable_Return(Data);
 
-  return Rte_GucStatus_If_VcuToDrv_71_RegenEnable_874;
+  return Rte_GucStatus_If_VcuToDrv_71_RegenEnable_865;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1237,13 +1237,13 @@ Rte_Read_SWC_LedCtrl_R_VcuToDrv_RegenLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucIf_VcuToDrv_71_RegenLevel_875;
+    *Data = Rte_GucIf_VcuToDrv_71_RegenLevel_866;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_LedCtrl_R_VcuToDrv_RegenLevel_Return(Data);
 
-  return Rte_GucStatus_If_VcuToDrv_71_RegenLevel_875;
+  return Rte_GucStatus_If_VcuToDrv_71_RegenLevel_866;
 }
 
 FUNC(Std_ReturnType, RTE_CODE)
@@ -1254,13 +1254,13 @@ Rte_Read_SWC_TestModeManager_TestModeRequestInterface_TestMode(OUT P2VAR(uint8, 
 
   if (Data != NULL_PTR)
   {
-    *Data = Rte_GucTestModeRequestInterface_41_TestMode_876;
+    *Data = Rte_GucTestModeRequestInterface_41_TestMode_867;
   }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ReadHook_SWC_TestModeManager_TestModeRequestInterface_TestMode_Return(Data);
 
-  return Rte_GucStatus_TestModeRequestInterface_41_TestMode_876;
+  return Rte_GucStatus_TestModeRequestInterface_41_TestMode_867;
 }
 
 /*******************************************************************************

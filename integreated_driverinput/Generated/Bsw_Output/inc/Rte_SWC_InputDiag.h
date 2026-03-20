@@ -20,72 +20,72 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DBImport\Project.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_App\Interface_common.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\MOBIUS Project\DriverInput-MCU\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DBImport\Project.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -296,7 +296,7 @@ extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw(IN VAR(boolean, AUTOMATIC) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
-Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault(IN VAR(uint8, AUTOMATIC) Data);
+Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_DriverInputFault(IN VAR(boolean, AUTOMATIC) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_InputDiag_P_DriverInputValidatedData_SocLevel(IN VAR(uint8, AUTOMATIC) Data);
