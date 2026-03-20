@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="09157ed0-6d0a-4255-9ca0-4234c50fc720">
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE UUID="3ee958e0-331d-44a5-8335-ce6df22cabaa">
+          <SHORT-NAME>CSWC_RootCompostion</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="2e39755e-d113-4b84-9e9f-fe69b2db2ea4">
+              <SHORT-NAME>SWC_Actuator</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_FiM/SWC_Actuator</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="0f84eefa-aa2c-438a-bfa2-45a2b5d2cfd3">
+              <SHORT-NAME>SWC_AppMode</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppMode/ApplicationSwComponentTypes/SWC_AppMode</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="a12d040f-bf21-41ef-b70b-1c3f1ecbcffb">
+              <SHORT-NAME>SWC_CanCom</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/CanCom/SWC_CanCom</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="04af7000-1db3-4253-ba3b-28fdb4352862">
+              <SHORT-NAME>SWC_ComM</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_ComM/SWC_ComM</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="5e9d1296-3adc-400b-9503-6eb68a245aae">
+              <SHORT-NAME>SWC_DiagnosticMonitor</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppSwComponent_Dem/SwComponentType/SWC_DiagnosticMonitor</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="c78e0305-9cba-4f34-9928-223f101d5213">
+              <SHORT-NAME>SWC_DiagnosticService</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppSwComponent_Dcm/SwComponentType/SWC_DiagnosticService</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="e31e2ad8-c60d-4432-9605-a65fbb74b835">
+              <SHORT-NAME>SWC_HwInput</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/HwInput/SWC_HwInput</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="4e913b4e-57a1-4c16-aa21-8e515a9ad58a">
+              <SHORT-NAME>SWC_ErrM</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ErrM/ApplicationSwComponentTypes/SWC_ErrM</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="0945aac9-f5cb-44e5-9da7-d7c4adb79246">
+              <SHORT-NAME>SWC_InputDiag</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_InputDiag/SWC_InputDiag</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="38992c4f-6d73-41a9-b5cb-0309e61da0da">
+              <SHORT-NAME>SWC_LedCtrl</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/LedCtrl/SWC_LedCtrl</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="3fc4027b-3a5a-4186-a741-3262d3308c4b">
+              <SHORT-NAME>SWC_TestModeManager</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppMode/ApplicationSwComponentTypes/SWC_TestModeManager</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="c3fc448c-196a-4256-9afb-7f41378b2a63">
+              <SHORT-NAME>SWC_TestModeUser</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AppMode/ApplicationSwComponentTypes/SWC_TestModeUser</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="313e7803-9aff-41f8-87fe-6a2ce62535f8">
+              <SHORT-NAME>SWC_WdgMTest</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/App_WdgM/SWC_WdgMTest</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <ASSEMBLY-SW-CONNECTOR UUID="5d925c34-3ed7-4ecd-bd66-6de9694d4a81">
+              <SHORT-NAME>P_DriverInputValidatedDataOfSWC_InputDiagToR_DriverInputValidatedDataOfSWC_CanCom</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_InputDiag</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_CanCom</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="1d3a378b-3083-46fa-83b9-62a5708b217e">
+              <SHORT-NAME>P_DriverInputValidatedDataOfSWC_InputDiagToR_DriverInputValidatedDataOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_InputDiag</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_DriverInputValidatedData</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="526869eb-81c0-4a9f-92e3-8d3e02fe6ea2">
+              <SHORT-NAME>P_DriverInputDataOfSWC_HwInputToR_DriverInputOfSWC_InputDiag</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/HwInput/SWC_HwInput/P_DriverInputData</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_InputDiag</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/R_DriverInput</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="1ccb00e0-b988-4ae2-af57-8b7dbd4dff1e">
+              <SHORT-NAME>P_VcuToDrvOfSWC_CanComToR_VcuToDrvOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_CanCom</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/P_VcuToDrv</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AUTOSAR/CSWC_RootCompostion/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_VcuToDrv</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+
