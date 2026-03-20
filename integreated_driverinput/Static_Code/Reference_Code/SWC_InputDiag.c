@@ -1,55 +1,50 @@
 #include "Rte_SWC_InputDiag.h"
 
-
 FUNC(void, SWC_InputDiag_CODE) CheckInputFault_func(void)
 {
 
-    boolean accel, brake, readStatus, validatedData;
+    boolean accel, brake, readStatus;
     uint8 soc, speed;
 
-
-
+    boolean BrakeSw = FALSE;
+    boolean AccelSw = FALSE;
+    uint8 SocLevel = 0U;
+    uint8 VehicleSpeed = 0U;
+    uint8 DriverInputFault = 0U;
 
 
     (void)Rte_Read_R_DriverInput_AccelSw(&accel);
     (void)Rte_Read_R_DriverInput_BrakeSw(&brake);
     (void)Rte_Read_R_DriverInput_SocLevel(&soc);
     (void)Rte_Read_R_DriverInput_VehicleSpeed(&speed);
-    (void)Rte_Read_R_DriverInput_ReadStatus(&readStatus); // 하드웨어 읽기 성공 여부
+    (void)Rte_Read_R_DriverInput_ReadStatus(&readStatus);
 
-
-
-    // [CASE 1] 읽기 실패 시 (ReadStatus가 FALSE인 경우 등)
     if (readStatus == FALSE)
     {
-    	brake = FALSE;         // 기본값
-        accel = FALSE;         // 기본값
-        soc = 0U;           // 기본값
-        speed = 0U;       // 기본값
-        readStatus = 2U;   // 2: INPUT_READ_FAIL
-        validatedData = FALSE;
+        DriverInputFault = 2U;   /* 2: INPUT_READ_FAIL */
     }
-    // [CASE 2] 페달 모순 검사 (Brake & Accel 동시 입력)
     else if ((brake == TRUE) && (accel == TRUE))
     {
-    	brake = brake;
-    	accel = accel;
-    	soc = soc;
-    	speed = speed;
-    	readStatus = 1U;   // 1: PEDAL_CONFLICT
-    	validatedData = FALSE;
+        BrakeSw = brake;
+        AccelSw = accel;
+        SocLevel = soc;
+        VehicleSpeed = speed;
+        DriverInputFault = 1U;   /* 1: PEDAL_CONFLICT */
     }
-    // [CASE 3] 정상
     else
     {
-    	brake = brake;
-    	accel = accel;
-    	soc = soc;
-    	speed = speed;
-    	readStatus = 0U;   // 0: NONE
-    	validatedData = TRUE;
+        BrakeSw = brake;
+        AccelSw = accel;
+        SocLevel = soc;
+        VehicleSpeed = speed;
+        DriverInputFault = 0U;   /* 0: NONE */
     }
 
 
-    (void)Rte_Write_P_DriverInputValidatedData_DriverInputFault(&validatedData);
+    	(void)Rte_Write_P_DriverInputValidatedData_BrakeSw(BrakeSw);
+        (void)Rte_Write_P_DriverInputValidatedData_AccelSw(AccelSw);
+        (void)Rte_Write_P_DriverInputValidatedData_SocLevel(SocLevel);
+        (void)Rte_Write_P_DriverInputValidatedData_VehicleSpeed(VehicleSpeed);
+        (void)Rte_Write_P_DriverInputValidatedData_DriverInputFault(DriverInputFault);
+
 }

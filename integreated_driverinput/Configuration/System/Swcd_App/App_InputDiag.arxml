@@ -130,12 +130,52 @@
                     </VARIABLE-ACCESS>
                   </DATA-RECEIVE-POINT-BY-ARGUMENTS>
                   <DATA-SEND-POINTS>
-                    <VARIABLE-ACCESS UUID="dc22b045-94c1-4e4a-9135-d4e1753d7be8">
+                    <VARIABLE-ACCESS UUID="b4be1e18-d5c3-47ee-a50a-b0fd0d1c18b4">
+                      <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_AccelSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/AccelSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8cec3097-723c-4aa7-8155-fe9616541935">
+                      <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_BrakeSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="447a613f-a630-45e7-b853-46ef73d774aa">
                       <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_DriverInputFault</SHORT-NAME>
                       <ACCESSED-VARIABLE>
                         <AUTOSAR-VARIABLE-IREF>
                           <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
                           <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/DriverInputFault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="54f7875f-42d1-40c1-950e-40e0aa353e85">
+                      <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="a1e40d52-82bf-49c0-8921-327d950becf1">
+                      <SHORT-NAME>DSP_RE_CheckInputFault_P_DriverInputValidatedData_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/App_InputDiag/SWC_InputDiag/P_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                       <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>

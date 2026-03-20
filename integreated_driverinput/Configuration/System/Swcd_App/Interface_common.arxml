@@ -26,7 +26,7 @@
             </VARIABLE-DATA-PROTOTYPE>
             <VARIABLE-DATA-PROTOTYPE UUID="6b65d8c3-e0e6-4519-9d8d-4424399ce4b8">
               <SHORT-NAME>DriverInputFault</SHORT-NAME>
-              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_DataTypes/ImplementationDataTypes/uint8</TYPE-TREF>
             </VARIABLE-DATA-PROTOTYPE>
           </DATA-ELEMENTS>
         </SENDER-RECEIVER-INTERFACE>
