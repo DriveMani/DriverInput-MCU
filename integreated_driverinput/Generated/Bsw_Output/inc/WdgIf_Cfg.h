@@ -18,8 +18,8 @@
 **                      File Generation Information                           **
 *******************************************************************************/
 /*
- * INPUT FILE:    Configuration\ECU\Mcal\Ecud_Wdg.arxml
- *                Configuration\ECU\Ecud_WdgIf.arxml
+ * INPUT FILE:    Configuration\ECU\Ecud_WdgIf.arxml
+ *                Configuration\ECU\Mcal\Ecud_Wdg.arxml
  * GENERATED ON:  This timestamp is removed.
  */
 

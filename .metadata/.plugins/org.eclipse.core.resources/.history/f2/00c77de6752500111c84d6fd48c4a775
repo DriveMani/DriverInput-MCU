@@ -25,11 +25,10 @@ FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
     ret3 = Rte_Read_R_DriverInputValidatedData_DriverInputFault(&driverInputFault);
 
     if (ret1!=E_OK || ret2!=E_OK || ret3!=E_OK) {
-    	(void)Rte_Call_R_Led1Ctrl_WriteDirect(led1);
-    	(void)Rte_Call_R_Led2Ctrl_WriteDirect(led2);
-    	(void)Rte_Call_R_Led3Ctrl_WriteDirect(led3);
-    	(void)Rte_Call_R_Led4Ctrl_WriteDirect(led4);
-    	return;
+    	led1 = LED_OFF;
+    	led2 = LED_OFF;
+    	led3 = LED_OFF;
+    	led4 = LED_OFF;
     }
 
 

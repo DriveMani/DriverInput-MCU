@@ -24,8 +24,8 @@
 *******************************************************************************/
 
 /*
- * INPUT FILE:    Configuration\ECU\Ecud_Dem.arxml
- *                Configuration\ECU\Ecud_FiM.arxml
+ * INPUT FILE:    Configuration\ECU\Ecud_FiM.arxml
+ *                Configuration\ECU\Ecud_Dem.arxml
  * GENERATED ON:  This timestamp is removed.
  */  
 

@@ -427,28 +427,6 @@ extern void Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Start
 #define Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Start_Return(DataIn_routineControlOption_StartInSignal,	OpStatus,	DataOut_routineStatus_StartOutSignal,	ErrorCode) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Start
 #endif
@@ -471,6 +449,28 @@ extern void Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailab
 	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) supported);
 #else
 #define Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Return(DID,	supported) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Stop_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -523,30 +523,6 @@ extern void Rte_CallHook_Dcm_DataServices_RPM_ReturnControlToECU_Return(OUT P2VA
 #define Rte_CallHook_Dcm_DataServices_RPM_ReturnControlToECU_Return(ErrorCode) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start(IN P2CONST(uint8, AUTOMATIC, RTE_APPL_DATA) ControlStateInfo,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start(ControlStateInfo,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return(IN P2CONST(uint8, AUTOMATIC, RTE_APPL_DATA) ControlStateInfo,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return(ControlStateInfo,	ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_RequestResults_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_RequestResults_Start
 #endif
@@ -571,6 +547,30 @@ extern void Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Reque
 	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_RequestResults_Return(OpStatus,	DataOut_routineStatus_ResOutSignal,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start(IN P2CONST(uint8, AUTOMATIC, RTE_APPL_DATA) ControlStateInfo,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Start(ControlStateInfo,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return(IN P2CONST(uint8, AUTOMATIC, RTE_APPL_DATA) ControlStateInfo,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ShortTermAdjustment_Return(ControlStateInfo,	ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUHardwareVersionNumber_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -617,28 +617,6 @@ extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_Condit
 #define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start
 #endif
@@ -659,6 +637,28 @@ extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start(OUT P2VAR(uint8
 extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_WriteData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -827,28 +827,6 @@ extern void Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceReq
 #define Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Confirmation_Return(SID,	ReqType,	SourceAddress,	ConfirmationStatus) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
 #endif
@@ -869,6 +847,28 @@ extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Sta
 extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -1079,6 +1079,32 @@ extern void Rte_CallHook_Dcm_DataServices_RPM_ConditionCheckRead_Return(OUT P2VA
 #define Rte_CallHook_Dcm_DataServices_RPM_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start)
+#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start
+extern void Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start(IN Dcm_OpStatusType OpStatus,
+	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start(OpStatus,	Seed,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return)
+#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return
+extern void Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return(IN Dcm_OpStatusType OpStatus,
+	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return(OpStatus,	Seed,	ErrorCode) ((void)(0))
+#endif
+
 #if defined(Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Indication_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Indication_Start
 #endif
@@ -1109,32 +1135,6 @@ extern void Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceReq
 	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Indication_Return(SID,	RequestData,	DataSize,	ReqType,	SourceAddress,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start)
-#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start
-extern void Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start(IN Dcm_OpStatusType OpStatus,
-	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Start(OpStatus,	Seed,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return)
-#undef Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return
-extern void Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return(IN Dcm_OpStatusType OpStatus,
-	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_SecurityAccess_L9_GetSeed_Return(OpStatus,	Seed,	ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_SecurityAccess_L1_CompareKey_Start) && (RTE_VFB_TRACE == RTE_FALSE)

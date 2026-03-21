@@ -48,6 +48,8 @@ FUNC(void, SWC_CanCom_CODE) CanCom_Rx_func(void)
     ret5 = Rte_Write_P_VcuToDrv_RegenLevel(regenLevel);
     ret6 = Rte_Write_P_VcuToDrv_LimitReason(limitReason);
 
+    (void)ret1; (void)ret2; (void)ret3;
+    (void)ret4; (void)ret5; (void)ret6;
 }
 
 #define SWC_CanCom_STOP_SEC_CODE

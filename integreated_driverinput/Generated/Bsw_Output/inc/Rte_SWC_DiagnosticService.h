@@ -356,16 +356,16 @@ extern const struct Rte_CDS_SWC_DiagnosticService Rte_Inst_SWC_DiagnosticService
 #define RTE_E_DataServices_ECT_E_NOT_OK 1U
 #endif
 
-#ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING
-#define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING 10U
-#endif
-
 #ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_E_NOT_OK
 #define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_E_NOT_OK 1U
 #endif
 
 #ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_FORCE_RCRRP
 #define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_FORCE_RCRRP 12U
+#endif
+
+#ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING
+#define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING 10U
 #endif
 
 #ifndef RTE_E_DCMServices_E_NOT_OK

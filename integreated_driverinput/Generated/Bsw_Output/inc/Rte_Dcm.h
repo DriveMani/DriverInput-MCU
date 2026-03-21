@@ -340,10 +340,6 @@ extern const struct Rte_CDS_Dcm Rte_Inst_Dcm;
 #define RTE_E_DataServices_VehicleSpeed_E_NOT_OK 1U
 #endif
 
-#ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING
-#define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING 10U
-#endif
-
 #ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_E_NOT_OK
 #define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_E_NOT_OK 1U
 #endif
@@ -352,24 +348,28 @@ extern const struct Rte_CDS_Dcm Rte_Inst_Dcm;
 #define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_FORCE_RCRRP 12U
 #endif
 
-#ifndef RTE_E_SecurityAccess_L1_DCM_E_COMPARE_KEY_FAILED
-#define RTE_E_SecurityAccess_L1_DCM_E_COMPARE_KEY_FAILED 11U
+#ifndef RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING
+#define RTE_E_RoutineServices_RID_0200h_CalibrationActuator_DCM_E_PENDING 10U
 #endif
 
 #ifndef RTE_E_SecurityAccess_L1_E_NOT_OK
 #define RTE_E_SecurityAccess_L1_E_NOT_OK 1U
 #endif
 
+#ifndef RTE_E_SecurityAccess_L1_DCM_E_COMPARE_KEY_FAILED
+#define RTE_E_SecurityAccess_L1_DCM_E_COMPARE_KEY_FAILED 11U
+#endif
+
 #ifndef RTE_E_SecurityAccess_L1_DCM_E_PENDING
 #define RTE_E_SecurityAccess_L1_DCM_E_PENDING 10U
 #endif
 
-#ifndef RTE_E_SecurityAccess_L9_DCM_E_COMPARE_KEY_FAILED
-#define RTE_E_SecurityAccess_L9_DCM_E_COMPARE_KEY_FAILED 11U
-#endif
-
 #ifndef RTE_E_SecurityAccess_L9_E_NOT_OK
 #define RTE_E_SecurityAccess_L9_E_NOT_OK 1U
+#endif
+
+#ifndef RTE_E_SecurityAccess_L9_DCM_E_COMPARE_KEY_FAILED
+#define RTE_E_SecurityAccess_L9_DCM_E_COMPARE_KEY_FAILED 11U
 #endif
 
 #ifndef RTE_E_SecurityAccess_L9_DCM_E_PENDING
