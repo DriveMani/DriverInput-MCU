@@ -9,10 +9,38 @@
           <PORTS>
             <P-PORT-PROTOTYPE UUID="3aafe14c-896d-43aa-ab8c-04d5354d328c">
               <SHORT-NAME>P_VcuToDrv</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/RegenLevel</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/RegenEnable</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/LimitReason</DATA-ELEMENT-REF>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_VcuToDrv</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
             <R-PORT-PROTOTYPE UUID="cd1c18e2-1b6d-4b68-aa72-f571aa5a115f">
               <SHORT-NAME>R_DriverInputValidatedData</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/BrakeSw</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/AccelSw</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/SocLevel</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/VehicleSpeed</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/DriverInputFault</DATA-ELEMENT-REF>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
               <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputValidatedData</REQUIRED-INTERFACE-TREF>
             </R-PORT-PROTOTYPE>
             <P-PORT-PROTOTYPE UUID="c9706e3c-1681-4fc2-9ca7-8dc8c1e96cbb">
@@ -138,17 +166,7 @@
                   <SHORT-NAME>RE_CanCom_Tx</SHORT-NAME>
                   <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
                   <DATA-SEND-POINTS>
-                    <VARIABLE-ACCESS UUID="40d02f77-e889-4969-99b7-dcb739d4ff3a">
-                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_VehicleSpeed</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="ed56b8a3-4661-4ac7-88f1-ee299ee07b49">
+                    <VARIABLE-ACCESS UUID="29116501-c554-498c-a33d-8d27404a5f6d">
                       <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_AccelSw</SHORT-NAME>
                       <ACCESSED-VARIABLE>
                         <AUTOSAR-VARIABLE-IREF>
@@ -158,27 +176,7 @@
                       </ACCESSED-VARIABLE>
                       <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
                     </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="404500a2-4ae7-4b30-8fd3-a5af4cbc4c0f">
-                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_DriverInputFault</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/DriverInputFault</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="4f01365f-f5da-4d0f-a7ed-4451fbe273b7">
-                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_SocLevel</SHORT-NAME>
-                      <ACCESSED-VARIABLE>
-                        <AUTOSAR-VARIABLE-IREF>
-                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
-                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/SocLevel</TARGET-DATA-PROTOTYPE-REF>
-                        </AUTOSAR-VARIABLE-IREF>
-                      </ACCESSED-VARIABLE>
-                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
-                    </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="3393524e-29b6-4fca-98c5-9bd339d97a97">
+                    <VARIABLE-ACCESS UUID="b4a4f62e-9969-43d0-be77-e5a54eeadc11">
                       <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_AliveCounter</SHORT-NAME>
                       <ACCESSED-VARIABLE>
                         <AUTOSAR-VARIABLE-IREF>
@@ -188,12 +186,72 @@
                       </ACCESSED-VARIABLE>
                       <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
                     </VARIABLE-ACCESS>
-                    <VARIABLE-ACCESS UUID="f56feb9e-20a1-4203-ae26-98f086d27a1c">
+                    <VARIABLE-ACCESS UUID="9d231fc1-59db-4212-8f70-fe1e57ea6acf">
                       <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_BrakeSw</SHORT-NAME>
                       <ACCESSED-VARIABLE>
                         <AUTOSAR-VARIABLE-IREF>
                           <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
                           <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="8245e285-6f97-462b-93c3-140632c63a4c">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_DriverInputFault</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/DriverInputFault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="21fb8e24-c030-4bfd-8ee8-38082a39e84b">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="78499819-9732-446b-acbb-4f18def864c3">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="27f34b74-3e82-4bf1-beaf-971b3c612fa6">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_P_VcuToDrv_LimitReason</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/P_VcuToDrv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/LimitReason</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="3f53cf51-0866-4785-8c79-13d26ed51185">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_P_VcuToDrv_RegenEnable</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/P_VcuToDrv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/RegenEnable</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="116a793c-63d9-4273-acd6-c7096f7424e3">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_P_VcuToDrv_RegenLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/P_VcuToDrv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_VcuToDrv/RegenLevel</TARGET-DATA-PROTOTYPE-REF>
                         </AUTOSAR-VARIABLE-IREF>
                       </ACCESSED-VARIABLE>
                       <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
@@ -204,6 +262,88 @@
                 <RUNNABLE-ENTITY UUID="e0f7759c-3113-4d70-81cc-af0ba52f669e">
                   <SHORT-NAME>RE_CanCom_Rx</SHORT-NAME>
                   <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS UUID="a6b90fbb-f376-4f87-a4ed-a2f77338b758">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_Project_VCURegenStatus_LimitReason</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_VCURegenStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/LimitReason</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="33de72b6-cd8d-49a9-ba0d-e3547074f11f">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_Project_VCURegenStatus_RegenEnable</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_VCURegenStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/RegenEnable</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="f1b51e53-dde4-445f-8835-d4df1768d04d">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_Project_VCURegenStatus_RegenLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_VCURegenStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/RegenLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="ccaaf43d-459a-4f0e-8b68-40f6550a086c">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_R_DriverInputValidatedData_AccelSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/AccelSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="2b0bafef-e68e-4dc7-b928-1907fdac9d74">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_R_DriverInputValidatedData_BrakeSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="11f39bee-f8da-45e4-bff3-5cf5c5ec8408">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_R_DriverInputValidatedData_DriverInputFault</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/DriverInputFault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="a570db1f-2da2-4b37-a26c-2e8fdb7058b9">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_R_DriverInputValidatedData_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="97b43f69-75e3-4743-970b-a09220e31c7c">
+                      <SHORT-NAME>DRPBA_RE_CanCom_Rx_R_DriverInputValidatedData_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/CanCom/SWC_CanCom/R_DriverInputValidatedData</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interface/If_DriverInputValidatedData/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
                   <SYMBOL>CanCom_Rx_func</SYMBOL>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>

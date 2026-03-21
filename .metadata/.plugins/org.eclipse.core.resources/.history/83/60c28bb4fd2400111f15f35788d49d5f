@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE UUID="c0968992-f761-486a-bdde-87023847c11d">
+      <SHORT-NAME>CanCom</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="d2857f9f-7b10-4a6b-b1f0-7148ef6360e8">
+          <SHORT-NAME>SWC_CanCom</SHORT-NAME>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="3aafe14c-896d-43aa-ab8c-04d5354d328c">
+              <SHORT-NAME>P_VcuToDrv</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_VcuToDrv</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="cd1c18e2-1b6d-4b68-aa72-f571aa5a115f">
+              <SHORT-NAME>R_DriverInputValidatedData</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputValidatedData</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="c9706e3c-1681-4fc2-9ca7-8dc8c1e96cbb">
+              <SHORT-NAME>Project_DriverStatus</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/VehicleSpeed</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_VehicleSpeed</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/AccelSw</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_AccelSw</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/DriverInputFault</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_DriverInputFault</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/SocLevel</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_SocLevel</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/AliveCounter</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_AliveCounter</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+                <NONQUEUED-SENDER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/BrakeSw</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_DriverStatus_BrakeSw</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-SENDER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/DBCImport/INTERFACES/Project_DriverStatus</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="05b746b7-a67a-4279-966a-ecf3f122084e">
+              <SHORT-NAME>Project_VCURegenStatus</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/RegenEnable</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_VCURegenStatus_RegenEnable</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/LimitReason</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_VCURegenStatus_LimitReason</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+                <NONQUEUED-RECEIVER-COM-SPEC>
+                  <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_VCURegenStatus/RegenLevel</DATA-ELEMENT-REF>
+                  <NETWORK-REPRESENTATION>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/DBCImport/COMPUMETHODS/ISignal_Project_VCURegenStatus_RegenLevel</COMPU-METHOD-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </NETWORK-REPRESENTATION>
+                </NONQUEUED-RECEIVER-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/DBCImport/INTERFACES/Project_VCURegenStatus</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="be183639-223d-43e1-9ad5-0ef3fea7e4eb">
+              <SHORT-NAME>InternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="9ab3946a-5376-416b-b24f-6699b8b2a626">
+                  <SHORT-NAME>TE_RE_CanCom_Rx</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CanCom/SWC_CanCom/InternalBehavior/RE_CanCom_Rx</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="892e82c2-e344-4b07-8b7b-ad3564153428">
+                  <SHORT-NAME>TE_RE_CanCom_Tx</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CanCom/SWC_CanCom/InternalBehavior/RE_CanCom_Tx</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="032278a7-2618-49c8-a3f1-a7262f6e9072">
+                  <SHORT-NAME>RE_CanCom_Tx</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="40d02f77-e889-4969-99b7-dcb739d4ff3a">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_VehicleSpeed</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/VehicleSpeed</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="ed56b8a3-4661-4ac7-88f1-ee299ee07b49">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_AccelSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/AccelSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="404500a2-4ae7-4b30-8fd3-a5af4cbc4c0f">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_DriverInputFault</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/DriverInputFault</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="4f01365f-f5da-4d0f-a7ed-4451fbe273b7">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_SocLevel</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/SocLevel</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="3393524e-29b6-4fca-98c5-9bd339d97a97">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_AliveCounter</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/AliveCounter</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="f56feb9e-20a1-4203-ae26-98f086d27a1c">
+                      <SHORT-NAME>DSP_RE_CanCom_Tx_Project_DriverStatus_BrakeSw</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/CanCom/SWC_CanCom/Project_DriverStatus</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/DBCImport/INTERFACES/Project_DriverStatus/BrakeSw</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                      <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>CanCom_Tx_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="e0f7759c-3113-4d70-81cc-af0ba52f669e">
+                  <SHORT-NAME>RE_CanCom_Rx</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <SYMBOL>CanCom_Rx_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1388,6 +1388,105 @@
                 <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_VcuToDrv</TARGET-R-PORT-REF>
               </REQUESTER-IREF>
             </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="f5d316a2-dd5a-4ad6-9519-43b856a412e3">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_LED01OfSvc_IoHwAbToR_Led1CtrlOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_LED01</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_Led1Ctrl</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="54cdf47d-9064-40cd-80d5-31b859506f2d">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_LED02OfSvc_IoHwAbToR_Led2CtrlOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_LED02</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_Led2Ctrl</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="2ffd1ea2-8664-42b1-8298-f7f9486965cb">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_LED03OfSvc_IoHwAbToR_Led3CtrlOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_LED03</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_Led3Ctrl</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="cf39fa55-766f-4950-82d3-25e3fe93dfb2">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_LED04OfSvc_IoHwAbToR_Led4CtrlOfSWC_LedCtrl</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_LED04</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_LedCtrl</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/LedCtrl/SWC_LedCtrl/R_Led4Ctrl</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="76e8f385-715f-4e7f-b94b-04000f2ac3f6">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_S01OfSvc_IoHwAbToR_SW01OfSWC_HwInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_S01</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW01</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="362f5bcd-249a-4b52-9505-24a46b426e5b">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_S02OfSvc_IoHwAbToR_SW02OfSWC_HwInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_S02</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW02</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="8afcf070-6561-4375-83f5-5b42c9e3e8ba">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_S03OfSvc_IoHwAbToR_SW03OfSWC_HwInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_S03</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW03</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="bc2b91b5-3707-4943-a08a-dab4726070fe">
+              <SHORT-NAME>P_IoHwAbDigitalDirectLogical_S04OfSvc_IoHwAbToR_SW04OfSWC_HwInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbDigitalDirectLogical_S04</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW04</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR UUID="a3b38476-8187-4783-9692-f51e498803bc">
+              <SHORT-NAME>P_IoHwAbAnalogInputDirectLogical_PotOfSvc_IoHwAbToR_POTOfSWC_HwInput</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/Svc_IoHwAb</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Svc_IoHwAb/EcuAbstractionSwComponentTypes/IoHwAb/P_IoHwAbAnalogInputDirectLogical_Pot</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ECU_EXTRACT/EcuComposition/SWC_HwInput</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_POT</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
           </CONNECTORS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>

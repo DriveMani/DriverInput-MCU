@@ -2,6 +2,8 @@
 
 void ReadHwInput_func(void)
 {
+	Std_ReturnType ret1, ret2, ret3, ret4, ret5;
+
 	boolean brakeSwRaw;
 	boolean accelSwRaw;
 	boolean socSw1Raw;
@@ -14,13 +16,22 @@ void ReadHwInput_func(void)
 	uint8 vehicleSpeed;
 	boolean readStatus;
 
-	// 실제 보드와 연결 후 수정
 	brakeSwRaw = FALSE;
 	accelSwRaw = FALSE;
 	socSw1Raw = FALSE;
 	socSw2Raw = FALSE;
 	vehicleSpeedAdc = 0U;
 	readStatus = TRUE;
+
+	ret1 = Rte_Call_R_SW01_ReadDirect(&brakeSwRaw);
+	ret2 = Rte_Call_R_SW02_ReadDirect(&accelSwRaw);
+	ret3 = Rte_Call_R_SW03_ReadDirect(&socSw1Raw);
+	ret4 = Rte_Call_R_SW04_ReadDirect(&socSw2Raw);
+	ret5 = Rte_Call_R_POT_ReadDirect(&vehicleSpeedAdc, 1U);
+
+	if (ret1!=E_OK || ret2!=E_OK || ret3!=E_OK || ret4!=E_OK || ret5!=E_OK) {
+		readStatus = FALSE;
+	}
 
 	brakeSw = brakeSwRaw;
 	accelSw = accelSwRaw;

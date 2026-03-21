@@ -1,0 +1,87 @@
+#include "Rte_SWC_CanCom.h"
+
+#define SWC_CanCom_START_SEC_CODE
+#include "SWC_CanCom_MemMap.h"
+
+FUNC(void, SWC_CanCom_CODE) CanCom_Tx_func(void)
+{
+    Std_ReturnType ret;
+
+    boolean brakeSw = FALSE;
+    boolean accelSw = FALSE;
+    boolean driverInputFault = FALSE;
+    uint8 socLevel = 0U;
+    uint8 vehicleSpeed = 0U;
+    uint8 aliveCounter = 0U;
+
+    /* DriverInputValidatedData 수신 */
+    ret = Rte_Read_R_DriverInputValidatedData_BrakeSw(&brakeSw);
+    (void)ret;
+
+    ret = Rte_Read_R_DriverInputValidatedData_AccelSw(&accelSw);
+    (void)ret;
+
+    ret = Rte_Read_R_DriverInputValidatedData_DriverInputFault(&driverInputFault);
+    (void)ret;
+
+    ret = Rte_Read_R_DriverInputValidatedData_SocLevel(&socLevel);
+    (void)ret;
+
+    ret = Rte_Read_R_DriverInputValidatedData_VehicleSpeed(&vehicleSpeed);
+    (void)ret;
+
+    /* Alive counter 관리 */
+    aliveCounter++;
+    aliveCounter &= 0x0FU;
+
+    /* CAN Tx용 데이터 publish */
+    ret = Rte_Write_Project_DriverStatus_BrakeSw(brakeSw);
+    (void)ret;
+
+    ret = Rte_Write_Project_DriverStatus_AccelSw(accelSw);
+    (void)ret;
+
+    ret = Rte_Write_Project_DriverStatus_SocLevel(socLevel);
+    (void)ret;
+
+    ret = Rte_Write_Project_DriverStatus_DriverInputFault((uint8)driverInputFault);
+    (void)ret;
+
+    ret = Rte_Write_Project_DriverStatus_AliveCounter(aliveCounter);
+    (void)ret;
+
+    ret = Rte_Write_Project_DriverStatus_VehicleSpeed(vehicleSpeed);
+    (void)ret;
+}
+
+FUNC(void, SWC_CanCom_CODE) CanCom_Rx_func(void)
+{
+    Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret6;
+
+    boolean regenEnable = FALSE;
+    uint8 regenLevel = 0U;
+    uint8 limitReason = 0U;
+
+    /* CAN Rx 데이터 read */
+    ret1 = Rte_Read_Project_VCURegenStatus_RegenEnable(&regenEnable);
+    (void)ret1;
+
+    ret2 = Rte_Read_Project_VCURegenStatus_RegenLevel(&regenLevel);
+    (void)ret2;
+
+    ret3 = Rte_Read_Project_VCURegenStatus_LimitReason(&limitReason);
+    (void)ret3;
+
+    /* 다른 SWC로 전달 */
+    ret4 = Rte_Write_P_VcuToDrv_RegenEnable(regenEnable);
+    (void)ret4;
+
+    ret5 = Rte_Write_P_VcuToDrv_RegenLevel(regenLevel);
+    (void)ret5;
+
+    ret6 = Rte_Write_P_VcuToDrv_LimitReason(limitReason);
+    (void)ret6;
+}
+
+#define SWC_CanCom_STOP_SEC_CODE
+#include "SWC_CanCom_MemMap.h"

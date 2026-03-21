@@ -1,0 +1,88 @@
+#include "Rte_SWC_CanCom.h"
+
+#define SWC_CanCom_START_SEC_CODE
+#include "SWC_CanCom_MemMap.h"
+
+FUNC(void, SWC_CanCom_CODE) CanCom_Tx_func(void)
+{
+    Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret6, ret7, ret8, ret9;
+
+    boolean brakeSw = FALSE;
+    boolean accelSw = FALSE;
+    boolean driverInputFault = FALSE;
+    uint8 socLevel = 0U;
+    uint8 vehicleSpeed = 0U;
+    uint8 aliveCounter = 0U;
+
+    boolean regenEnable = FALSE;
+    uint8 regenLevel = 0U;
+    uint8 limitReason = 0U;
+
+    /* 다른 SWC로 전달 */
+    ret1 = Rte_Write_P_VcuToDrv_RegenEnable(regenEnable);
+
+    ret2 = Rte_Write_P_VcuToDrv_RegenLevel(regenLevel);
+
+    ret3 = Rte_Write_P_VcuToDrv_LimitReason(limitReason);
+
+
+    /* Alive counter 관리 */
+    aliveCounter++;
+    aliveCounter &= 0x0FU;
+
+    /* CAN Tx용 데이터 publish */
+    ret4 = Rte_Write_Project_DriverStatus_BrakeSw(brakeSw);
+
+    ret5 = Rte_Write_Project_DriverStatus_AccelSw(accelSw);
+
+    ret6 = Rte_Write_Project_DriverStatus_SocLevel(socLevel);
+
+    ret7 = Rte_Write_Project_DriverStatus_DriverInputFault((uint8)driverInputFault);
+
+    ret8 = Rte_Write_Project_DriverStatus_AliveCounter(aliveCounter);
+
+    ret9 = Rte_Write_Project_DriverStatus_VehicleSpeed(vehicleSpeed);
+
+    if (ret1!=E_OK || ret2!=E_OK || ret3!=E_OK || ret4!=E_OK || ret5!=E_OK || ret6!=E_OK || ret7!=E_OK || ret8!=E_OK || ret9!=E_OK) {
+
+    }
+}
+
+FUNC(void, SWC_CanCom_CODE) CanCom_Rx_func(void)
+{
+    Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret8;
+
+    boolean brakeSw = FALSE;
+    boolean accelSw = FALSE;
+    boolean driverInputFault = FALSE;
+    uint8 socLevel = 0U;
+    uint8 vehicleSpeed = 0U;
+    uint8 aliveCounter = 0U;
+
+    /* DriverInputValidatedData 수신 */
+    ret1 = Rte_Read_R_DriverInputValidatedData_BrakeSw(&brakeSw);
+
+    ret2 = Rte_Read_R_DriverInputValidatedData_AccelSw(&accelSw);
+
+    ret3 = Rte_Read_R_DriverInputValidatedData_DriverInputFault(&driverInputFault);
+
+    ret4 = Rte_Read_R_DriverInputValidatedData_SocLevel(&socLevel);
+
+    ret5 = Rte_Read_R_DriverInputValidatedData_VehicleSpeed(&vehicleSpeed);
+
+
+    /* CAN Rx 데이터 read */
+    ret6 = Rte_Read_Project_VCURegenStatus_RegenEnable(&regenEnable);
+
+    ret7 = Rte_Read_Project_VCURegenStatus_RegenLevel(&regenLevel);
+
+    ret8 = Rte_Read_Project_VCURegenStatus_LimitReason(&limitReason);
+
+    if (ret1!=E_OK || ret2!=E_OK || ret3!=E_OK || ret4!=E_OK || ret5!=E_OK || ret6!=E_OK || ret7!=E_OK || ret8!=E_OK) {
+
+    }
+
+}
+
+#define SWC_CanCom_STOP_SEC_CODE
+#include "SWC_CanCom_MemMap.h"

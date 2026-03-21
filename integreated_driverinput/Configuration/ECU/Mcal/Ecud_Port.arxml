@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 autosar_4-0-3.xsd">
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
   <AR-PACKAGES>
     <AR-PACKAGE>
       <SHORT-NAME>Port</SHORT-NAME>
@@ -4510,6 +4510,14 @@
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
                       <SHORT-NAME>PortContainer_E_PortPin_7</SHORT-NAME>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                            <SD T="2026-03-21T15:50:41Z" GID="PortPinInitialMode">PORT_GPIO_MODE</SD>
+                            <SD T="2026-03-21T15:50:56Z" GID="PortPinMode">GPIO</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
@@ -4554,11 +4562,11 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin/PortPinInitialMode</DEFINITION-REF>
-                          <VALUE>PORT_ALT1_FUNC_MODE</VALUE>
+                          <VALUE>PORT_GPIO_MODE</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>eMIOS_A23</VALUE>
+                          <VALUE>GPIO</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin/PortPinLevelValue</DEFINITION-REF>
@@ -7842,3 +7850,4 @@
     </AR-PACKAGE>
   </AR-PACKAGES>
 </AUTOSAR>
+

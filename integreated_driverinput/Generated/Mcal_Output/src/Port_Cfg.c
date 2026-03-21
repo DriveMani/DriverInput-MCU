@@ -298,7 +298,7 @@ CONST(Port_LLD_PinConfigType, PORT_CONST) Port_LLD_PinConfigDefault[PORT_MAX_PIN
   {(uint8)68, (uint16)0x0200, (sint8)0, (boolean)TRUE, (boolean)FALSE},
   {(uint8)69, (uint16)0x0200, (sint8)0, (boolean)TRUE, (boolean)FALSE},
   {(uint8)70, (uint16)0x0200, (sint8)0, (boolean)TRUE, (boolean)FALSE},
-  {(uint8)71, (uint16)0x0600, (sint8)0, (boolean)TRUE, (boolean)FALSE},
+  {(uint8)71, (uint16)0x0200, (sint8)0, (boolean)TRUE, (boolean)FALSE},
   {(uint8)72, (uint16)0x0100, (sint8)0, (boolean)TRUE, (boolean)FALSE},
   {(uint8)73, (uint16)0x0100, (sint8)0, (boolean)TRUE, (boolean)FALSE},
   {(uint8)74, (uint16)0x0100, (sint8)0, (boolean)TRUE, (boolean)FALSE},

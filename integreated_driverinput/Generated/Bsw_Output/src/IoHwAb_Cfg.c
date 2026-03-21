@@ -31,16 +31,16 @@
 **                      File Generation Information                           **
 *******************************************************************************/
 /*
- * INPUT FILE:    C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Icu.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Port.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_IoHwAb.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Gpt.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Adc.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Mcu.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Dio.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Spi.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Pwm.arxml
+ * INPUT FILE:    C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_IoHwAb.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Dio.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Pwm.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Port.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Spi.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Icu.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Gpt.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Adc.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Mcu.arxml
  * GENERATED ON:  This timestamp is removed.
  */
 
@@ -69,8 +69,14 @@ VAR(Port_PinDirectionType, IOHWAB_VAR)IoHwAb_GaaDigDirPinDir[IOHWAB_DIGDIR_NUM_L
 #define IOHWAB_START_SEC_CONST_UNSPECIFIED
 #include "MemMap.h"
 CONST(IoHwAb_IndexType, IOHWAB_CONST)IoHwAb_GaaDigDirChIdx[IOHWAB_DIGDIR_NUM_LGC] = {
-  1U,  /* IoHwAbDigitalDirectLogical_LED01 => IoHwAbPortPinCh_PortE_Pin4 */
-  0U,  /* IoHwAbDigitalDirectLogical_S01 => IoHwAbPortPinCh_PortE_Pin0 */
+  5U,  /* IoHwAbDigitalDirectLogical_LED01 => IoHwAbPortPinCh_PortE_Pin4 */
+  6U,  /* IoHwAbDigitalDirectLogical_LED02 => IoHwAbPortPinCh_PortE_Pin5 */
+  7U,  /* IoHwAbDigitalDirectLogical_LED03 => IoHwAbPortPinCh_PortE_Pin6 */
+  8U,  /* IoHwAbDigitalDirectLogical_LED04 => IoHwAbPortPinCh_PortE_Pin7 */
+  1U,  /* IoHwAbDigitalDirectLogical_S01 => IoHwAbPortPinCh_PortE_Pin0 */
+  2U,  /* IoHwAbDigitalDirectLogical_S02 => IoHwAbPortPinCh_PortE_Pin1 */
+  3U,  /* IoHwAbDigitalDirectLogical_S03 => IoHwAbPortPinCh_PortE_Pin2 */
+  4U,  /* IoHwAbDigitalDirectLogical_S04 => IoHwAbPortPinCh_PortE_Pin3 */
 
 };
 #define IOHWAB_STOP_SEC_CONST_UNSPECIFIED
@@ -413,7 +419,22 @@ CONST(IoHwAb_AnaInInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaAnaInInfos[IOHWAB_AN
 
 CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NUM_PORT_PIN_CHS] =
 {
-  /* General Info 0 - IoHwAbPortPinCh_PortE_Pin0 */
+  /* General Info 0 - IoHwAbPortPinCh_PortB_Pin5 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_B_DioChannel_5,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_B_PortPin_5,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_IN
+  },
+
+  /* General Info 1 - IoHwAbPortPinCh_PortE_Pin0 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_E_DioChannel_0,
@@ -428,7 +449,52 @@ CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NU
     PORT_PIN_IN
   },
 
-  /* General Info 1 - IoHwAbPortPinCh_PortE_Pin4 */
+  /* General Info 2 - IoHwAbPortPinCh_PortE_Pin1 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_1,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_1,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_IN
+  },
+
+  /* General Info 3 - IoHwAbPortPinCh_PortE_Pin2 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_2,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_2,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_IN
+  },
+
+  /* General Info 4 - IoHwAbPortPinCh_PortE_Pin3 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_3,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_3,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_IN
+  },
+
+  /* General Info 5 - IoHwAbPortPinCh_PortE_Pin4 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_E_DioChannel_4,
@@ -443,7 +509,52 @@ CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NU
     PORT_PIN_OUT
   },
 
-  /* General Info 2 - IoHwAbPortPinCh_PortG_Pin6 */
+  /* General Info 6 - IoHwAbPortPinCh_PortE_Pin5 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_5,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_5,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_OUT
+  },
+
+  /* General Info 7 - IoHwAbPortPinCh_PortE_Pin6 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_6,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_6,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_OUT
+  },
+
+  /* General Info 8 - IoHwAbPortPinCh_PortE_Pin7 */
+  {
+    /* ddDioChType */
+    DioConf_DioChannel_DioPort_E_DioChannel_7,
+
+    /* ddPortPinType */
+    PortConf_PortPin_PortContainer_E_PortPin_7,
+
+    /* ucPolar */
+    IOHWAB_POL_HIGH,
+
+    /* ddCfgPinDir */
+    PORT_PIN_OUT
+  },
+
+  /* General Info 9 - IoHwAbPortPinCh_PortG_Pin6 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_G_DioChannel_6,
@@ -458,7 +569,7 @@ CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NU
     PORT_PIN_IN
   },
 
-  /* General Info 3 - IoHwAbPortPinCh_PortG_Pin7 */
+  /* General Info 10 - IoHwAbPortPinCh_PortG_Pin7 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_G_DioChannel_7,
@@ -473,7 +584,7 @@ CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NU
     PORT_PIN_IN
   },
 
-  /* General Info 4 - IoHwAbPortPinCh_PortG_Pin8 */
+  /* General Info 11 - IoHwAbPortPinCh_PortG_Pin8 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_G_DioChannel_8,
@@ -488,7 +599,7 @@ CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST) IoHwAb_GaaGenInfos[IOHWAB_GEN_NU
     PORT_PIN_IN
   },
 
-  /* General Info 5 - IoHwAbPortPinCh_PortG_Pin9 */
+  /* General Info 12 - IoHwAbPortPinCh_PortG_Pin9 */
   {
     /* ddDioChType */
     DioConf_DioChannel_DioPort_G_DioChannel_9,

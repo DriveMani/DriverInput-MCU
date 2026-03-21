@@ -8,7 +8,7 @@
 
 FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
 {
-    Std_ReturnType ret;
+    Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret6, ret7;
 
     boolean regenEnable = FALSE;
     uint8 regenLevel = 0U;
@@ -20,20 +20,19 @@ FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
     uint8 led4 = LED_OFF;
 
     /* 입력 데이터 읽기 */
-    ret = Rte_Read_R_VcuToDrv_RegenEnable(&regenEnable);
-    (void)ret;
+    ret1 = Rte_Read_R_VcuToDrv_RegenEnable(&regenEnable);
 
-    ret = Rte_Read_R_VcuToDrv_RegenLevel(&regenLevel);
-    (void)ret;
+    ret2 = Rte_Read_R_VcuToDrv_RegenLevel(&regenLevel);
 
-    ret = Rte_Read_R_DriverInputValidatedData_DriverInputFault(&driverInputFault);
-    (void)ret;
+    ret3 = Rte_Read_R_DriverInputValidatedData_DriverInputFault(&driverInputFault);
 
-    /* 기본 OFF */
-    led1 = LED_OFF;
-    led2 = LED_OFF;
-    led3 = LED_OFF;
-    led4 = LED_OFF;
+    if (ret1!=E_OK || ret2!=E_OK || ret3!=E_OK) {
+    	uint8 led1 = LED_OFF;
+    	uint8 led2 = LED_OFF;
+    	uint8 led3 = LED_OFF;
+    	uint8 led4 = LED_OFF;
+    }
+
 
     /* LED1, LED2 : RegenLevel
        00 = NONE
@@ -82,17 +81,13 @@ FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
     led4 = (driverInputFault != FALSE) ? LED_ON : LED_OFF;
 
     /* 각 LED 출력 */
-    ret = Rte_Call_R_Led1Ctrl_WriteDirect(led1);
-    (void)ret;
+    ret4 = Rte_Call_R_Led1Ctrl_WriteDirect(led1);
 
-    ret = Rte_Call_R_Led2Ctrl_WriteDirect(led2);
-    (void)ret;
+    ret5 = Rte_Call_R_Led2Ctrl_WriteDirect(led2);
 
-    ret = Rte_Call_R_Led3Ctrl_WriteDirect(led3);
-    (void)ret;
+    ret6 = Rte_Call_R_Led3Ctrl_WriteDirect(led3);
 
-    ret = Rte_Call_R_Led4Ctrl_WriteDirect(led4);
-    (void)ret;
+    ret7 = Rte_Call_R_Led4Ctrl_WriteDirect(led4);
 }
 
 #define SWC_LedCtrl_STOP_SEC_CODE

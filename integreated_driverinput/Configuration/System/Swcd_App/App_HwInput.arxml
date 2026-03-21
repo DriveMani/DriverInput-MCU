@@ -28,6 +28,51 @@
               </PROVIDED-COM-SPECS>
               <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interface/If_DriverInputData</PROVIDED-INTERFACE-TREF>
             </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="2cbed465-f593-43fb-88ae-6679980ac3c0">
+              <SHORT-NAME>R_SW01</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="48f036d4-74c9-430b-bef0-ead0e74b5e35">
+              <SHORT-NAME>R_SW02</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="bca8d291-1424-4b9a-b5b5-8f8aa92a33c6">
+              <SHORT-NAME>R_SW03</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="309be1e0-0901-451f-8a40-90006459c2c4">
+              <SHORT-NAME>R_SW04</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="da9cb27c-498f-4807-8036-dda554995dc6">
+              <SHORT-NAME>R_POT</SHORT-NAME>
+              <REQUIRED-COM-SPECS>
+                <CLIENT-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_AnaInDir/ReadDirect</OPERATION-REF>
+                </CLIENT-COM-SPEC>
+              </REQUIRED-COM-SPECS>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_AnaInDir</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
           </PORTS>
           <INTERNAL-BEHAVIORS>
             <SWC-INTERNAL-BEHAVIOR UUID="dee420e8-f100-4ca5-aca9-c165f5708dda">
@@ -96,6 +141,43 @@
                       <SCOPE>COMMUNICATION-INTER-ECU</SCOPE>
                     </VARIABLE-ACCESS>
                   </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="2a930853-08ee-4005-ada6-9748a598f28d">
+                      <SHORT-NAME>SSCP_RE_ReadHwInput_R_POT_ReadDirect</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_POT</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_AnaInDir/ReadDirect</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="887a0cd7-d49b-4cdc-97ed-e6ff2dd10ae7">
+                      <SHORT-NAME>SSCP_RE_ReadHwInput_R_SW01_ReadDirect</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW01</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="21ea34c2-b466-43ed-a014-65252eb031d6">
+                      <SHORT-NAME>SSCP_RE_ReadHwInput_R_SW02_ReadDirect</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW02</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="6fa32b65-5b0b-43d1-986f-ee6edd491d4a">
+                      <SHORT-NAME>SSCP_RE_ReadHwInput_R_SW03_ReadDirect</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW03</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="d110f6cb-bf01-4b6e-9241-a999fb518108">
+                      <SHORT-NAME>SSCP_RE_ReadHwInput_R_SW04_ReadDirect</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/HwInput/SWC_HwInput/R_SW04</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Svc_IoHwAb/ClientServerInterfaces/IoHwAb_If_DigDir/ReadDirect</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
                   <SYMBOL>ReadHwInput_func</SYMBOL>
                 </RUNNABLE-ENTITY>
               </RUNNABLES>

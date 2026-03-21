@@ -18,16 +18,16 @@
 **                      File Generation Information                           **
 *******************************************************************************/
 /*
- * INPUT FILE:    C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Icu.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Port.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_IoHwAb.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Gpt.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Adc.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Mcu.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Dio.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Spi.arxml
- *                C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Pwm.arxml
+ * INPUT FILE:    C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_IoHwAb.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Dio.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Pwm.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Port.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Spi.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Icu.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Gpt.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Adc.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *                C:\realwk\integreated_driverinput\Configuration\ECU\Mcal\Ecud_Mcu.arxml
  * GENERATED ON:  This timestamp is removed.
  */
 
@@ -160,7 +160,7 @@
 *******************************************************************************/
 #define IOHWAB_MCAL_FREESCALE_MPC560XB                
 
-#define IOHWAB_GEN_NUM_PORT_PIN_CHS                   (6U)
+#define IOHWAB_GEN_NUM_PORT_PIN_CHS                   (13U)
 
 #define IOHWAB_ADC_READDIRECT_MAX_DELAY               (65535U)
 
@@ -189,10 +189,16 @@ extern CONST(IoHwAb_GenInfoPropertyType, IOHWAB_CONST)IoHwAb_GaaGenInfos[];
 /*******************************************************************************
 **                      Digital Direct                                        **
 *******************************************************************************/
-#define IOHWAB_DIGDIR_NUM_LGC                         (2U)
+#define IOHWAB_DIGDIR_NUM_LGC                         (8U)
 
 #define IoHwAbDigitalDirectLogical_LED01              (0U)
-#define IoHwAbDigitalDirectLogical_S01                (1U)
+#define IoHwAbDigitalDirectLogical_LED02              (1U)
+#define IoHwAbDigitalDirectLogical_LED03              (2U)
+#define IoHwAbDigitalDirectLogical_LED04              (3U)
+#define IoHwAbDigitalDirectLogical_S01                (4U)
+#define IoHwAbDigitalDirectLogical_S02                (5U)
+#define IoHwAbDigitalDirectLogical_S03                (6U)
+#define IoHwAbDigitalDirectLogical_S04                (7U)
 
 #define IOHWAB_START_SEC_VAR_CLEARED_8
 #include "MemMap.h"

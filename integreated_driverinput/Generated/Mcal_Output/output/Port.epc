@@ -4118,6 +4118,16 @@
                     </ECUC-CONTAINER-VALUE>
                     <ECUC-CONTAINER-VALUE>
                       <SHORT-NAME>PortContainer_E_PortPin_7</SHORT-NAME>
+                      <ADMIN-DATA>
+                        <SDGS>
+                          <SDG GID="ODIN_WRITER_TYPE:USER_CONFIGURED">
+                            <SD GID="PortPinInitialMode"
+                                T="2026-03-21T15:50:41Z">PORT_GPIO_MODE</SD>
+                            <SD GID="PortPinMode"
+                                T="2026-03-21T15:50:56Z">GPIO</SD>
+                          </SDG>
+                        </SDGS>
+                      </ADMIN-DATA>
                       <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin</DEFINITION-REF>
                       <PARAMETER-VALUES>
                         <ECUC-TEXTUAL-PARAM-VALUE>
@@ -4138,7 +4148,7 @@
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-TEXTUAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin/PortPinMode</DEFINITION-REF>
-                          <VALUE>eMIOS_A23</VALUE>
+                          <VALUE>GPIO</VALUE>
                         </ECUC-TEXTUAL-PARAM-VALUE>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/TS_T2D13M10I1R0/Port/PortConfigSet/PortContainer/PortPin/PortPinModeChangeable</DEFINITION-REF>

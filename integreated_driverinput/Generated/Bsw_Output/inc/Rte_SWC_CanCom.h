@@ -20,72 +20,72 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DBImport\Project.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DBImport\Project.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -290,6 +290,15 @@ extern const struct Rte_CDS_SWC_CanCom Rte_Inst_SWC_CanCom;
 #define RTE_START_SEC_CODE
 #include "MemMap.h"
 extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_LimitReason(IN VAR(uint8, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_RegenEnable(IN VAR(boolean, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_RegenLevel(IN VAR(uint8, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_AccelSw(IN VAR(boolean, AUTOMATIC) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
@@ -307,12 +316,51 @@ Rte_Write_SWC_CanCom_Project_DriverStatus_SocLevel(IN VAR(uint8, AUTOMATIC) Data
 extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_VehicleSpeed(IN VAR(uint8, AUTOMATIC) Data);
 
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_Project_VCURegenStatus_LimitReason(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenEnable(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_AccelSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_BrakeSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_SocLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
 #define RTE_STOP_SEC_CODE
 #include "MemMap.h"
 
 /*******************************************************************************
 ** API Mapping                                                                **
 *******************************************************************************/
+#ifndef Rte_Write_P_VcuToDrv_LimitReason
+#define Rte_Write_P_VcuToDrv_LimitReason \
+  Rte_Write_SWC_CanCom_P_VcuToDrv_LimitReason
+#endif
+
+#ifndef Rte_Write_P_VcuToDrv_RegenEnable
+#define Rte_Write_P_VcuToDrv_RegenEnable \
+  Rte_Write_SWC_CanCom_P_VcuToDrv_RegenEnable
+#endif
+
+#ifndef Rte_Write_P_VcuToDrv_RegenLevel
+#define Rte_Write_P_VcuToDrv_RegenLevel \
+  Rte_Write_SWC_CanCom_P_VcuToDrv_RegenLevel
+#endif
+
 #ifndef Rte_Write_Project_DriverStatus_AccelSw
 #define Rte_Write_Project_DriverStatus_AccelSw \
   Rte_Write_SWC_CanCom_Project_DriverStatus_AccelSw
@@ -341,6 +389,46 @@ Rte_Write_SWC_CanCom_Project_DriverStatus_VehicleSpeed(IN VAR(uint8, AUTOMATIC) 
 #ifndef Rte_Write_Project_DriverStatus_VehicleSpeed
 #define Rte_Write_Project_DriverStatus_VehicleSpeed \
   Rte_Write_SWC_CanCom_Project_DriverStatus_VehicleSpeed
+#endif
+
+#ifndef Rte_Read_Project_VCURegenStatus_LimitReason
+#define Rte_Read_Project_VCURegenStatus_LimitReason \
+  Rte_Read_SWC_CanCom_Project_VCURegenStatus_LimitReason
+#endif
+
+#ifndef Rte_Read_Project_VCURegenStatus_RegenEnable
+#define Rte_Read_Project_VCURegenStatus_RegenEnable \
+  Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenEnable
+#endif
+
+#ifndef Rte_Read_Project_VCURegenStatus_RegenLevel
+#define Rte_Read_Project_VCURegenStatus_RegenLevel \
+  Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenLevel
+#endif
+
+#ifndef Rte_Read_R_DriverInputValidatedData_AccelSw
+#define Rte_Read_R_DriverInputValidatedData_AccelSw \
+  Rte_Read_SWC_CanCom_R_DriverInputValidatedData_AccelSw
+#endif
+
+#ifndef Rte_Read_R_DriverInputValidatedData_BrakeSw
+#define Rte_Read_R_DriverInputValidatedData_BrakeSw \
+  Rte_Read_SWC_CanCom_R_DriverInputValidatedData_BrakeSw
+#endif
+
+#ifndef Rte_Read_R_DriverInputValidatedData_DriverInputFault
+#define Rte_Read_R_DriverInputValidatedData_DriverInputFault \
+  Rte_Read_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault
+#endif
+
+#ifndef Rte_Read_R_DriverInputValidatedData_SocLevel
+#define Rte_Read_R_DriverInputValidatedData_SocLevel \
+  Rte_Read_SWC_CanCom_R_DriverInputValidatedData_SocLevel
+#endif
+
+#ifndef Rte_Read_R_DriverInputValidatedData_VehicleSpeed
+#define Rte_Read_R_DriverInputValidatedData_VehicleSpeed \
+  Rte_Read_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed
 #endif
 
 /*******************************************************************************

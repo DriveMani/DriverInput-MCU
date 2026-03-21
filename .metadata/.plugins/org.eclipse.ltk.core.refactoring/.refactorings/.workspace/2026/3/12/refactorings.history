@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;integreated_driverinput&apos;" deleteContents="true" description="Delete resource &apos;integreated_driverinput&apos;" element1="/integreated_driverinput" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1774073089338"/>&#x0A;<refactoring comment="Delete resource &apos;integreated_driverinput&apos;" deleteContents="true" description="Delete resource &apos;integreated_driverinput&apos;" element1="/integreated_driverinput" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1774075337764"/>
+</session>

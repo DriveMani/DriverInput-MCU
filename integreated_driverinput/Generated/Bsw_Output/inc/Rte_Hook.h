@@ -20,72 +20,72 @@
 *******************************************************************************/
 /*
  * INPUT FILE:
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DBImport\Project.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
- *      C:\integratedDriverInput\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\ECUCD_EcucValueCollection.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Com.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_EcuC.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Os.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\ECU\Ecud_Rte.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Adc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_BswM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Can.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanIf.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanSM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_CanTp.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Com.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Crc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Dio.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fee.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Fls.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Gpt.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Icu_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Mcu.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_MemIf.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_NvM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Os.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_PduR.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Port.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Pwm_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Spi.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\BswMd\Bswmd_Wdg_43.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Composition\EcuExtract.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DBImport\Project.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\DataTypes\AUTOSAR_DataTypes_Etc.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_CanCom.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_HwInput.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_InputDiag.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_LedCtrl.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_Mode.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\App_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_App\Interface_Common.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\MODE_PortInterfaces.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Bsw_BswM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_ComM.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_Det.arxml
+ *      C:\realwk\integreated_driverinput\Configuration\System\Swcd_Bsw\Swcd_FiM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_EcuM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_IoHwAb.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgIf.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\bswmd\Bswmd_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dcm.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_Dem.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_EcuM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_Bsw_NvM.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_IoHwAb.arxml
+ *      C:\realwk\integreated_driverinput\Generated\Bsw_Output\swcd\Swcd_WdgM.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_swc_ErrorManagement\App_ErrM.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_sys_EcuM_R40\generator\EcuM_PortInterface.arxml
+ *      C:\realwk\integreated_driverinput\Static_Code\Modules\b_autosar_sys_WdgM_R40\generator\Swcd_WdgM_Fixed.arxml
 
  * GENERATED ON:  This timestamp is removed.
 */
@@ -331,28 +331,6 @@ extern void Rte_CallHook_Dcm_DataServices_ECT_ReadData_Return(OUT P2VAR(uint8, A
 #define Rte_CallHook_Dcm_DataServices_ECT_ReadData_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start)
-#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start
-extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return)
-#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return
-extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_WriteData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_ActuatorControl_WriteData_Start
 #endif
@@ -375,6 +353,28 @@ extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_WriteData_Return(IN P2
 	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_DataServices_ActuatorControl_WriteData_Return(Data,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start)
+#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start
+extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return)
+#undef Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return
+extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ReadData_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_SystemSupplierECUHardwareVersionNumber_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -427,6 +427,28 @@ extern void Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Start
 #define Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Start_Return(DataIn_routineControlOption_StartInSignal,	OpStatus,	DataOut_routineStatus_StartOutSignal,	ErrorCode) ((void)(0))
 #endif
 
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(ErrorCode) ((void)(0))
+#endif
+
 #if defined(Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Start
 #endif
@@ -449,28 +471,6 @@ extern void Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailab
 	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) supported);
 #else
 #define Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_IsDidAvailable_Return(DID,	supported) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ResetToDefault_Return(ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_RoutineServices_RID_0200h_CalibrationActuator_Stop_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -617,28 +617,6 @@ extern void Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_Condit
 #define Rte_CallHook_Dcm_DataServices_SystemSupplierECUSoftwareNumber_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start)
-#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start
-extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return)
-#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return
-extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Start
 #endif
@@ -659,6 +637,28 @@ extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Sta
 extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_DataServices_ActuatorControl_FreezeCurrentState_Return(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start)
+#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start
+extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return)
+#undef Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return
+extern void Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_CallHook_Dcm_DataServices_BatVolt_ReadData_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_WriteData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -827,28 +827,6 @@ extern void Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceReq
 #define Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Confirmation_Return(SID,	ReqType,	SourceAddress,	ConfirmationStatus) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return)
-#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return
-extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
 #endif
@@ -871,6 +849,28 @@ extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_R
 #define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return)
+#undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return
+extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(ErrorCode) ((void)(0))
+#endif
+
 #if defined(Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start
 #endif
@@ -891,6 +891,28 @@ extern void Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start(OUT P2VAR(uint8, AU
 extern void Rte_CallHook_Dcm_DataServices_RPM_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_CallHook_Dcm_DataServices_RPM_ReadData_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start)
+#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start
+extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start(IN Dcm_ProtocolType ProtocolID);
+#else
+#define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start(ProtocolID) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return)
+#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return
+extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(IN Dcm_ProtocolType ProtocolID);
+#else
+#define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(ProtocolID) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -917,28 +939,6 @@ extern void Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(IN Dcm_OpStatusTyp
 	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(OpStatus,	Seed,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start)
-#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start
-extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start(IN Dcm_ProtocolType ProtocolID);
-#else
-#define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start(ProtocolID) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return)
-#undef Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return
-extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(IN Dcm_ProtocolType ProtocolID);
-#else
-#define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(ProtocolID) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -1229,30 +1229,6 @@ extern void Rte_CallHook_Dcm_DataServices_RPM_FreezeCurrentState_Return(OUT P2VA
 #define Rte_CallHook_Dcm_DataServices_RPM_FreezeCurrentState_Return(ErrorCode) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) ScalingInfo,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start(ScalingInfo,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) ScalingInfo,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return(ScalingInfo,	ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_ReadDidData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_ReadDidData_Start
 #endif
@@ -1281,6 +1257,30 @@ extern void Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_ReadDidData_
 	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_DataServices_DIDRange_DIDs_0100h_0110h_ReadDidData_Return(DID,	Data,	OpStatus,	DataLength,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) ScalingInfo,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Start(ScalingInfo,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) ScalingInfo,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_GetScalingInformation_Return(ScalingInfo,	ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dem_CBReadData_DE_0001_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -1329,6 +1329,28 @@ extern void Rte_CallHook_Dem_CBStatusEvt_DEM_E_TEST_EVENT1_DemCallbackEventStatu
 #define Rte_CallHook_Dem_CBStatusEvt_DEM_E_TEST_EVENT1_DemCallbackEventStatusChanged0_EventStatusChanged_Return(EventStatusOld,	EventStatusNew) ((void)(0))
 #endif
 
+#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start
+#endif
+
+#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start)
+#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start
+extern void Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start(IN Dem_InitMonitorReasonType InitMonitorReason);
+#else
+#define Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start(InitMonitorReason) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return
+#endif
+
+#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return)
+#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return
+extern void Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return(IN Dem_InitMonitorReasonType InitMonitorReason);
+#else
+#define Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return(InitMonitorReason) ((void)(0))
+#endif
+
 #if defined(Rte_CallHook_Dem_GeneralCBStatusEvt_EventStatusChanged_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dem_GeneralCBStatusEvt_EventStatusChanged_Start
 #endif
@@ -1353,28 +1375,6 @@ extern void Rte_CallHook_Dem_GeneralCBStatusEvt_EventStatusChanged_Return(IN Dem
 	IN Dem_EventStatusExtendedType EventStatusNew);
 #else
 #define Rte_CallHook_Dem_GeneralCBStatusEvt_EventStatusChanged_Return(EventId,	EventStatusOld,	EventStatusNew) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start
-#endif
-
-#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start)
-#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start
-extern void Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start(IN Dem_InitMonitorReasonType InitMonitorReason);
-#else
-#define Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Start(InitMonitorReason) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return
-#endif
-
-#if defined(Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return)
-#undef Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return
-extern void Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return(IN Dem_InitMonitorReasonType InitMonitorReason);
-#else
-#define Rte_CallHook_Dem_CBInitEvt_DEM_E_TEST_EVENT1_InitMonitorForEvent_Return(InitMonitorReason) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dem_CBStatusEvt_CANSM_E_MODE_CHANGE_PROJECT_DemCallbackEventStatusChanged0_EventStatusChanged_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -2615,28 +2615,6 @@ extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw_Retur
 #define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
 #endif
@@ -2657,6 +2635,28 @@ extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
 extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(IN boolean Data);
 #else
 #define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -2681,28 +2681,6 @@ extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(OUT P2VAR(bo
 #define Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start
 #endif
@@ -2723,6 +2701,28 @@ extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(OUT P2VAR(
 extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -3079,48 +3079,26 @@ extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_SocLevel_Return(IN uin
 #define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_SocLevel_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start(IN uint8 Data);
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start(Data) ((void)(0))
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Start(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return(IN uint8 Data);
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return(Data) ((void)(0))
-#endif
-
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start
-#endif
-
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start(IN uint8 Data);
-#else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return
-#endif
-
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return(IN uint8 Data);
-#else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return(Data) ((void)(0))
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_BrakeSw_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -3145,26 +3123,48 @@ extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_BrakeSw_Return(IN bool
 #define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_BrakeSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start(IN boolean Data);
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start(IN uint8 Data);
 #else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start(Data) ((void)(0))
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Start(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return
 #endif
 
-#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return)
-#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return
-extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return(IN boolean Data);
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return(IN uint8 Data);
 #else
-#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return(Data) ((void)(0))
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_LimitReason_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenEnable_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_DriverInputFault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -3189,6 +3189,248 @@ extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_DriverInputFault_Retur
 #define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_DriverInputFault_Return(Data) ((void)(0))
 #endif
 
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenEnable_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return)
+#undef Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return
+extern void Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_P_VcuToDrv_RegenLevel_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_LimitReason_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_SocLevel_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return)
+#undef Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return
+extern void Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_Project_VCURegenStatus_RegenLevel_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return)
+#undef Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return
+extern void Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return)
+#undef Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return
+extern void Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_CanCom_R_DriverInputValidatedData_AccelSw_Return(Data) ((void)(0))
+#endif
+
 #if defined(Rte_WriteHook_SWC_ErrM_modeRequestPort_AppMode_AppMode_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_WriteHook_SWC_ErrM_modeRequestPort_AppMode_AppMode_Start
 #endif
@@ -3211,48 +3453,48 @@ extern void Rte_WriteHook_SWC_ErrM_modeRequestPort_AppMode_AppMode_Return(IN uin
 #define Rte_WriteHook_SWC_ErrM_modeRequestPort_AppMode_AppMode_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start
+#if defined(Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start(IN boolean Data);
+#if defined(Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start)
+#undef Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start
+extern void Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start(Data) ((void)(0))
+#define Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Start(Level) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return
+#if defined(Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return(IN boolean Data);
+#if defined(Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return)
+#undef Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return
+extern void Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return(Data) ((void)(0))
+#define Rte_CallHook_SWC_HwInput_R_SW02_ReadDirect_Return(Level) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start(IN uint8 Data);
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start(IN boolean Data);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start(Data) ((void)(0))
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return(IN uint8 Data);
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return(IN boolean Data);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return(Data) ((void)(0))
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -3277,26 +3519,138 @@ extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_BrakeSw_Return(IN boolea
 #define Rte_WriteHook_SWC_HwInput_P_DriverInputData_BrakeSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start
+#if defined(Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start(IN boolean Data);
+#if defined(Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start)
+#undef Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start
+extern void Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start(OUT P2VAR(IoHwAb_ValueType, AUTOMATIC, RTE_APPL_DATA) Value,
+	IN IoHwAb_LengthType AnaInDirLength);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Start(Data) ((void)(0))
+#define Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Start(Value,	AnaInDirLength) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return
+#if defined(Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return
 #endif
 
-#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return)
-#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return
-extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return(IN boolean Data);
+#if defined(Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return)
+#undef Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return
+extern void Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return(OUT P2VAR(IoHwAb_ValueType, AUTOMATIC, RTE_APPL_DATA) Value,
+	IN IoHwAb_LengthType AnaInDirLength);
 #else
-#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_ReadStatus_Return(Data) ((void)(0))
+#define Rte_CallHook_SWC_HwInput_R_POT_ReadDirect_Return(Value,	AnaInDirLength) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_AccelSw_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start)
+#undef Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start
+extern void Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Start(Level) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return)
+#undef Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return
+extern void Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW01_ReadDirect_Return(Level) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start)
+#undef Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start
+extern void Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Start(Level) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return)
+#undef Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return
+extern void Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW03_ReadDirect_Return(Level) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start)
+#undef Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start
+extern void Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Start(Level) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return
+#endif
+
+#if defined(Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return)
+#undef Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return
+extern void Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return(OUT P2VAR(IoHwAb_LevelType, AUTOMATIC, RTE_APPL_DATA) Level);
+#else
+#define Rte_CallHook_SWC_HwInput_R_SW04_ReadDirect_Return(Level) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return)
+#undef Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return
+extern void Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return(IN uint8 Data);
+#else
+#define Rte_WriteHook_SWC_HwInput_P_DriverInputData_SocLevel_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_HwInput_P_DriverInputData_VehicleSpeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -3675,30 +4029,6 @@ extern void Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock3_JobFinished_Return(
 #define Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock3_JobFinished_Return(ServiceId,	JobResult) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start
-#endif
-
-#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start)
-#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start
-extern void Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start(IN uint8 ServiceId,
-	IN NvM_RequestResultType JobResult);
-#else
-#define Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start(ServiceId,	JobResult) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return
-#endif
-
-#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return)
-#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return
-extern void Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return(IN uint8 ServiceId,
-	IN NvM_RequestResultType JobResult);
-#else
-#define Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return(ServiceId,	JobResult) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_NvM_PNJF_NvMBlock_ConfigID_JobFinished_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_NvM_PNJF_NvMBlock_ConfigID_JobFinished_Start
 #endif
@@ -3721,6 +4051,30 @@ extern void Rte_CallHook_NvM_PNJF_NvMBlock_ConfigID_JobFinished_Return(IN uint8 
 	IN NvM_RequestResultType JobResult);
 #else
 #define Rte_CallHook_NvM_PNJF_NvMBlock_ConfigID_JobFinished_Return(ServiceId,	JobResult) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start
+#endif
+
+#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start)
+#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start
+extern void Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start(IN uint8 ServiceId,
+	IN NvM_RequestResultType JobResult);
+#else
+#define Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Start(ServiceId,	JobResult) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return
+#endif
+
+#if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return)
+#undef Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return
+extern void Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return(IN uint8 ServiceId,
+	IN NvM_RequestResultType JobResult);
+#else
+#define Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock1_JobFinished_Return(ServiceId,	JobResult) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_NvM_PNJF_NvMBlock_IntTst_TestBlock2_JobFinished_Start) && (RTE_VFB_TRACE == RTE_FALSE)
