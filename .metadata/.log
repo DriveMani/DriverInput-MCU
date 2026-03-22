@@ -2214,3 +2214,19 @@ java.lang.Exception: The project description file (.project) for 'integreated_dr
 	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+!SESSION 2026-03-23 07:06:34.826 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_322
+java.vendor=ojdkbuild
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -clearPersistedState
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clearPersistedState
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-23 07:12:09.796
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-23 07:12:09.823
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2026-03-23 07:12:09.824
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
