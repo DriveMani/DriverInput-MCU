@@ -399,9 +399,9 @@ static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputValidatedDa
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_DriverInputValidatedData_69_VehicleSpeed_730 = RTE_E_OK;
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenEnable_715 = RTE_E_OK;
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_If_VcuToDrv_71_RegenLevel_716 = RTE_E_OK;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_LimitReason_723 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_RegenEnable_724 = RTE_E_UNCONNECTED;
-static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_RegenLevel_725 = RTE_E_UNCONNECTED;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_LimitReason_723 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_RegenEnable_724 = RTE_E_OK;
+static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_Project_VCURegenStatus_63_RegenLevel_725 = RTE_E_OK;
 static VAR(Std_ReturnType, RTE_VAR_INIT) Rte_GucStatus_TestModeRequestInterface_41_TestMode_884 = RTE_E_UNCONNECTED;
 static VAR(boolean, RTE_VAR_INIT) Rte_GblProject_VCURegenStatus_63_RegenEnable_724 = 0U;
 static VAR(uint8, RTE_VAR_INIT) Rte_GucProject_VCURegenStatus_63_LimitReason_723 = 0U;
@@ -835,9 +835,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_AccelSw(IN VAR(boolean, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_AccelSw = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_AccelSw_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_AccelSw = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_AccelSw,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_AccelSw != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AccelSw_Return(Data);
@@ -849,9 +865,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_AliveCounter(IN VAR(uint8, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_AliveCounter = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_AliveCounter_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_AliveCounter = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_AliveCounter,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_AliveCounter != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_AliveCounter_Return(Data);
@@ -863,9 +895,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_BrakeSw(IN VAR(boolean, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_BrakeSw = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_BrakeSw_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_BrakeSw_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_BrakeSw = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_BrakeSw,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_BrakeSw != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_BrakeSw_Return(Data);
@@ -877,9 +925,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_DriverInputFault(IN VAR(uint8, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_DriverInputFault = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_DriverInputFault_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_DriverInputFault_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_DriverInputFault = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_DriverInputFault,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_DriverInputFault != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_DriverInputFault_Return(Data);
@@ -891,9 +955,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_SocLevel(IN VAR(uint8, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_SocLevel = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_SocLevel_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_SocLevel_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_SocLevel = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_SocLevel,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_SocLevel != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_SocLevel_Return(Data);
@@ -905,9 +985,25 @@ FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_VehicleSpeed(IN VAR(uint8, AUTOMATIC) Data)
 {
   VAR(Std_ReturnType, AUTOMATIC) LddRetVal = RTE_E_OK;
+  VAR(uint8, AUTOMATIC) LucComRetVal_ComISignal_Project_DriverStatus_VehicleSpeed = E_OK;
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Start(Data);
+
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_DriverStatus_VehicleSpeed_SigTx
+  (
+    &Data
+  );
+  LucComRetVal_ComISignal_Project_DriverStatus_VehicleSpeed = Com_SendSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_DriverStatus_VehicleSpeed,
+    (const void *)(&Data)
+  );
+  if (LucComRetVal_ComISignal_Project_DriverStatus_VehicleSpeed != E_OK)
+  {
+    LddRetVal = RTE_E_COM_STOPPED;
+  }
 
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_WriteHook_SWC_CanCom_Project_DriverStatus_VehicleSpeed_Return(Data);
@@ -6097,20 +6193,92 @@ FUNC(void, RTE_CODE) SchM_Exit_WdgM_GLOBALSUPVSNSTATUS_PROTECTION(void)
 *******************************************************************************/
 FUNC(void, RTE_CODE) Rte_COMCbk_ComISignal_Project_VCURegenStatus_LimitReason(void)
 {
+  VAR(uint8, AUTOMATIC) LucComRetVal_Project_VCURegenStatus_63_LimitReason_723 = E_OK;
+  VAR(uint8, AUTOMATIC) LucComValue_Project_VCURegenStatus_63_LimitReason_723 = 0;
+  
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ComHookRx_ComISignal_Project_VCURegenStatus_LimitReason();
+  
+  LucComRetVal_Project_VCURegenStatus_63_LimitReason_723 = Com_ReceiveSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_VCURegenStatus_LimitReason,
+    (void *)(&LucComValue_Project_VCURegenStatus_63_LimitReason_723)
+  );
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_VCURegenStatus_LimitReason_SigRx
+  (
+    &LucComValue_Project_VCURegenStatus_63_LimitReason_723
+  );
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_LimitReason_723 == E_OK)
+  {
+    Rte_GucProject_VCURegenStatus_63_LimitReason_723 = LucComValue_Project_VCURegenStatus_63_LimitReason_723;
+  }
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_LimitReason_723 == E_OK)
+  {
+    Rte_GucStatus_Project_VCURegenStatus_63_LimitReason_723 = RTE_E_OK;
+  }
 }
 
 FUNC(void, RTE_CODE) Rte_COMCbk_ComISignal_Project_VCURegenStatus_RegenEnable(void)
 {
+  VAR(uint8, AUTOMATIC) LucComRetVal_Project_VCURegenStatus_63_RegenEnable_724 = E_OK;
+  VAR(boolean, AUTOMATIC) LblComValue_Project_VCURegenStatus_63_RegenEnable_724 = 0;
+  
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ComHookRx_ComISignal_Project_VCURegenStatus_RegenEnable();
+  
+  LucComRetVal_Project_VCURegenStatus_63_RegenEnable_724 = Com_ReceiveSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_VCURegenStatus_RegenEnable,
+    (void *)(&LblComValue_Project_VCURegenStatus_63_RegenEnable_724)
+  );
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_VCURegenStatus_RegenEnable_SigRx
+  (
+    &LblComValue_Project_VCURegenStatus_63_RegenEnable_724
+  );
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_RegenEnable_724 == E_OK)
+  {
+    Rte_GblProject_VCURegenStatus_63_RegenEnable_724 = LblComValue_Project_VCURegenStatus_63_RegenEnable_724;
+  }
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_RegenEnable_724 == E_OK)
+  {
+    Rte_GucStatus_Project_VCURegenStatus_63_RegenEnable_724 = RTE_E_OK;
+  }
 }
 
 FUNC(void, RTE_CODE) Rte_COMCbk_ComISignal_Project_VCURegenStatus_RegenLevel(void)
 {
+  VAR(uint8, AUTOMATIC) LucComRetVal_Project_VCURegenStatus_63_RegenLevel_725 = E_OK;
+  VAR(uint8, AUTOMATIC) LucComValue_Project_VCURegenStatus_63_RegenLevel_725 = 0;
+  
   /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
   Rte_ComHookRx_ComISignal_Project_VCURegenStatus_RegenLevel();
+  
+  LucComRetVal_Project_VCURegenStatus_63_RegenLevel_725 = Com_ReceiveSignal
+  (
+    ComConf_ComSignal_ComISignal_Project_VCURegenStatus_RegenLevel,
+    (void *)(&LucComValue_Project_VCURegenStatus_63_RegenLevel_725)
+  );
+  /* polyspace<MISRA-C:14.2:Not a defect:Justify with annotations> AUTOSAR Standard rte_sws_1236 */
+  Rte_ComHook_ComISignal_Project_VCURegenStatus_RegenLevel_SigRx
+  (
+    &LucComValue_Project_VCURegenStatus_63_RegenLevel_725
+  );
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_RegenLevel_725 == E_OK)
+  {
+    Rte_GucProject_VCURegenStatus_63_RegenLevel_725 = LucComValue_Project_VCURegenStatus_63_RegenLevel_725;
+  }
+  
+  if (LucComRetVal_Project_VCURegenStatus_63_RegenLevel_725 == E_OK)
+  {
+    Rte_GucStatus_Project_VCURegenStatus_63_RegenLevel_725 = RTE_E_OK;
+  }
 }
 
 /*******************************************************************************
