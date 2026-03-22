@@ -265,28 +265,6 @@ extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StopProtocol_Return
 #define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StopProtocol_Return(ProtocolID) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start)
-#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start
-extern void Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return)
-#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return
-extern void Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_VehicleSpeed_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_VehicleSpeed_ConditionCheckRead_Start
 #endif
@@ -307,6 +285,28 @@ extern void Rte_CallHook_Dcm_DataServices_VehicleSpeed_ConditionCheckRead_Start(
 extern void Rte_CallHook_Dcm_DataServices_VehicleSpeed_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
 #else
 #define Rte_CallHook_Dcm_DataServices_VehicleSpeed_ConditionCheckRead_Return(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start)
+#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start
+extern void Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return)
+#undef Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return
+extern void Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VehicleManufacturerECUSoftwareVersionNumber_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_ECT_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -827,28 +827,6 @@ extern void Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceReq
 #define Rte_CallHook_Dcm_ServiceRequestSupplierNotification_DcmDslServiceRequestSupplierNotification0_Confirmation_Return(SID,	ReqType,	SourceAddress,	ConfirmationStatus) ((void)(0))
 #endif
 
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return)
-#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
-extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(ErrorCode) ((void)(0))
-#endif
-
 #if defined(Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Start
 #endif
@@ -871,6 +849,28 @@ extern void Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Ret
 #define Rte_CallHook_Dcm_DataServices_ActuatorControl_ConditionCheckRead_Return(ErrorCode) ((void)(0))
 #endif
 
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Start(ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return)
+#undef Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return
+extern void Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ConditionCheckRead_Return(ErrorCode) ((void)(0))
+#endif
+
 #if defined(Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start
 #endif
@@ -891,6 +891,32 @@ extern void Rte_CallHook_Dcm_DataServices_RPM_ReadData_Start(OUT P2VAR(uint8, AU
 extern void Rte_CallHook_Dcm_DataServices_RPM_ReadData_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_CallHook_Dcm_DataServices_RPM_ReadData_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start)
+#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start
+extern void Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start(IN Dcm_OpStatusType OpStatus,
+	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start(OpStatus,	Seed,	ErrorCode) ((void)(0))
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return
+#endif
+
+#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return)
+#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return
+extern void Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(IN Dcm_OpStatusType OpStatus,
+	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
+	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
+#else
+#define Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(OpStatus,	Seed,	ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_VINDataIdentifier_ReadData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -935,32 +961,6 @@ extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Start
 extern void Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(IN Dcm_ProtocolType ProtocolID);
 #else
 #define Rte_CallHook_Dcm_CallbackDCMRequestServices_ECU1_StartProtocol_Return(ProtocolID) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start)
-#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start
-extern void Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start(IN Dcm_OpStatusType OpStatus,
-	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Start(OpStatus,	Seed,	ErrorCode) ((void)(0))
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return
-#endif
-
-#if defined(Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return)
-#undef Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return
-extern void Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(IN Dcm_OpStatusType OpStatus,
-	OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Seed,
-	OUT P2VAR(Dcm_NegativeResponseCodeType, AUTOMATIC, RTE_APPL_DATA) ErrorCode);
-#else
-#define Rte_CallHook_Dcm_SecurityAccess_L1_GetSeed_Return(OpStatus,	Seed,	ErrorCode) ((void)(0))
 #endif
 
 #if defined(Rte_CallHook_Dcm_DataServices_RPM_WriteData_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -2615,28 +2615,6 @@ extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw_Retur
 #define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_BrakeSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
-#endif
-
-#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start)
-#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
-extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start(IN boolean Data);
-#else
-#define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return
-#endif
-
-#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return)
-#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return
-extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(IN boolean Data);
-#else
-#define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start
 #endif
@@ -2657,6 +2635,28 @@ extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Start(OUT P2VAR(ui
 extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_ReadHook_SWC_InputDiag_R_DriverInput_SocLevel_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
+#endif
+
+#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start)
+#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start
+extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return
+#endif
+
+#if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return)
+#undef Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return
+extern void Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(IN boolean Data);
+#else
+#define Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_AccelSw_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
@@ -2681,28 +2681,6 @@ extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(OUT P2VAR(bo
 #define Rte_ReadHook_SWC_InputDiag_R_DriverInput_AccelSw_Return(Data) ((void)(0))
 #endif
 
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(Data) ((void)(0))
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return) && (RTE_VFB_TRACE == RTE_FALSE)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return
-#endif
-
-#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return)
-#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return
-extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
-#else
-#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(Data) ((void)(0))
-#endif
-
 #if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start) && (RTE_VFB_TRACE == RTE_FALSE)
 #undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start
 #endif
@@ -2723,6 +2701,28 @@ extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Start(OUT P2VAR(boo
 extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
 #else
 #define Rte_ReadHook_SWC_InputDiag_R_DriverInput_BrakeSw_Return(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Start(Data) ((void)(0))
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return) && (RTE_VFB_TRACE == RTE_FALSE)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return
+#endif
+
+#if defined(Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return)
+#undef Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return
+extern void Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+#else
+#define Rte_ReadHook_SWC_InputDiag_R_DriverInput_ReadStatus_Return(Data) ((void)(0))
 #endif
 
 #if defined(Rte_WriteHook_SWC_InputDiag_P_DriverInputValidatedData_SocLevel_Start) && (RTE_VFB_TRACE == RTE_FALSE)

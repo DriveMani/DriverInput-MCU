@@ -299,6 +299,15 @@ extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_P_VcuToDrv_RegenLevel(IN VAR(uint8, AUTOMATIC) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_LimitReason(IN VAR(uint8, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_RegenEnable(IN VAR(boolean, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Write_SWC_CanCom_P_VcuToDrv_RegenLevel(IN VAR(uint8, AUTOMATIC) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Write_SWC_CanCom_Project_DriverStatus_AccelSw(IN VAR(boolean, AUTOMATIC) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
@@ -324,6 +333,21 @@ Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenEnable(OUT P2VAR(boolean, AUTOMA
 
 extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Read_SWC_CanCom_Project_VCURegenStatus_RegenLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_AccelSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_BrakeSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_DriverInputFault(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_SocLevel(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
+
+extern FUNC(Std_ReturnType, RTE_CODE)
+Rte_Read_SWC_CanCom_R_DriverInputValidatedData_VehicleSpeed(OUT P2VAR(uint8, AUTOMATIC, RTE_APPL_DATA) Data);
 
 extern FUNC(Std_ReturnType, RTE_CODE)
 Rte_Read_SWC_CanCom_R_DriverInputValidatedData_AccelSw(OUT P2VAR(boolean, AUTOMATIC, RTE_APPL_DATA) Data);

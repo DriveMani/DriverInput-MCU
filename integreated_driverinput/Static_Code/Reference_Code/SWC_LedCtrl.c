@@ -8,7 +8,8 @@
 
 FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
 {
-    Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret6, ret7;
+
+	Std_ReturnType ret1, ret2, ret3, ret4, ret5, ret6, ret7;
 
     boolean regenEnable = FALSE;
     uint8 regenLevel = 0U;
@@ -84,6 +85,8 @@ FUNC(void, SWC_LedCtrl_CODE) LedCtrl_func(void)
     ret5 = Rte_Call_R_Led2Ctrl_WriteDirect(led2);
     ret6 = Rte_Call_R_Led3Ctrl_WriteDirect(led3);
     ret7 = Rte_Call_R_Led4Ctrl_WriteDirect(led4);
+	Rte_Call_R_Led1Ctrl_WriteDirect(led2);
+	Rte_Call_R_Led2Ctrl_WriteDirect(led3);
 }
 
 #define SWC_LedCtrl_STOP_SEC_CODE

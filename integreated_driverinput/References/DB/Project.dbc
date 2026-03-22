@@ -35,18 +35,18 @@ BS_:
 
 BU_: TestClient ECU4 ECU3 ECU1 ECU2
  
- BO_ 1900 DriverStatus: 8 ECU1
- SG_ BrakeSw : 0|1@1+ (1,0) [0|1] "" ECU2
- SG_ AccelSw : 1|1@1+ (1,0) [0|1] "" ECU2
- SG_ SocLevel : 2|2@1+ (1,0) [0|3] "" ECU2
- SG_ DriverInputFault : 4|2@1+ (1,0) [0|3] "" ECU2
- SG_ AliveCounter : 8|4@1+ (1,0) [0|15] "" ECU2
- SG_ VehicleSpeed : 16|8@1+ (1,0) [0|255] "km/h" ECU2
+ BO_ 1900 DriverStatus: 8 TestClient
+ SG_ BrakeSw : 0|1@1+ (1,0) [0|1] "" TestClient
+ SG_ AccelSw : 1|1@1+ (1,0) [0|1] "" TestClient
+ SG_ SocLevel : 2|2@1+ (1,0) [0|3] "" TestClient
+ SG_ DriverInputFault : 4|2@1+ (1,0) [0|3] "" TestClient
+ SG_ AliveCounter : 8|4@1+ (1,0) [0|15] "" TestClient
+ SG_ VehicleSpeed : 16|8@1+ (1,0) [0|255] "km/h" TestClient
 
-BO_ 1901 VCURegenStatus: 8 ECU2
- SG_ RegenEnable : 0|1@1+ (1,0) [0|1] "" ECU1
- SG_ RegenLevel : 1|2@1+ (1,0) [0|3] "" ECU1
- SG_ LimitReason : 8|3@1+ (1,0) [0|7] "" ECU1
+BO_ 1901 VCURegenStatus: 8 TestClient
+ SG_ RegenEnable : 0|1@1+ (1,0) [0|1] "" TestClient
+ SG_ RegenLevel : 1|2@1+ (1,0) [0|3] "" TestClient
+ SG_ LimitReason : 8|3@1+ (1,0) [0|7] "" TestClient
  
  VAL_ 1900 BrakeSw 0 "OFF" 1 "ON";
 VAL_ 1900 AccelSw 0 "OFF" 1 "ON";

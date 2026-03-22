@@ -33,9 +33,11 @@ void ReadHwInput_func(void)
 		readStatus = FALSE;
 	}
 
-	brakeSw = brakeSwRaw;
-	accelSw = accelSwRaw;
-	socLevel = ((uint8)socSw1Raw << 1U) | (uint8)socSw2Raw;
+	brakeSw = (boolean)!brakeSwRaw;
+	accelSw = (boolean)!accelSwRaw;
+
+	socLevel = (((uint8)(!socSw1Raw)) << 1U) | ((uint8)(!socSw2Raw));
+
 	vehicleSpeed = (uint8)((vehicleSpeedAdc * 120U) / 4095U);
 
 	(void)Rte_Write_SWC_HwInput_P_DriverInputData_BrakeSw(brakeSw);
